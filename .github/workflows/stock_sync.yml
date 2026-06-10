@@ -1,0 +1,65 @@
+name: Stock Sync
+
+on:
+  schedule:
+    - cron: '0 16 * * *'   # daily 4pm UTC
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300    # 5 hour max per run
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests beautifulsoup4 lxml
+
+      # Restore checkpoint if this is a resume run
+      - name: Restore checkpoint
+        uses: actions/download-artifact@v4
+        with:
+          name: checkpoint
+          path: .
+        continue-on-error: true   # fine if no checkpoint exists yet
+
+      - name: Run stock sync
+        id: sync
+        run: |
+          python stock_sync.py
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      # Always commit whatever we have (partial stock_map + logs)
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f stock_map.json sync_log.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "sync $(date -u +'%Y-%m-%d %H:%M')"
+          git push
+        continue-on-error: true
+
+      # If blocked (exit 2) → save checkpoint artifact + trigger new run
+      - name: Save checkpoint artifact
+        if: steps.sync.outputs.exit_code == '2'
+        uses: actions/upload-artifact@v4
+        with:
+          name: checkpoint
+          path: checkpoint.json
+          retention-days: 2
+          overwrite: true
+
+      - name: Trigger resume run
+        if: steps.sync.outputs.exit_code == '2'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Blocked — triggering resume run with fresh IP..."
+          gh workflow run stock_sync.yml \
+            --repo ${{ github.repository }} \
+            --ref ${{ github.ref_name }}
