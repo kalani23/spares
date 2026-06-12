@@ -173,47 +173,19 @@ def get_subcats(category: str) -> list[str]:
     if not soup:
         return [BASE_URL + category]
 
-    # Try multiple selectors — site redesigned Nov 2025
-    selectors = [
-        # New design
-        "a.category-link",
-        "a.subcategory-link",
-        ".category-grid a",
-        ".subcategory-grid a",
-        "div.category-card a",
-        # Old design (pre-Nov 2025)
-        ".et-sub-category a.et-sub-category-link-wrapper",
-        ".et-sub-category a",
-        # Generic fallback — any link containing /Porsche/ with a subpath
-        "a[href*='/Porsche/'][href*='/']",
-    ]
-
-    for selector in selectors:
-        links = soup.select(selector)
-        urls  = []
-        seen  = set()
-        for a in links:
-            href = a.get("href", "")
-            # Must be a subpath of this category (deeper level)
-            if not href:
-                continue
+    # Exact selector confirmed from DOM inspection
+    urls, seen = [], set()
+    for a in soup.select("a.et-sub-category-link-wrapper"):
+        href = a.get("href", "")
+        if href and href not in seen:
+            seen.add(href)
             full = href if href.startswith("http") else BASE_URL + href
-            # Only keep URLs that are deeper than the category URL
-            # e.g. /Porsche/964/Engine-repair not /Porsche/964-Ersatzteile
-            if full in seen:
-                continue
-            # Must have at least 3 path segments: /Porsche/MODEL/SUBCAT
-            parts = [p for p in full.replace(BASE_URL, "").split("/") if p]
-            if len(parts) >= 3 and full not in seen:
-                seen.add(full)
-                urls.append(full)
-        if urls:
-            return urls
+            urls.append(full)
 
-    # Nothing found — this category IS a leaf (goes straight to products)
-    # Debug: log all links found on page to help diagnose
-    all_links = [a.get("href","") for a in soup.select("a[href]") if "/Porsche/" in a.get("href","")]
-    tprint(f"  [DEBUG] No subcats found for {category} — sample links: {all_links[:5]}")
+    if urls:
+        return urls
+
+    # No subcategories — this category goes straight to products
     return [BASE_URL + category]
 
 def discover_all_pages() -> list[str]:
@@ -242,7 +214,7 @@ def discover_all_pages() -> list[str]:
         soup = fetch(url)
         pages = [url]
         if soup:
-            for a in soup.select(".navbar-pagination a.page-link"):
+            for a in soup.select("ul.pagination a.page-link"):
                 href = a.get("href", "").split("#")[0]
                 if href:
                     full = href if href.startswith("http") else BASE_URL + href
