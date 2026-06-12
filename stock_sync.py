@@ -168,71 +168,66 @@ def fetch(url: str) -> BeautifulSoup | None:
 # PHASE 1 — DISCOVERY
 # ═════════════════════════════════════════════════════════════════════════════
 
-def get_subcats(category: str) -> list[str]:
-    soup = fetch(BASE_URL + category)
+def get_all_pages_for_category(category: str) -> list[str]:
+    """
+    Fetch category page. If it has subcategory tiles, collect pages for each subcat.
+    Otherwise treat the category itself as a product listing and paginate it.
+    """
+    base_url = BASE_URL + category
+    soup = fetch(base_url)
     if not soup:
-        return [BASE_URL + category]
+        return [base_url]
 
-    # Exact selector confirmed from DOM inspection
-    urls, seen = [], set()
+    # Check for subcategory grid
+    subcats = []
     for a in soup.select("a.et-sub-category-link-wrapper"):
         href = a.get("href", "")
-        if href and href not in seen:
-            seen.add(href)
+        if href:
             full = href if href.startswith("http") else BASE_URL + href
-            urls.append(full)
+            if full not in subcats:
+                subcats.append(full)
 
-    if urls:
-        return urls
-
-    # No subcategories — this category goes straight to products
-    return [BASE_URL + category]
-
-def discover_all_pages() -> list[str]:
-    """Discover all subcategories and their listing pages."""
-
-    tprint("\n── Phase 1: Discovering subcategories ──────────────────────")
-    all_subcats, seen, lock = [], set(), Lock()
-
-    def fetch_cat(cat):
-        urls = get_subcats(cat)
-        with lock:
-            new = [u for u in urls if u not in seen]
-            seen.update(new)
-            all_subcats.extend(new)
-            tprint(f"  {cat:<55} → {len(new)} subcats")
-
-    with ThreadPoolExecutor(max_workers=DISCOVERY_WORKERS) as ex:
-        list(as_completed([ex.submit(fetch_cat, c) for c in ALL_CATEGORIES]))
-
-    tprint(f"\n  Total subcategories: {len(all_subcats)}")
-
-    tprint("\n── Phase 2: Collecting listing pages ───────────────────────")
-    all_pages, seen2, lock2, done = [], set(), Lock(), [0]
-
-    def collect(url):
-        soup = fetch(url)
+    def get_pages(url, first_soup=None):
+        s = first_soup or fetch(url)
         pages = [url]
-        if soup:
-            for a in soup.select("ul.pagination a.page-link"):
+        if s:
+            for a in s.select("ul.pagination a.page-link"):
                 href = a.get("href", "").split("#")[0]
-                if href:
+                if href and href != "#":
                     full = href if href.startswith("http") else BASE_URL + href
                     if full not in pages:
                         pages.append(full)
-        with lock2:
-            for p in pages:
-                if p not in seen2:
-                    seen2.add(p)
+        return pages
+
+    if subcats:
+        all_pages, seen = [], set()
+        for subcat_url in subcats:
+            for p in get_pages(subcat_url):
+                if p not in seen:
+                    seen.add(p)
                     all_pages.append(p)
-            done[0] += 1
-            if done[0] % 100 == 0:
-                tprint(f"  {done[0]}/{len(all_subcats)} subcats | {len(all_pages)} pages")
+        return all_pages
+    else:
+        # Category is itself a product listing
+        return get_pages(base_url, soup)
+
+def discover_all_pages() -> list[str]:
+    """Discover all listing pages across all categories."""
+    tprint("\n── Discovery: collecting all listing pages ─────────────────")
+    all_pages, seen, lock = [], set(), Lock()
+
+    def process_cat(cat):
+        pages = get_all_pages_for_category(cat)
+        with lock:
+            new = [p for p in pages if p not in seen]
+            seen.update(new)
+            all_pages.extend(new)
+            tprint(f"  {cat:<55} → {len(pages)} pages")
 
     with ThreadPoolExecutor(max_workers=DISCOVERY_WORKERS) as ex:
-        list(as_completed([ex.submit(collect, u) for u in all_subcats]))
+        list(as_completed([ex.submit(process_cat, c) for c in ALL_CATEGORIES]))
 
-    tprint(f"  Total listing pages: {len(all_pages)}")
+    tprint(f"\n  Total listing pages: {len(all_pages)}")
     return all_pages
 
 # ═════════════════════════════════════════════════════════════════════════════
