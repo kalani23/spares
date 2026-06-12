@@ -47,7 +47,7 @@ SHOPIFY_HEADERS = {"X-Shopify-Access-Token": SHOPIFY_TOKEN, "Content-Type": "app
 # Scraping config
 DISCOVERY_WORKERS = 6     # workers for discovery phase (parallel is fine)
 REQ_DELAY         = (1.2, 2.5)   # seconds between requests — polite
-REQ_TIMEOUT       = 20
+REQ_TIMEOUT       = 12
 MAX_RETRIES       = 3
 BLOCK_THRESHOLD   = 40    # consecutive empty pages → assume blocked
 
@@ -172,8 +172,49 @@ def get_subcats(category: str) -> list[str]:
     soup = fetch(BASE_URL + category)
     if not soup:
         return [BASE_URL + category]
-    urls = [a.get("href", "") for a in soup.select(".et-sub-category a.et-sub-category-link-wrapper") if a.get("href")]
-    return urls if urls else [BASE_URL + category]
+
+    # Try multiple selectors — site redesigned Nov 2025
+    selectors = [
+        # New design
+        "a.category-link",
+        "a.subcategory-link",
+        ".category-grid a",
+        ".subcategory-grid a",
+        "div.category-card a",
+        # Old design (pre-Nov 2025)
+        ".et-sub-category a.et-sub-category-link-wrapper",
+        ".et-sub-category a",
+        # Generic fallback — any link containing /Porsche/ with a subpath
+        "a[href*='/Porsche/'][href*='/']",
+    ]
+
+    for selector in selectors:
+        links = soup.select(selector)
+        urls  = []
+        seen  = set()
+        for a in links:
+            href = a.get("href", "")
+            # Must be a subpath of this category (deeper level)
+            if not href:
+                continue
+            full = href if href.startswith("http") else BASE_URL + href
+            # Only keep URLs that are deeper than the category URL
+            # e.g. /Porsche/964/Engine-repair not /Porsche/964-Ersatzteile
+            if full in seen:
+                continue
+            # Must have at least 3 path segments: /Porsche/MODEL/SUBCAT
+            parts = [p for p in full.replace(BASE_URL, "").split("/") if p]
+            if len(parts) >= 3 and full not in seen:
+                seen.add(full)
+                urls.append(full)
+        if urls:
+            return urls
+
+    # Nothing found — this category IS a leaf (goes straight to products)
+    # Debug: log all links found on page to help diagnose
+    all_links = [a.get("href","") for a in soup.select("a[href]") if "/Porsche/" in a.get("href","")]
+    tprint(f"  [DEBUG] No subcats found for {category} — sample links: {all_links[:5]}")
+    return [BASE_URL + category]
 
 def discover_all_pages() -> list[str]:
     """Discover all subcategories and their listing pages."""
@@ -337,7 +378,7 @@ def scrape_stock(all_pages: list, start_index: int, stock_map: dict) -> tuple[di
 def get_shopify_products() -> list[dict]:
     tprint("\n── Fetching Shopify products ────────────────────────────────")
     products = []
-    url = f"{SHOPIFY_BASE}/products.json?limit=250&fields=id,variants"
+    url = f"{SHOPIFY_BASE}/products.json?limit=250&fields=id,variants&status=active"
     while url:
         r    = requests.get(url, headers=SHOPIFY_HEADERS, timeout=20)
         data = r.json()
@@ -441,6 +482,14 @@ def update_shopify(stock_map: dict, products: list, location_id: int) -> dict:
 # MAIN
 # ═════════════════════════════════════════════════════════════════════════════
 
+def check_site_reachable() -> bool:
+    """Quick check if partworks.de is reachable from this IP."""
+    try:
+        r = requests.get(BASE_URL, timeout=10)
+        return r.status_code == 200
+    except:
+        return False
+
 def main():
     start = time.time()
 
@@ -448,6 +497,13 @@ def main():
     tprint("Stuttgart Spares — Stock Sync")
     tprint(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     tprint("=" * 65)
+
+    # ── Quick IP check before doing anything ─────────────────────
+    tprint("\n  Checking if partworks.de is reachable from this runner...")
+    if not check_site_reachable():
+        tprint("  ✗ Site unreachable — this runner likely has a non-EU IP.")
+        tprint("  Exiting with code 2 → workflow will trigger new run with fresh IP.")
+        sys.exit(2)
 
     # ── Load checkpoint or discover fresh ────────────────────────────
     checkpoint = load_checkpoint()
