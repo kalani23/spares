@@ -111,12 +111,17 @@ def get_session() -> requests.Session:
     if not hasattr(_local, "s"):
         s = requests.Session()
         s.headers.update({
-            "User-Agent":      random.choice(USER_AGENTS),
-            "Accept-Language": "en-GB,en;q=0.9,de;q=0.8",
-            "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Referer":         "https://partworks.de/",
-            "DNT":             "1",
+            "User-Agent":                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Accept":                    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language":           "en-GB,en;q=0.9",
+            "Accept-Encoding":           "gzip, deflate, br",
+            "Connection":                "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "Sec-Fetch-Dest":            "document",
+            "Sec-Fetch-Mode":            "navigate",
+            "Sec-Fetch-Site":            "none",
+            "Sec-Fetch-User":            "?1",
+            "Cache-Control":             "max-age=0",
         })
         _local.s = s
     return _local.s
@@ -176,11 +181,16 @@ def get_all_pages_for_category(category: str) -> list[str]:
     base_url = BASE_URL + category
     soup = fetch(base_url)
     if not soup:
+        tprint(f"  [DEBUG] {category} → fetch None")
         return [base_url]
+
+    body_len = len(str(soup))
+    subcats_raw = soup.select("a.et-sub-category-link-wrapper")
+    tprint(f"  [DEBUG] {category} body={body_len} subcats={len(subcats_raw)}")
 
     # Check for subcategory grid
     subcats = []
-    for a in soup.select("a.et-sub-category-link-wrapper"):
+    for a in subcats_raw:
         href = a.get("href", "")
         if href:
             full = href if href.startswith("http") else BASE_URL + href
