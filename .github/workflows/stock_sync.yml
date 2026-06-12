@@ -25,16 +25,18 @@ jobs:
         with:
           name: checkpoint
           path: .
-        continue-on-error: true   # fine if no checkpoint exists yet
+        continue-on-error: true
 
       - name: Run stock sync
         id: sync
         run: |
           python stock_sync.py
-          echo "exit_code=$?" >> $GITHUB_OUTPUT
+          CODE=$?
+          echo "exit_code=$CODE" >> $GITHUB_OUTPUT
+          exit $CODE
         continue-on-error: true
 
-      # Always commit whatever we have (partial stock_map + logs)
+      # Always commit whatever we have
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
@@ -44,7 +46,7 @@ jobs:
           git push
         continue-on-error: true
 
-      # If blocked (exit 2) → save checkpoint artifact + trigger new run
+      # exit 2 = blocked → save checkpoint + trigger new run with fresh IP
       - name: Save checkpoint artifact
         if: steps.sync.outputs.exit_code == '2'
         uses: actions/upload-artifact@v4
@@ -59,7 +61,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Blocked — triggering resume run with fresh IP..."
+          echo "Blocked (exit 2) — triggering new run with fresh IP..."
           gh workflow run stock_sync.yml \
             --repo ${{ github.repository }} \
             --ref ${{ github.ref_name }}
