@@ -2,8 +2,16 @@ name: Stock Sync
 
 on:
   schedule:
-    - cron: '30 19 * * *'   # 1:00am Sri Lanka time (UTC+5:30) = 19:30 UTC prev day
-  workflow_dispatch:        # manual trigger button
+    - cron: '30 19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: stock-sync
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -12,6 +20,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -19,72 +30,51 @@ jobs:
 
       - run: pip install requests beautifulsoup4 lxml
 
-      # Restore checkpoint from a previous (blocked) run, if any
-      - name: Restore checkpoint
-        uses: actions/download-artifact@v4
-        with:
-          name: checkpoint
-          path: .
-        continue-on-error: true
-
       - name: Run stock sync
         id: sync
         env:
           SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
         run: |
+          set +e
           python stock_sync_final.py
           CODE=$?
           echo "exit_code=$CODE" >> $GITHUB_OUTPUT
-          exit $CODE
-        continue-on-error: true
+          exit 0
 
-      # Always commit the sync log, whatever happened
-      - name: Commit results
+      - name: Generate dashboard
+        run: |
+          if [ -f generate_dashboard.py ]; then
+            python generate_dashboard.py
+          else
+            echo "generate_dashboard.py missing, skipping dashboard"
+          fi
+
+      - name: Commit checkpoint and results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f sync_run_log.json 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "sync $(date -u +'%Y-%m-%d %H:%M')"
-          git push
-        continue-on-error: true
 
-      # Build the dashboard from whatever sync_run_log.json has so far
-      - name: Generate dashboard
-        run: python generate_dashboard.py
-        continue-on-error: true
+          git pull --rebase origin main || true
 
-      - name: Deploy dashboard to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: gh-pages
-          keep_files: false
-          exclude_assets: '.github,*.py,proxies.txt,checkpoint.json'
-        continue-on-error: true
+          git add -f sync_run_log.json checkpoint.json index.html 2>/dev/null || true
 
-      # Blocked (exit code 2) -> save checkpoint as artifact for next run
-      - name: Save checkpoint artifact
-        if: steps.sync.outputs.exit_code == '2'
-        uses: actions/upload-artifact@v4
-        with:
-          name: checkpoint
-          path: checkpoint.json
-          retention-days: 2
-          overwrite: true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "sync $(date -u +'%Y-%m-%d %H:%M')"
+            git push origin main
+          fi
 
-      # Blocked (exit code 2) -> trigger a brand-new run with a fresh IP
-      # NOTE: requires a Personal Access Token secret named GH_PAT
-      # (the default GITHUB_TOKEN is blocked by GitHub from triggering
-      # other workflow runs, to prevent infinite loops). Create one at
-      # https://github.com/settings/tokens with the 'workflow' (actions)
-      # scope, then add it as a repo secret named GH_PAT.
       - name: Trigger resume run
         if: steps.sync.outputs.exit_code == '2'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          echo "Blocked (exit 2) - triggering new run with fresh IP..."
+          echo "Blocked - triggering fresh runner..."
           gh workflow run stock_sync.yml \
             --repo ${{ github.repository }} \
-            --ref ${{ github.ref_name }}
+            --ref main
+
+      - name: Fail if real script error
+        if: steps.sync.outputs.exit_code != '0' && steps.sync.outputs.exit_code != '2'
+        run: exit 1
