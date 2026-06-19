@@ -67,11 +67,14 @@ jobs:
       - name: Run chunk ${{ matrix.chunk_id }}
         id: chunk
         run: |
+          set +e
           python sync_chunk.py ${{ matrix.chunk_id }}
           CODE=$?
-          echo "exit_code=$CODE" >> $GITHUB_OUTPUT
-          exit $CODE
-        continue-on-error: true
+          set -e
+          echo "$CODE" > chunk_exit_code.txt
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          echo "Chunk ${{ matrix.chunk_id }} exited with code $CODE"
+          exit 0
 
       - name: Commit chunk results/checkpoint
         run: |
@@ -89,11 +92,19 @@ jobs:
         continue-on-error: true
 
       - name: Record blocked chunk id
-        if: steps.chunk.outputs.exit_code == '2'
-        run: echo "${{ matrix.chunk_id }}" >> blocked_chunks.txt
+        run: |
+          CODE=$(cat chunk_exit_code.txt 2>/dev/null || echo "${{ steps.chunk.outputs.exit_code }}")
+          echo "Checking exit code for chunk ${{ matrix.chunk_id }}: $CODE"
+          if [ "$CODE" = "2" ]; then
+            echo "${{ matrix.chunk_id }}" >> blocked_chunks.txt
+            echo "is_blocked=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_blocked=false" >> "$GITHUB_OUTPUT"
+          fi
+        id: blockcheck
 
       - name: Upload blocked-chunk marker
-        if: steps.chunk.outputs.exit_code == '2'
+        if: steps.blockcheck.outputs.is_blocked == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: blocked-${{ matrix.chunk_id }}
