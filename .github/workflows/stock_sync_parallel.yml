@@ -55,6 +55,10 @@ jobs:
           ) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Pull latest (pick up chunks committed by split job)
+        run: git pull origin ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -73,10 +77,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase --autostash
-          git add -f results/results_*.json chunks/checkpoint_*.json 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "chunk ${{ matrix.chunk_id }} result $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin ${{ github.ref_name }}
+            git add -f results/results_*.json chunks/checkpoint_*.json 2>/dev/null || true
+            git diff --staged --quiet && break
+            git commit -m "chunk ${{ matrix.chunk_id }} result $(date -u +'%Y-%m-%d %H:%M')"
+            git push origin ${{ github.ref_name }} && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((RANDOM % 5 + 2))
+          done
         continue-on-error: true
 
       - name: Record blocked chunk id
@@ -136,6 +145,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Pull latest (pick up all chunk results)
+        run: git pull origin ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
