@@ -47,6 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      max-parallel: 6
       matrix:
         chunk_id: ${{ fromJson(
             github.event.inputs.chunk_ids != ''
@@ -68,6 +69,11 @@ jobs:
         id: chunk
         run: |
           set +e
+          # Stagger start so 18 matrix jobs don't all hit partworks.de
+          # in the exact same instant - spread across ~36s based on chunk_id
+          STAGGER=$(( 5 + ${{ matrix.chunk_id }} * 3 + RANDOM % 4 ))
+          echo "Staggering chunk ${{ matrix.chunk_id }} start by ${STAGGER}s"
+          sleep "$STAGGER"
           python sync_chunk.py ${{ matrix.chunk_id }}
           CODE=$?
           set -e
