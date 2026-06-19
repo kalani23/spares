@@ -21,24 +21,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - run: pip install requests beautifulsoup4 lxml
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml
 
-      - name: Run stock sync
+      - name: Run stock sync chunk
         id: sync
         env:
           SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
+          CHUNK_SIZE: 200
+          BLOCK_THRESHOLD: 5
         run: |
           set +e
           python stock_sync_final.py
           CODE=$?
-          echo "exit_code=$CODE" >> $GITHUB_OUTPUT
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          echo "Script exit code: $CODE"
           exit 0
 
       - name: Generate dashboard
@@ -49,7 +52,7 @@ jobs:
             echo "generate_dashboard.py missing, skipping dashboard"
           fi
 
-      - name: Commit checkpoint and results
+      - name: Commit progress
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -61,20 +64,20 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "sync $(date -u +'%Y-%m-%d %H:%M')"
+            git commit -m "sync progress $(date -u +'%Y-%m-%d %H:%M')"
             git push origin main
           fi
 
-      - name: Trigger resume run
-        if: steps.sync.outputs.exit_code == '2'
+      - name: Trigger next run
+        if: steps.sync.outputs.exit_code == '2' || steps.sync.outputs.exit_code == '3'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          echo "Blocked - triggering fresh runner..."
+          echo "Triggering next run. Exit code was ${{ steps.sync.outputs.exit_code }}"
           gh workflow run stock_sync.yml \
             --repo ${{ github.repository }} \
             --ref main
 
-      - name: Fail if real script error
-        if: steps.sync.outputs.exit_code != '0' && steps.sync.outputs.exit_code != '2'
+      - name: Fail on real script error
+        if: steps.sync.outputs.exit_code != '0' && steps.sync.outputs.exit_code != '2' && steps.sync.outputs.exit_code != '3'
         run: exit 1
