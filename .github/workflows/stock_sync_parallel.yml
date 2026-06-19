@@ -1,0 +1,187 @@
+name: Stock Sync Parallel
+
+on:
+  schedule:
+    - cron: '30 19 * * *'   # 1:00am Sri Lanka time (UTC+5:30)
+  workflow_dispatch:
+    inputs:
+      chunk_ids:
+        description: 'Comma-separated chunk ids to retry (leave blank for full fresh run)'
+        required: false
+        default: ''
+
+jobs:
+  # ── Job 1: Split all SKUs into chunks (only on a fresh run, not a retry) ──
+  split:
+    if: ${{ github.event.inputs.chunk_ids == '' }}
+    runs-on: ubuntu-latest
+    outputs:
+      chunk_ids: ${{ steps.split.outputs.chunk_ids }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Split SKUs into chunks
+        id: split
+        env:
+          SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
+        run: |
+          python split_chunks.py | tee split_output.log
+          CHUNK_COUNT=$(grep -oP '(?<=chunk_count": )\d+' chunks/manifest.json || python -c "import json; print(json.load(open('chunks/manifest.json'))['chunk_count'])")
+          IDS=$(python -c "print(','.join(str(i) for i in range($CHUNK_COUNT)))")
+          echo "chunk_ids=$IDS" >> $GITHUB_OUTPUT
+      - name: Commit chunks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f chunks/*.json
+          git diff --staged --quiet || git commit -m "split chunks $(date -u +'%Y-%m-%d %H:%M')"
+          git push
+
+  # ── Job 2: Process each chunk in parallel (matrix) ─────────────────────────
+  sync_chunks:
+    needs: split
+    if: ${{ always() && (needs.split.result == 'success' || github.event.inputs.chunk_ids != '') }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk_id: ${{ fromJson(
+            github.event.inputs.chunk_ids != ''
+              && format('[{0}]', github.event.inputs.chunk_ids)
+              || format('[{0}]', needs.split.outputs.chunk_ids)
+          ) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4 lxml
+
+      - name: Run chunk ${{ matrix.chunk_id }}
+        id: chunk
+        run: |
+          python sync_chunk.py ${{ matrix.chunk_id }}
+          CODE=$?
+          echo "exit_code=$CODE" >> $GITHUB_OUTPUT
+          exit $CODE
+        continue-on-error: true
+
+      - name: Commit chunk results/checkpoint
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash
+          git add -f results/results_*.json chunks/checkpoint_*.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chunk ${{ matrix.chunk_id }} result $(date -u +'%Y-%m-%d %H:%M')"
+          git push
+        continue-on-error: true
+
+      - name: Record blocked chunk id
+        if: steps.chunk.outputs.exit_code == '2'
+        run: echo "${{ matrix.chunk_id }}" >> blocked_chunks.txt
+
+      - name: Upload blocked-chunk marker
+        if: steps.chunk.outputs.exit_code == '2'
+        uses: actions/upload-artifact@v4
+        with:
+          name: blocked-${{ matrix.chunk_id }}
+          path: blocked_chunks.txt
+          retention-days: 1
+          overwrite: true
+
+  # ── Job 3: Check for any blocked chunks and retrigger just those ───────────
+  retrigger:
+    needs: sync_chunks
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all blocked-chunk markers
+        uses: actions/download-artifact@v4
+        with:
+          pattern: blocked-*
+          path: blocked_markers
+        continue-on-error: true
+
+      - name: Collect blocked chunk ids
+        id: collect
+        run: |
+          if [ -d blocked_markers ]; then
+            IDS=$(find blocked_markers -name "blocked_chunks.txt" -exec cat {} \; | sort -u | paste -sd, -)
+          else
+            IDS=""
+          fi
+          echo "ids=$IDS" >> $GITHUB_OUTPUT
+          echo "Blocked chunk ids: $IDS"
+
+      # NOTE: requires a Personal Access Token secret named GH_PAT with
+      # the 'workflow' scope (default GITHUB_TOKEN cannot trigger workflows)
+      - name: Retrigger blocked chunks only
+        if: steps.collect.outputs.ids != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          echo "Retriggering blocked chunks: ${{ steps.collect.outputs.ids }}"
+          gh workflow run stock_sync_parallel.yml \
+            --repo ${{ github.repository }} \
+            --ref ${{ github.ref_name }} \
+            -f chunk_ids="${{ steps.collect.outputs.ids }}"
+
+  # ── Job 4: Merge + update Shopify (only when nothing is blocked) ──────────
+  merge_and_update:
+    needs: [sync_chunks, retrigger]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+
+      - name: Check if any chunks still blocked
+        id: check
+        run: |
+          if ls chunks/checkpoint_*.json 1> /dev/null 2>&1; then
+            echo "still_blocked=true" >> $GITHUB_OUTPUT
+          else
+            echo "still_blocked=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Merge results and update Shopify
+        if: steps.check.outputs.still_blocked == 'false'
+        env:
+          SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
+        run: python merge_and_update.py
+
+      - name: Generate dashboard
+        if: steps.check.outputs.still_blocked == 'false'
+        run: python generate_dashboard.py
+
+      - name: Commit merged log
+        if: steps.check.outputs.still_blocked == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash
+          git add -f sync_run_log.json
+          git diff --staged --quiet || git commit -m "merged sync $(date -u +'%Y-%m-%d %H:%M')"
+          git push
+        continue-on-error: true
+
+      - name: Deploy dashboard to GitHub Pages
+        if: steps.check.outputs.still_blocked == 'false'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: false
+          exclude_assets: '.github,*.py,proxies.txt,chunks,results'
+        continue-on-error: true
+
+      - name: Skip merge - chunks still blocked, waiting for retrigger
+        if: steps.check.outputs.still_blocked == 'true'
+        run: echo "Some chunks are still blocked and have been retriggered. Merge will run after they complete."
