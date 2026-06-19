@@ -191,9 +191,14 @@ def get_primary_location_id(products: list[dict]) -> int:
 
 def lookup_sku_stock(sku: str, retries: int = MAX_RETRIES):
     """
-    Returns True (in stock), False (out of stock), or None (lookup failed
-    / ambiguous / blocked). No proxy rotation here — if blocked, the
-    caller's empty-streak counter handles checkpoint + exit.
+    Returns (in_stock, was_blocked):
+      in_stock   -> True / False / None (None = not found on partworks.de,
+                    e.g. merchandise SKUs that were never on their site —
+                    this is a normal, expected outcome, NOT a block)
+      was_blocked-> True only when the response itself looks like a bot
+                    block (stripped page body, or a non-200 we couldn't
+                    recover from after retries). This is the only signal
+                    that should count toward the retrigger threshold.
     """
     sku = clean_sku(sku)
     url = f"{SEARCH_URL}?qs={sku}"
@@ -207,36 +212,43 @@ def lookup_sku_stock(sku: str, retries: int = MAX_RETRIES):
                 if attempt < retries - 1:
                     time.sleep(2 ** attempt)
                     continue
-                return None
+                return None, True  # exhausted retries on bad HTTP -> treat as blocked
 
             if len(r.text) < 150_000:
-                # Soft block — stripped page
-                return None
+                # Soft block — stripped page, known bot-filter signature
+                if attempt < retries - 1:
+                    time.sleep(2 ** attempt)
+                    continue
+                return None, True
 
             soup = BeautifulSoup(r.text, "html.parser")
             h1 = soup.select_one("h1.product-title")
             sku_el = soup.select_one('[itemprop="sku"]')
             if not (h1 and sku_el):
-                return None
+                # Full page loaded fine, just no single product matched —
+                # this SKU genuinely isn't on partworks.de (e.g. merch).
+                # Not a block.
+                return None, False
 
             status_span = soup.select_one(".status-text")
             if not status_span:
-                return None
+                return None, False
 
             status_text = status_span.get_text(strip=True)
-            return (
+            in_stock = (
                 any(p in status_text for p in ["Available", "verfügbar", "sofort"])
                 and "Currently unavailable" not in status_text
                 and "nicht verfügbar" not in status_text
             )
+            return in_stock, False
 
         except Exception:
             if attempt < retries - 1:
                 time.sleep(2 ** attempt)
                 continue
-            return None
+            return None, True  # exhausted retries on exception -> treat as blocked
 
-    return None
+    return None, True
 
 
 def set_inventory_level(inventory_item_id, location_id, available) -> bool:
@@ -311,7 +323,7 @@ def main():
     print(f"\n-> Step 2: Checking stock on partworks.de "
           f"({start_index}/{len(products)} done so far)...\n")
 
-    empty_streak = 0
+    block_streak = 0
     in_stock_count     = sum(1 for r in results if r.get("in_stock") is True)
     out_of_stock_count = sum(1 for r in results if r.get("in_stock") is False)
     unknown_count      = sum(1 for r in results if r.get("in_stock") is None)
@@ -319,27 +331,30 @@ def main():
     for i in range(start_index, len(products)):
         item = products[i]
         sku = clean_sku(item["sku"])
-        in_stock = lookup_sku_stock(sku)
+        in_stock, was_blocked = lookup_sku_stock(sku)
 
-        if in_stock is None:
-            status_label = "UNKNOWN"
+        if was_blocked:
+            status_label = "BLOCKED"
+            block_streak += 1
+        elif in_stock is None:
+            status_label = "NOT FOUND"
             unknown_count += 1
-            empty_streak += 1
+            block_streak = 0
         elif in_stock:
             status_label = "IN STOCK"
             in_stock_count += 1
-            empty_streak = 0
+            block_streak = 0
         else:
             status_label = "OUT OF STOCK"
             out_of_stock_count += 1
-            empty_streak = 0
+            block_streak = 0
 
         print(f"  [{i+1}/{len(products)}] {sku:<15} {status_label:<14} {item['product_title'][:45]}")
         results.append({**item, "sku": sku, "in_stock": in_stock})
 
-        # ── Blocked: save checkpoint and exit with code 2 ───────────────────
-        if empty_streak >= BLOCK_THRESHOLD:
-            print(f"\n  BLOCKED: {empty_streak} consecutive unknown lookups.")
+        # ── Real block detected: save checkpoint and exit with code 2 ──────
+        if block_streak >= BLOCK_THRESHOLD:
+            print(f"\n  BLOCKED: {block_streak} consecutive stripped/failed responses.")
             print(f"  Saving checkpoint at index {i+1} and exiting (code 2)")
             print(f"  to trigger a fresh-IP retry.")
             # Rewind a little so the blocked ones get retried on fresh IP

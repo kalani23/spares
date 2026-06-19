@@ -2,7 +2,7 @@ name: Stock Sync
 
 on:
   schedule:
-    - cron: '0 3 * * *'    # 3am UTC daily
+    - cron: '30 19 * * *'   # 1:00am Sri Lanka time (UTC+5:30) = 19:30 UTC prev day
   workflow_dispatch:        # manual trigger button
 
 jobs:
@@ -48,6 +48,21 @@ jobs:
           git push
         continue-on-error: true
 
+      # Build the dashboard from whatever sync_run_log.json has so far
+      - name: Generate dashboard
+        run: python generate_dashboard.py
+        continue-on-error: true
+
+      - name: Deploy dashboard to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: false
+          exclude_assets: '.github,*.py,proxies.txt,checkpoint.json'
+        continue-on-error: true
+
       # Blocked (exit code 2) -> save checkpoint as artifact for next run
       - name: Save checkpoint artifact
         if: steps.sync.outputs.exit_code == '2'
@@ -59,10 +74,15 @@ jobs:
           overwrite: true
 
       # Blocked (exit code 2) -> trigger a brand-new run with a fresh IP
+      # NOTE: requires a Personal Access Token secret named GH_PAT
+      # (the default GITHUB_TOKEN is blocked by GitHub from triggering
+      # other workflow runs, to prevent infinite loops). Create one at
+      # https://github.com/settings/tokens with the 'workflow' (actions)
+      # scope, then add it as a repo secret named GH_PAT.
       - name: Trigger resume run
         if: steps.sync.outputs.exit_code == '2'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           echo "Blocked (exit 2) - triggering new run with fresh IP..."
           gh workflow run stock_sync.yml \
