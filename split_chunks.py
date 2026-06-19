@@ -128,7 +128,7 @@ def main():
 
     for i in range(chunk_count):
         chunk = products[i * CHUNK_SIZE : (i + 1) * CHUNK_SIZE]
-        chunk_file = Path(CHUNK_DIR) / f"chunk_{i:02d}.json"
+        chunk_file = CHUNKS_DIR / f"chunk_{i:02d}.json"
         with open(chunk_file, "w", encoding="utf-8") as f:
             json.dump(chunk, f, default=str)
         print(f"  {chunk_file} -> {len(chunk)} SKUs")
