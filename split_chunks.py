@@ -26,7 +26,7 @@ if not SHOPIFY_TOKEN:
 SHOP        = "27dkze-zv.myshopify.com"
 API_VERSION = "2024-10"
 CHUNK_SIZE  = 200
-CHUNK_DIR   = "chunks"
+CHUNK_DIR   = Path("chunks")
 
 GRAPHQL_URL = f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json"
 SHOPIFY_HEADERS = {
@@ -128,7 +128,7 @@ def main():
 
     for i in range(chunk_count):
         chunk = products[i * CHUNK_SIZE : (i + 1) * CHUNK_SIZE]
-        chunk_file = CHUNK_DIR / f"chunk_{i:02d}.json"
+        chunk_file = Path(CHUNK_DIR) / f"chunk_{i:02d}.json"
         with open(chunk_file, "w", encoding="utf-8") as f:
             json.dump(chunk, f, default=str)
         print(f"  {chunk_file} -> {len(chunk)} SKUs")
