@@ -1,0 +1,47 @@
+[
+  {
+    "product_id": "gid://shopify/Product/10376625553751",
+    "product_title": "Porsche Rear lock for Porsche 911 F/G 964 bonnet tailgate REAR TOP 930.512.052.01",
+    "variant_id": "gid://shopify/ProductVariant/52074959470935",
+    "inventory_item_id": "gid://shopify/InventoryItem/54129695949143",
+    "sku": "2879",
+    "original_sku": "2879.0",
+    "in_stock": null
+  },
+  {
+    "product_id": "gid://shopify/Product/10376625652055",
+    "product_title": "Porsche Belt tensioner seal for Porsche 928 sleeve bellows 92810555208 928.105.552.08",
+    "variant_id": "gid://shopify/ProductVariant/52074959569239",
+    "inventory_item_id": "gid://shopify/InventoryItem/54129696047447",
+    "sku": "2426",
+    "original_sku": "2426.0",
+    "in_stock": null
+  },
+  {
+    "product_id": "gid://shopify/Product/10376625717591",
+    "product_title": "Porsche 2x sealing ring cap valve cover for Porsche Cayenne 4.5 S turbo 955 ELRING 948.105.934.00",
+    "variant_id": "gid://shopify/ProductVariant/52074959634775",
+    "inventory_item_id": "gid://shopify/InventoryItem/54129696112983",
+    "sku": "1153",
+    "original_sku": "1153",
+    "in_stock": null
+  },
+  {
+    "product_id": "gid://shopify/Product/10376697512279",
+    "product_title": "Porsche 1x Lambda sensor before/after catalytic converter for Porsche Boxster 986 up to -'02 BOSCH 986.606.126.01",
+    "variant_id": "gid://shopify/ProductVariant/52075205558615",
+    "inventory_item_id": "gid://shopify/InventoryItem/54129944035671",
+    "sku": "5330",
+    "original_sku": "5330",
+    "in_stock": null
+  },
+  {
+    "product_id": "gid://shopify/Product/10376697577815",
+    "product_title": "Porsche Timing belt kit for Porsche 944 S S2 968 + CONTI track rollers 944.102.025.07",
+    "variant_id": "gid://shopify/ProductVariant/52075205624151",
+    "inventory_item_id": "gid://shopify/InventoryItem/54129944101207",
+    "sku": "8005",
+    "original_sku": "'8005",
+    "in_stock": null
+  }
+]
