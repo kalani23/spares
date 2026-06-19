@@ -2,13 +2,13 @@ name: Stock Sync
 
 on:
   schedule:
-    - cron: '0 16 * * *'   # daily 4pm UTC
-  workflow_dispatch:        # manual trigger
+    - cron: '0 3 * * *'    # 3am UTC daily
+  workflow_dispatch:        # manual trigger button
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 300    # 5 hour max per run
+    timeout-minutes: 300
 
     steps:
       - uses: actions/checkout@v4
@@ -19,7 +19,7 @@ jobs:
 
       - run: pip install requests beautifulsoup4 lxml
 
-      # Restore checkpoint if this is a resume run
+      # Restore checkpoint from a previous (blocked) run, if any
       - name: Restore checkpoint
         uses: actions/download-artifact@v4
         with:
@@ -30,23 +30,23 @@ jobs:
       - name: Run stock sync
         id: sync
         run: |
-          python stock_sync.py
+          python stock_sync_final.py
           CODE=$?
           echo "exit_code=$CODE" >> $GITHUB_OUTPUT
           exit $CODE
         continue-on-error: true
 
-      # Always commit whatever we have
+      # Always commit the sync log, whatever happened
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f stock_map.json sync_log.json 2>/dev/null || true
+          git add -f sync_run_log.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "sync $(date -u +'%Y-%m-%d %H:%M')"
           git push
         continue-on-error: true
 
-      # exit 2 = blocked → save checkpoint + trigger new run with fresh IP
+      # Blocked (exit code 2) -> save checkpoint as artifact for next run
       - name: Save checkpoint artifact
         if: steps.sync.outputs.exit_code == '2'
         uses: actions/upload-artifact@v4
@@ -56,12 +56,13 @@ jobs:
           retention-days: 2
           overwrite: true
 
+      # Blocked (exit code 2) -> trigger a brand-new run with a fresh IP
       - name: Trigger resume run
         if: steps.sync.outputs.exit_code == '2'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Blocked (exit 2) — triggering new run with fresh IP..."
+          echo "Blocked (exit 2) - triggering new run with fresh IP..."
           gh workflow run stock_sync.yml \
             --repo ${{ github.repository }} \
             --ref ${{ github.ref_name }}
