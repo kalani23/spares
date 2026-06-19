@@ -32,7 +32,14 @@ from bs4 import BeautifulSoup
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-SHOPIFY_TOKEN = "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"
+SHOPIFY_TOKEN = os.environ.get("SHOPIFY_TOKEN", "")
+if not SHOPIFY_TOKEN:
+    raise RuntimeError(
+        "SHOPIFY_TOKEN environment variable not set. "
+        "Set it locally (e.g. `set SHOPIFY_TOKEN=shpat_...` on Windows, "
+        "`export SHOPIFY_TOKEN=shpat_...` on Mac/Linux) or as a GitHub "
+        "Actions secret named SHOPIFY_TOKEN."
+    )
 SHOP          = "27dkze-zv.myshopify.com"
 API_VERSION   = "2024-10"
 
