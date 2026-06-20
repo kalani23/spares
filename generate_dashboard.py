@@ -144,6 +144,18 @@ def main():
     letter-spacing: 0.06em; color: var(--text-dim); }
   .updated { font-family: var(--mono); font-size: 12px; color: var(--text-dim); text-align: right; }
 
+  .trigger-bar { display: flex; align-items: center; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
+  .trigger-btn { background: var(--panel); border: 1px solid var(--line); color: var(--text);
+    padding: 11px 18px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+    text-transform: uppercase; cursor: pointer; border-radius: 2px; }
+  .trigger-btn:hover { border-color: var(--accent); }
+  .trigger-btn.primary { background: var(--accent-dim); border-color: var(--accent); }
+  .trigger-btn.primary:hover { background: var(--accent); }
+  .trigger-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .trigger-status { font-family: var(--mono); font-size: 12px; color: var(--text-dim); }
+  .trigger-status.success { color: #8bbf78; }
+  .trigger-status.error { color: #e08a7d; }
+
   .last-run-banner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
     background: var(--line); border: 1px solid var(--line); margin: 24px 0; }
   .lrb-item { background: var(--panel); padding: 16px 18px; text-align: center; }
@@ -233,6 +245,12 @@ def main():
     </div>
     <div class="updated">Dashboard generated<br>__GENERATED_AT__</div>
   </header>
+
+  <div class="trigger-bar">
+    <button id="trigger-full" class="trigger-btn primary">Run Full Sync</button>
+    <button id="trigger-merge" class="trigger-btn">Merge Only (use existing data)</button>
+    <span id="trigger-status" class="trigger-status"></span>
+  </div>
 
   __LAST_RUN_SUMMARY__
 
@@ -325,6 +343,71 @@ def main():
       detail.style.display = isOpen ? 'none' : 'grid';
       if (!isOpen) detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
+  });
+  // ── Workflow trigger buttons ──────────────────────────────────────────
+  const REPO = "kalani23/spares";
+
+  function getToken() {
+    let token = sessionStorage.getItem("gh_trigger_token");
+    if (!token) {
+      token = prompt(
+        "Paste a GitHub Personal Access Token (repo + workflow scope).\n" +
+        "This is kept only in this browser tab's memory and is never saved or sent anywhere except GitHub's own API."
+      );
+      if (token) sessionStorage.setItem("gh_trigger_token", token.trim());
+    }
+    return token ? token.trim() : null;
+  }
+
+  async function triggerWorkflow(workflowFile, btn, label) {
+    const token = getToken();
+    if (!token) return;
+
+    const statusEl = document.getElementById("trigger-status");
+    btn.disabled = true;
+    statusEl.className = "trigger-status";
+    statusEl.textContent = "Starting " + label + "...";
+
+    try {
+      const res = await fetch(
+        `https://api.github.com/repos/${REPO}/actions/workflows/${workflowFile}/dispatches`,
+        {
+          method: "POST",
+          headers: {
+            "Authorization": "Bearer " + token,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ref: "main" }),
+        }
+      );
+
+      if (res.status === 204) {
+        statusEl.className = "trigger-status success";
+        statusEl.textContent = label + " started. Check the Actions tab on GitHub for progress.";
+      } else if (res.status === 401) {
+        statusEl.className = "trigger-status error";
+        statusEl.textContent = "Invalid token. Click the button again to re-enter it.";
+        sessionStorage.removeItem("gh_trigger_token");
+      } else {
+        const body = await res.text();
+        statusEl.className = "trigger-status error";
+        statusEl.textContent = "Failed (" + res.status + "): " + body.slice(0, 150);
+      }
+    } catch (e) {
+      statusEl.className = "trigger-status error";
+      statusEl.textContent = "Error: " + e.message;
+    } finally {
+      btn.disabled = false;
+    }
+  }
+
+  document.getElementById("trigger-full").addEventListener("click", (e) => {
+    triggerWorkflow("stock_sync_parallel.yml", e.target, "Full sync");
+  });
+
+  document.getElementById("trigger-merge").addEventListener("click", (e) => {
+    triggerWorkflow("merge_only.yml", e.target, "Merge only");
   });
 </script>
 </body>
