@@ -165,7 +165,7 @@ def main():
             failed += 1
             print(f"  [FAILED] {item['sku']} - could not update inventory")
 
-        time.sleep(0.55)  # stay safely under Shopify's 2 calls/sec limit
+        time.sleep(0.75)  # stay safely under Shopify's 2 calls/sec limit, with headroom
 
         if i % 25 == 0:
             print(f"  {i}/{len(all_results)} processed...")
