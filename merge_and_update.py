@@ -26,6 +26,7 @@ RESULTS_DIR = "results"
 LOG_FILE    = "sync_run_log.json"
 
 SHOPIFY_BASE = f"https://{SHOP}/admin/api/{API_VERSION}"
+GRAPHQL_URL  = f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json"
 SHOPIFY_HEADERS = {
     "X-Shopify-Access-Token": SHOPIFY_TOKEN,
     "Content-Type": "application/json",
@@ -90,35 +91,59 @@ def set_inventory_level(inventory_item_id, location_id, available, retries=4):
 def get_valid_product_ids():
     """Fetch the set of product_ids that currently exist in Shopify -
     used to filter out stale results for products that have since been
-    deleted (e.g. the dirty-SKU cleanup), avoiding pointless 404s."""
+    deleted (e.g. the dirty-SKU cleanup), avoiding pointless 404s.
+    Uses GraphQL (same proven pattern as split_chunks.py) rather than
+    REST, since the REST products.json endpoint with fields= returned
+    an empty list despite the store having thousands of real products."""
     valid_ids = set()
-    url = f"{SHOPIFY_BASE}/products.json?limit=250&status=any&fields=id"
+    cursor = None
     page = 1
-    while url:
+
+    while True:
         print(f"  Fetching valid product ids page {page}...")
-        r = requests.get(url, headers=SHOPIFY_HEADERS, timeout=(10, 15))
+        query = """
+        query($cursor: String) {
+          products(first: 250, after: $cursor) {
+            edges {
+              cursor
+              node { id }
+            }
+            pageInfo { hasNextPage }
+          }
+        }
+        """
+        r = requests.post(
+            GRAPHQL_URL,
+            headers=SHOPIFY_HEADERS,
+            json={"query": query, "variables": {"cursor": cursor}},
+            timeout=(10, 15),
+        )
         print(f"    HTTP {r.status_code}")
         try:
-            data = r.json()
+            result = r.json()
         except Exception as e:
-            print(f"  [ERROR] Could not parse JSON response: {e}")
-            print(f"  [ERROR] Raw response: {r.text[:500]}")
+            print(f"  [ERROR] Could not parse JSON: {e}")
             break
-        if "products" not in data:
-            print(f"  [ERROR] Unexpected response shape: {data}")
+
+        if "errors" in result:
+            print(f"  [ERROR] GraphQL errors: {result['errors']}")
             break
-        page_count = len(data["products"])
-        print(f"    Got {page_count} products on this page")
-        for p in data["products"]:
-            valid_ids.add(f"gid://shopify/Product/{p['id']}")
-        link = r.headers.get("Link", "")
-        next_url = None
-        for part in link.split(","):
-            if 'rel="next"' in part:
-                next_url = part.strip().split(";")[0].strip("<>")
-        url = next_url
+
+        data = result.get("data", {}).get("products", {})
+        edges = data.get("edges", [])
+        print(f"    Got {len(edges)} products on this page")
+
+        for edge in edges:
+            valid_ids.add(edge["node"]["id"])
+
+        if not data.get("pageInfo", {}).get("hasNextPage"):
+            break
+        cursor = edges[-1]["cursor"] if edges else None
+        if not cursor:
+            break
         page += 1
         time.sleep(0.3)
+
     return valid_ids
 
 
