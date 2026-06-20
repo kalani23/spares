@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 6
+      max-parallel: 18
       matrix:
         chunk_id: ${{ fromJson(
             github.event.inputs.chunk_ids != ''
