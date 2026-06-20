@@ -1,0 +1,30 @@
+name: Dashboard Only
+
+on:
+  workflow_dispatch:
+
+jobs:
+  rebuild_dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Pull latest
+        run: git pull origin ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate dashboard from existing data
+        run: python -u generate_dashboard.py
+
+      - name: Deploy dashboard to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: false
+          exclude_assets: '.github,*.py,proxies.txt,chunks,results'
