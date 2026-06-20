@@ -97,10 +97,18 @@ def get_valid_product_ids():
     while url:
         print(f"  Fetching valid product ids page {page}...")
         r = requests.get(url, headers=SHOPIFY_HEADERS, timeout=(10, 15))
-        data = r.json()
-        if "products" not in data:
-            print(f"  [ERROR] {data}")
+        print(f"    HTTP {r.status_code}")
+        try:
+            data = r.json()
+        except Exception as e:
+            print(f"  [ERROR] Could not parse JSON response: {e}")
+            print(f"  [ERROR] Raw response: {r.text[:500]}")
             break
+        if "products" not in data:
+            print(f"  [ERROR] Unexpected response shape: {data}")
+            break
+        page_count = len(data["products"])
+        print(f"    Got {page_count} products on this page")
         for p in data["products"]:
             valid_ids.add(f"gid://shopify/Product/{p['id']}")
         link = r.headers.get("Link", "")
