@@ -28,7 +28,7 @@ jobs:
         env:
           SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
         run: |
-          python split_chunks.py | tee split_output.log
+          python -u split_chunks.py | tee split_output.log
           CHUNK_COUNT=$(grep -oP '(?<=chunk_count": )\d+' chunks/manifest.json || python -c "import json; print(json.load(open('chunks/manifest.json'))['chunk_count'])")
           IDS=$(python -c "print(','.join(str(i) for i in range($CHUNK_COUNT)))")
           echo "chunk_ids=$IDS" >> $GITHUB_OUTPUT
@@ -74,7 +74,7 @@ jobs:
           STAGGER=$(( 5 + ${{ matrix.chunk_id }} * 3 + RANDOM % 4 ))
           echo "Staggering chunk ${{ matrix.chunk_id }} start by ${STAGGER}s"
           sleep "$STAGGER"
-          python sync_chunk.py ${{ matrix.chunk_id }}
+          python -u sync_chunk.py ${{ matrix.chunk_id }}
           CODE=$?
           set -e
           echo "$CODE" > chunk_exit_code.txt
@@ -234,7 +234,7 @@ jobs:
         if: steps.check.outputs.still_blocked == 'false'
         env:
           SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
-        run: python merge_and_update.py
+        run: python -u merge_and_update.py
 
       - name: Generate dashboard
         if: steps.check.outputs.still_blocked == 'false'

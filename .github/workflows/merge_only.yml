@@ -21,7 +21,7 @@ jobs:
       - name: Merge results and update Shopify
         env:
           SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
-        run: python merge_and_update.py
+        run: python -u merge_and_update.py
 
       - name: Generate dashboard
         run: python generate_dashboard.py
