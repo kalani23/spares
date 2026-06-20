@@ -1,0 +1,47 @@
+name: Merge Only
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge_and_update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Pull latest
+        run: git pull origin ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+
+      - name: Merge results and update Shopify
+        env:
+          SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
+        run: python merge_and_update.py
+
+      - name: Generate dashboard
+        run: python generate_dashboard.py
+
+      - name: Commit merged log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash
+          git add -f sync_run_log.json history.json
+          git diff --staged --quiet || git commit -m "manual merge $(date -u +'%Y-%m-%d %H:%M')"
+          git push
+        continue-on-error: true
+
+      - name: Deploy dashboard to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: false
+          exclude_assets: '.github,*.py,proxies.txt,chunks,results'
+        continue-on-error: true

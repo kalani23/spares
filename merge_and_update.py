@@ -59,14 +59,23 @@ def set_inventory_level(inventory_item_id, location_id, available, retries=4):
         "available": available,
     }
     for attempt in range(retries):
-        r = requests.post(
-            f"{SHOPIFY_BASE}/inventory_levels/set.json",
-            headers=SHOPIFY_HEADERS,
-            json=payload,
-            timeout=20,
-        )
+        try:
+            r = requests.post(
+                f"{SHOPIFY_BASE}/inventory_levels/set.json",
+                headers=SHOPIFY_HEADERS,
+                json=payload,
+                timeout=(10, 15),  # (connect_timeout, read_timeout) - explicit, no ambiguity
+            )
+        except requests.exceptions.RequestException as e:
+            print(f"[SHOPIFY UPDATE ERROR] Request exception: {e}")
+            return False
         if r.status_code == 200:
             return True
+        if r.status_code == 404:
+            # Product/variant no longer exists in Shopify (likely deleted) -
+            # no point retrying, this will never succeed.
+            print(f"[SHOPIFY UPDATE ERROR] 404 - product/inventory item no longer exists, skipping")
+            return False
         if r.status_code == 429:
             wait = float(r.headers.get("Retry-After", 2.0))
             print(f"    [429] Rate limited, waiting {wait}s (attempt {attempt+1}/{retries})")
@@ -76,6 +85,33 @@ def set_inventory_level(inventory_item_id, location_id, available, retries=4):
         return False
     print(f"[SHOPIFY UPDATE ERROR] Exhausted retries after repeated 429s")
     return False
+
+
+def get_valid_product_ids():
+    """Fetch the set of product_ids that currently exist in Shopify -
+    used to filter out stale results for products that have since been
+    deleted (e.g. the dirty-SKU cleanup), avoiding pointless 404s."""
+    valid_ids = set()
+    url = f"{SHOPIFY_BASE}/products.json?limit=250&status=any&fields=id"
+    page = 1
+    while url:
+        print(f"  Fetching valid product ids page {page}...")
+        r = requests.get(url, headers=SHOPIFY_HEADERS, timeout=(10, 15))
+        data = r.json()
+        if "products" not in data:
+            print(f"  [ERROR] {data}")
+            break
+        for p in data["products"]:
+            valid_ids.add(f"gid://shopify/Product/{p['id']}")
+        link = r.headers.get("Link", "")
+        next_url = None
+        for part in link.split(","):
+            if 'rel="next"' in part:
+                next_url = part.strip().split(";")[0].strip("<>")
+        url = next_url
+        page += 1
+        time.sleep(0.3)
+    return valid_ids
 
 
 def main():
@@ -136,11 +172,23 @@ def main():
     location_id = get_primary_location_id(all_results)
     print(f"  Location ID: {location_id}")
 
-    print(f"\n-> Updating Shopify inventory levels for {len(all_results)} SKUs...\n")
+    print("\n-> Checking which products still exist in Shopify...")
+    valid_product_ids = get_valid_product_ids()
+    print(f"  {len(valid_product_ids)} products currently exist")
+
+    stale = [r for r in all_results if r.get("product_id") not in valid_product_ids]
+    if stale:
+        print(f"  Skipping {len(stale)} results for products no longer in Shopify "
+              f"(likely deleted, e.g. dirty-SKU cleanup)")
+
+    update_candidates = [r for r in all_results if r.get("product_id") in valid_product_ids]
+
+    print(f"\n-> Updating Shopify inventory levels for {len(update_candidates)} SKUs "
+          f"({len(stale)} stale skipped)...\n")
 
     updated, skipped, failed = 0, 0, 0
 
-    for i, item in enumerate(all_results, 1):
+    for i, item in enumerate(update_candidates, 1):
         if item.get("in_stock") is None:
             skipped += 1
             continue
@@ -157,7 +205,7 @@ def main():
         time.sleep(0.55)  # stay safely under Shopify's 2 calls/sec limit
 
         if i % 25 == 0:
-            print(f"  {i}/{len(all_results)} processed...")
+            print(f"  {i}/{len(update_candidates)} processed...")
 
     print(f"\n{'=' * 60}")
     print("Merge + update complete")
