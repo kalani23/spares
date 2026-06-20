@@ -101,6 +101,25 @@ def main():
     print(f"  Out of stock: {len(out_of_stock)}")
     print(f"  Not found:    {len(not_found)}")
 
+    # ── Diff against the previous run to find what actually changed ────────
+    newly_in_stock, newly_out_of_stock = [], []
+    if Path(LOG_FILE).exists():
+        try:
+            with open(LOG_FILE, encoding="utf-8") as f:
+                previous_results = json.load(f)
+            previous_status = {r["sku"]: r.get("in_stock") for r in previous_results}
+            for r in all_results:
+                prev = previous_status.get(r["sku"])
+                curr = r.get("in_stock")
+                if curr is True and prev is not True:
+                    newly_in_stock.append(r)
+                elif curr is False and prev is not False:
+                    newly_out_of_stock.append(r)
+            print(f"\n  Newly in stock since last run:     {len(newly_in_stock)}")
+            print(f"  Newly out of stock since last run: {len(newly_out_of_stock)}")
+        except (json.JSONDecodeError, UnicodeDecodeError, KeyError):
+            print("  [WARN] Could not diff against previous run log")
+
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, default=str)
     print(f"\n  Merged log written -> {LOG_FILE}")
@@ -137,6 +156,43 @@ def main():
     print(f"  Skipped (not found on supplier): {skipped}")
     print(f"  Failed:  {failed}")
     print(f"{'=' * 60}")
+
+    # ── Append this run to history.json for the dashboard ──────────────────
+    history_file = Path("history.json")
+    history = []
+    if history_file.exists():
+        try:
+            with open(history_file, encoding="utf-8") as f:
+                history = json.load(f)
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            history = []
+
+    run_record = {
+        "timestamp": __import__("datetime").datetime.now(
+            __import__("datetime").timezone.utc
+        ).isoformat(),
+        "total_skus": len(all_results),
+        "in_stock": len(in_stock),
+        "out_of_stock": len(out_of_stock),
+        "not_found": len(not_found),
+        "newly_in_stock": len(newly_in_stock),
+        "newly_out_of_stock": len(newly_out_of_stock),
+        "updated": updated,
+        "skipped": skipped,
+        "failed": failed,
+        "newly_in_stock_skus": [
+            {"sku": r["sku"], "title": r["product_title"]} for r in newly_in_stock
+        ][:50],  # cap to keep history.json from growing unbounded
+        "newly_out_of_stock_skus": [
+            {"sku": r["sku"], "title": r["product_title"]} for r in newly_out_of_stock
+        ][:50],
+    }
+    history.append(run_record)
+    history = history[-90:]  # keep last 90 days
+
+    with open(history_file, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2, default=str)
+    print(f"\n  Run history updated -> {history_file} ({len(history)} runs kept)")
 
 
 if __name__ == "__main__":

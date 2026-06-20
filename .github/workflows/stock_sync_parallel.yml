@@ -2,7 +2,7 @@ name: Stock Sync Parallel
 
 on:
   schedule:
-    - cron: '30 19 * * *'   # 1:00am Sri Lanka time (UTC+5:30)
+    - cron: '0 0 * * *'    # 12:00am UK time (GMT, UTC+0) / 1:00am during BST
   workflow_dispatch:
     inputs:
       chunk_ids:
@@ -174,11 +174,59 @@ jobs:
       - name: Check if any chunks still blocked
         id: check
         run: |
-          if ls chunks/checkpoint_*.json 1> /dev/null 2>&1; then
-            echo "still_blocked=true" >> $GITHUB_OUTPUT
-          else
-            echo "still_blocked=false" >> $GITHUB_OUTPUT
-          fi
+          python3 - << 'PYEOF'
+          import json
+          import os
+          from pathlib import Path
+
+          chunk_dir = Path("chunks")
+          results_dir = Path("results")
+          still_blocked = False
+          cleaned = []
+
+          for cp_file in sorted(chunk_dir.glob("checkpoint_*.json")):
+              chunk_id = cp_file.stem.replace("checkpoint_", "")
+              chunk_file = chunk_dir / f"chunk_{chunk_id}.json"
+              results_file = results_dir / f"results_{chunk_id}.json"
+
+              expected_count = None
+              if chunk_file.exists():
+                  try:
+                      expected_count = len(json.loads(chunk_file.read_text()))
+                  except Exception:
+                      pass
+
+              actual_count = None
+              if results_file.exists():
+                  try:
+                      actual_count = len(json.loads(results_file.read_text()))
+                  except Exception:
+                      pass
+
+              if expected_count is not None and actual_count is not None and actual_count >= expected_count:
+                  # Results file is complete - this checkpoint is stale, remove it
+                  cp_file.unlink()
+                  cleaned.append(str(cp_file))
+              else:
+                  print(f"Chunk {chunk_id} genuinely still blocked: expected {expected_count}, got {actual_count}")
+                  still_blocked = True
+
+          if cleaned:
+              print(f"Cleaned up {len(cleaned)} stale checkpoint(s): {cleaned}")
+
+          gh_output = os.environ.get("GITHUB_OUTPUT")
+          with open(gh_output, "a") as f:
+              f.write(f"still_blocked={'true' if still_blocked else 'false'}\n")
+          PYEOF
+
+      - name: Commit cleaned-up stale checkpoints
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -u chunks/checkpoint_*.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "remove stale checkpoints $(date -u +'%Y-%m-%d %H:%M')"
+          git push origin ${{ github.ref_name }} || true
+        continue-on-error: true
 
       - name: Merge results and update Shopify
         if: steps.check.outputs.still_blocked == 'false'
@@ -196,7 +244,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash
-          git add -f sync_run_log.json
+          git add -f sync_run_log.json history.json
           git diff --staged --quiet || git commit -m "merged sync $(date -u +'%Y-%m-%d %H:%M')"
           git push
         continue-on-error: true
