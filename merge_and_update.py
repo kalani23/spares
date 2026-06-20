@@ -51,23 +51,31 @@ def get_primary_location_id(products):
     raise RuntimeError("Could not auto-detect Shopify location ID")
 
 
-def set_inventory_level(inventory_item_id, location_id, available):
+def set_inventory_level(inventory_item_id, location_id, available, retries=4):
     inventory_item_id = str(inventory_item_id).split("/")[-1]
     payload = {
         "location_id": location_id,
         "inventory_item_id": inventory_item_id,
         "available": available,
     }
-    r = requests.post(
-        f"{SHOPIFY_BASE}/inventory_levels/set.json",
-        headers=SHOPIFY_HEADERS,
-        json=payload,
-        timeout=20,
-    )
-    if r.status_code != 200:
+    for attempt in range(retries):
+        r = requests.post(
+            f"{SHOPIFY_BASE}/inventory_levels/set.json",
+            headers=SHOPIFY_HEADERS,
+            json=payload,
+            timeout=20,
+        )
+        if r.status_code == 200:
+            return True
+        if r.status_code == 429:
+            wait = float(r.headers.get("Retry-After", 2.0))
+            print(f"    [429] Rate limited, waiting {wait}s (attempt {attempt+1}/{retries})")
+            time.sleep(wait)
+            continue
         print(f"[SHOPIFY UPDATE ERROR] {r.status_code} {r.text[:300]}")
         return False
-    return True
+    print(f"[SHOPIFY UPDATE ERROR] Exhausted retries after repeated 429s")
+    return False
 
 
 def main():
@@ -146,9 +154,10 @@ def main():
             failed += 1
             print(f"  [FAILED] {item['sku']} - could not update inventory")
 
+        time.sleep(0.55)  # stay safely under Shopify's 2 calls/sec limit
+
         if i % 25 == 0:
             print(f"  {i}/{len(all_results)} processed...")
-            time.sleep(0.5)
 
     print(f"\n{'=' * 60}")
     print("Merge + update complete")
