@@ -88,7 +88,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           for i in 1 2 3 4 5; do
             git pull --rebase --autostash origin ${{ github.ref_name }}
-            git add -f results/results_*.json chunks/checkpoint_*.json 2>/dev/null || true
+            git add -A -f results/ 2>/dev/null || true
+            git add -A -f chunks/checkpoint_*.json 2>/dev/null || true
             git diff --staged --quiet && break
             git commit -m "chunk ${{ matrix.chunk_id }} result $(date -u +'%Y-%m-%d %H:%M')"
             git push origin ${{ github.ref_name }} && break
