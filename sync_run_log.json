@@ -5,7 +5,7 @@
     "variant_id": "gid://shopify/ProductVariant/52074959470935",
     "inventory_item_id": "gid://shopify/InventoryItem/54129695949143",
     "sku": "2879",
-    "in_stock": null
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10376625652055",
@@ -13,7 +13,7 @@
     "variant_id": "gid://shopify/ProductVariant/52074959569239",
     "inventory_item_id": "gid://shopify/InventoryItem/54129696047447",
     "sku": "2426",
-    "in_stock": null
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10376625717591",
@@ -5701,7 +5701,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651764216151",
     "inventory_item_id": "gid://shopify/InventoryItem/55724446613847",
     "sku": "9941",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895904702807",

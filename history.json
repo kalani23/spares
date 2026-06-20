@@ -12,5 +12,33 @@
     "failed": 0,
     "newly_in_stock_skus": [],
     "newly_out_of_stock_skus": []
+  },
+  {
+    "timestamp": "2026-06-20T12:25:55.751118+00:00",
+    "total_skus": 3138,
+    "in_stock": 2405,
+    "out_of_stock": 491,
+    "not_found": 242,
+    "newly_in_stock": 2,
+    "newly_out_of_stock": 1,
+    "updated": 2896,
+    "skipped": 242,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "2879",
+        "title": "Porsche Rear lock for Porsche 911 F/G 964 bonnet tailgate REAR TOP 930.512.052.01"
+      },
+      {
+        "sku": "2426",
+        "title": "Porsche Belt tensioner seal for Porsche 928 sleeve bellows 92810555208 928.105.552.08"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "9941",
+        "title": "Porsche 924S 944 Intake Manifold Gasket 1x Elring 94411016305"
+      }
+    ]
   }
 ]
