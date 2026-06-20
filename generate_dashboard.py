@@ -144,6 +144,10 @@ def main():
     letter-spacing: 0.06em; color: var(--text-dim); }
   .updated { font-family: var(--mono); font-size: 12px; color: var(--text-dim); text-align: right; }
 
+  .token-input { background: var(--panel); border: 1px solid var(--line); color: var(--text);
+    padding: 10px 12px; font-family: var(--mono); font-size: 12px; border-radius: 2px; min-width: 240px; }
+  .token-input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+
   .trigger-bar { display: flex; align-items: center; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
   .trigger-btn { background: var(--panel); border: 1px solid var(--line); color: var(--text);
     padding: 11px 18px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
@@ -249,6 +253,7 @@ def main():
   <div class="trigger-bar">
     <button id="trigger-full" class="trigger-btn primary">Run Full Sync</button>
     <button id="trigger-merge" class="trigger-btn">Merge Only (use existing data)</button>
+    <input id="gh-token-input" type="password" placeholder="GitHub token (repo+workflow scope)" class="token-input">
     <span id="trigger-status" class="trigger-status"></span>
   </div>
 
@@ -346,22 +351,35 @@ def main():
   });
   // ── Workflow trigger buttons ──────────────────────────────────────────
   const REPO = "kalani23/spares";
+  const tokenInput = document.getElementById("gh-token-input");
+
+  // Restore saved token into the input field, if any
+  const savedToken = sessionStorage.getItem("gh_trigger_token");
+  if (savedToken) tokenInput.value = savedToken;
+
+  tokenInput.addEventListener("input", () => {
+    sessionStorage.setItem("gh_trigger_token", tokenInput.value.trim());
+  });
 
   function getToken() {
-    let token = sessionStorage.getItem("gh_trigger_token");
+    const token = tokenInput.value.trim();
     if (!token) {
-      token = prompt(
-        "Paste a GitHub Personal Access Token (repo + workflow scope).\n" +
-        "This is kept only in this browser tab's memory and is never saved or sent anywhere except GitHub's own API."
-      );
-      if (token) sessionStorage.setItem("gh_trigger_token", token.trim());
+      const statusEl = document.getElementById("trigger-status");
+      statusEl.className = "trigger-status error";
+      statusEl.textContent = "Enter a GitHub token in the field first.";
+      tokenInput.focus();
+      return null;
     }
-    return token ? token.trim() : null;
+    return token;
   }
 
   async function triggerWorkflow(workflowFile, btn, label) {
+    console.log("[trigger] button clicked:", label);
     const token = getToken();
-    if (!token) return;
+    if (!token) {
+      console.log("[trigger] no token provided, aborting");
+      return;
+    }
 
     const statusEl = document.getElementById("trigger-status");
     btn.disabled = true;
@@ -369,6 +387,7 @@ def main():
     statusEl.textContent = "Starting " + label + "...";
 
     try {
+      console.log("[trigger] calling GitHub API for", workflowFile);
       const res = await fetch(
         `https://api.github.com/repos/${REPO}/actions/workflows/${workflowFile}/dispatches`,
         {
@@ -381,20 +400,23 @@ def main():
           body: JSON.stringify({ ref: "main" }),
         }
       );
+      console.log("[trigger] response status:", res.status);
 
       if (res.status === 204) {
         statusEl.className = "trigger-status success";
         statusEl.textContent = label + " started. Check the Actions tab on GitHub for progress.";
       } else if (res.status === 401) {
         statusEl.className = "trigger-status error";
-        statusEl.textContent = "Invalid token. Click the button again to re-enter it.";
+        statusEl.textContent = "Invalid token. Update the token field and try again.";
         sessionStorage.removeItem("gh_trigger_token");
       } else {
         const body = await res.text();
+        console.log("[trigger] error body:", body);
         statusEl.className = "trigger-status error";
         statusEl.textContent = "Failed (" + res.status + "): " + body.slice(0, 150);
       }
     } catch (e) {
+      console.error("[trigger] exception:", e);
       statusEl.className = "trigger-status error";
       statusEl.textContent = "Error: " + e.message;
     } finally {
