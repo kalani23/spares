@@ -2,8 +2,12 @@
 merge_and_update.py
 ====================
 Merges all results/results_*.json chunk files into one combined log,
-then pushes inventory updates to Shopify, then leaves sync_run_log.json
-ready for generate_dashboard.py.
+then pushes inventory updates to Shopify one by one, then writes
+sync_run_log.json + history.json for the dashboard.
+
+No pre-validation of SKUs against Shopify - just attempts every update
+directly. 404s (deleted products) fail fast and get skipped; everything
+else updates normally.
 
 Usage:
     python merge_and_update.py
@@ -26,7 +30,6 @@ RESULTS_DIR = "results"
 LOG_FILE    = "sync_run_log.json"
 
 SHOPIFY_BASE = f"https://{SHOP}/admin/api/{API_VERSION}"
-GRAPHQL_URL  = f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json"
 SHOPIFY_HEADERS = {
     "X-Shopify-Access-Token": SHOPIFY_TOKEN,
     "Content-Type": "application/json",
@@ -43,7 +46,7 @@ def get_primary_location_id(products):
         r = requests.get(
             f"{SHOPIFY_BASE}/inventory_levels.json?inventory_item_ids={iid}",
             headers=SHOPIFY_HEADERS,
-            timeout=20,
+            timeout=(10, 15),
         )
         data = r.json()
         levels = data.get("inventory_levels", [])
@@ -65,7 +68,7 @@ def set_inventory_level(inventory_item_id, location_id, available, retries=4):
                 f"{SHOPIFY_BASE}/inventory_levels/set.json",
                 headers=SHOPIFY_HEADERS,
                 json=payload,
-                timeout=(10, 15),  # (connect_timeout, read_timeout) - explicit, no ambiguity
+                timeout=(10, 15),
             )
         except requests.exceptions.RequestException as e:
             print(f"[SHOPIFY UPDATE ERROR] Request exception: {e}")
@@ -73,9 +76,7 @@ def set_inventory_level(inventory_item_id, location_id, available, retries=4):
         if r.status_code == 200:
             return True
         if r.status_code == 404:
-            # Product/variant no longer exists in Shopify (likely deleted) -
-            # no point retrying, this will never succeed.
-            print(f"[SHOPIFY UPDATE ERROR] 404 - product/inventory item no longer exists, skipping")
+            print(f"[SHOPIFY UPDATE ERROR] 404 - skipping")
             return False
         if r.status_code == 429:
             wait = float(r.headers.get("Retry-After", 2.0))
@@ -86,65 +87,6 @@ def set_inventory_level(inventory_item_id, location_id, available, retries=4):
         return False
     print(f"[SHOPIFY UPDATE ERROR] Exhausted retries after repeated 429s")
     return False
-
-
-def get_valid_product_ids():
-    """Fetch the set of product_ids that currently exist in Shopify -
-    used to filter out stale results for products that have since been
-    deleted (e.g. the dirty-SKU cleanup), avoiding pointless 404s.
-    Uses GraphQL (same proven pattern as split_chunks.py) rather than
-    REST, since the REST products.json endpoint with fields= returned
-    an empty list despite the store having thousands of real products."""
-    valid_ids = set()
-    cursor = None
-    page = 1
-
-    while True:
-        print(f"  Fetching valid product ids page {page}...")
-        query = """
-        query($cursor: String) {
-          products(first: 250, after: $cursor) {
-            edges {
-              cursor
-              node { id }
-            }
-            pageInfo { hasNextPage }
-          }
-        }
-        """
-        r = requests.post(
-            GRAPHQL_URL,
-            headers=SHOPIFY_HEADERS,
-            json={"query": query, "variables": {"cursor": cursor}},
-            timeout=(10, 15),
-        )
-        print(f"    HTTP {r.status_code}")
-        try:
-            result = r.json()
-        except Exception as e:
-            print(f"  [ERROR] Could not parse JSON: {e}")
-            break
-
-        if "errors" in result:
-            print(f"  [ERROR] GraphQL errors: {result['errors']}")
-            break
-
-        data = result.get("data", {}).get("products", {})
-        edges = data.get("edges", [])
-        print(f"    Got {len(edges)} products on this page")
-
-        for edge in edges:
-            valid_ids.add(edge["node"]["id"])
-
-        if not data.get("pageInfo", {}).get("hasNextPage"):
-            break
-        cursor = edges[-1]["cursor"] if edges else None
-        if not cursor:
-            break
-        page += 1
-        time.sleep(0.3)
-
-    return valid_ids
 
 
 def main():
@@ -178,7 +120,7 @@ def main():
     print(f"  Out of stock: {len(out_of_stock)}")
     print(f"  Not found:    {len(not_found)}")
 
-    # ── Diff against the previous run to find what actually changed ────────
+    # Diff against previous run for history tracking
     newly_in_stock, newly_out_of_stock = [], []
     if Path(LOG_FILE).exists():
         try:
@@ -205,23 +147,11 @@ def main():
     location_id = get_primary_location_id(all_results)
     print(f"  Location ID: {location_id}")
 
-    print("\n-> Checking which products still exist in Shopify...")
-    valid_product_ids = get_valid_product_ids()
-    print(f"  {len(valid_product_ids)} products currently exist")
-
-    stale = [r for r in all_results if r.get("product_id") not in valid_product_ids]
-    if stale:
-        print(f"  Skipping {len(stale)} results for products no longer in Shopify "
-              f"(likely deleted, e.g. dirty-SKU cleanup)")
-
-    update_candidates = [r for r in all_results if r.get("product_id") in valid_product_ids]
-
-    print(f"\n-> Updating Shopify inventory levels for {len(update_candidates)} SKUs "
-          f"({len(stale)} stale skipped)...\n")
+    print(f"\n-> Updating Shopify inventory levels for {len(all_results)} SKUs...\n")
 
     updated, skipped, failed = 0, 0, 0
 
-    for i, item in enumerate(update_candidates, 1):
+    for i, item in enumerate(all_results, 1):
         if item.get("in_stock") is None:
             skipped += 1
             continue
@@ -238,7 +168,7 @@ def main():
         time.sleep(0.55)  # stay safely under Shopify's 2 calls/sec limit
 
         if i % 25 == 0:
-            print(f"  {i}/{len(update_candidates)} processed...")
+            print(f"  {i}/{len(all_results)} processed...")
 
     print(f"\n{'=' * 60}")
     print("Merge + update complete")
@@ -247,7 +177,7 @@ def main():
     print(f"  Failed:  {failed}")
     print(f"{'=' * 60}")
 
-    # ── Append this run to history.json for the dashboard ──────────────────
+    # Append this run to history.json for the dashboard
     history_file = Path("history.json")
     history = []
     if history_file.exists():
@@ -272,13 +202,13 @@ def main():
         "failed": failed,
         "newly_in_stock_skus": [
             {"sku": r["sku"], "title": r["product_title"]} for r in newly_in_stock
-        ][:50],  # cap to keep history.json from growing unbounded
+        ][:50],
         "newly_out_of_stock_skus": [
             {"sku": r["sku"], "title": r["product_title"]} for r in newly_out_of_stock
         ][:50],
     }
     history.append(run_record)
-    history = history[-90:]  # keep last 90 days
+    history = history[-90:]
 
     with open(history_file, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2, default=str)
