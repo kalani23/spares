@@ -40,5 +40,28 @@
         "title": "Porsche 924S 944 Intake Manifold Gasket 1x Elring 94411016305"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-21T06:35:02.286683+00:00",
+    "total_skus": 3138,
+    "in_stock": 2403,
+    "out_of_stock": 493,
+    "not_found": 242,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 2,
+    "updated": 2896,
+    "skipped": 242,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "17855",
+        "title": "Porsche 928 / 944 Coolant Temperature Sensor 92860620103"
+      },
+      {
+        "sku": "3356",
+        "title": "Porsche 911 924 928 944 968 Interior Rearview Mirror 1x partworks 4778575110001C"
+      }
+    ]
   }
 ]
