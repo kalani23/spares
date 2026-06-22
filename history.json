@@ -63,5 +63,44 @@
         "title": "Porsche 911 924 928 944 968 Interior Rearview Mirror 1x partworks 4778575110001C"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-22T06:47:52.293600+00:00",
+    "total_skus": 3138,
+    "in_stock": 2397,
+    "out_of_stock": 499,
+    "not_found": 242,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 6,
+    "updated": 2896,
+    "skipped": 242,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "4026",
+        "title": "Porsche 944 Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4017",
+        "title": "Porsche 944 968 944 Turbo Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4025",
+        "title": "Porsche 944 Control Arm 1x Porsche 94434192831"
+      },
+      {
+        "sku": "4015",
+        "title": "Porsche 944 968 944 Turbo Control Arm 1x Porsche 94434192731"
+      },
+      {
+        "sku": "4016",
+        "title": "Porsche 944 944 Turbo 968 Control Arm 1x Porsche 94434192831"
+      },
+      {
+        "sku": "5324",
+        "title": "Porsche 996 Boxster 986 Crankshaft Sensor 1x Bosch 98660611202"
+      }
+    ]
   }
 ]
