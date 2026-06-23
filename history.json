@@ -102,5 +102,101 @@
         "title": "Porsche 996 Boxster 986 Crankshaft Sensor 1x Bosch 98660611202"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-23T08:07:43.670788+00:00",
+    "total_skus": 3138,
+    "in_stock": 2401,
+    "out_of_stock": 495,
+    "not_found": 242,
+    "newly_in_stock": 12,
+    "newly_out_of_stock": 8,
+    "updated": 2896,
+    "skipped": 242,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "18345",
+        "title": "Porsche 924S 944 968 Power Steering Pump Adjuster Brace Bar 94434705302"
+      },
+      {
+        "sku": "1664",
+        "title": "Porsche 924S 944 Pulse Generator Holder 1x Porsche 94410132107"
+      },
+      {
+        "sku": "16460",
+        "title": "Porsche 944 964 968 993 Rear Axle Control Arm Mounting Plate 1x Porsche 96433119902"
+      },
+      {
+        "sku": "16558",
+        "title": "Porsche 944 968 993 964 Rear Axle Control Arm Mounting Plates 2x Porsche 96433119902"
+      },
+      {
+        "sku": "17297",
+        "title": "Porsche 944 924S 968 Handbrake Cable 1x Porsche 95142407102"
+      },
+      {
+        "sku": "17891",
+        "title": "Porsche 911 928 944 964 Air Conditioning Valve 1x Porsche 92857396504"
+      },
+      {
+        "sku": "936",
+        "title": "Porsche 911 924 944 968 Side Indicator 1x partworks 4A0949101"
+      },
+      {
+        "sku": "3278",
+        "title": "Porsche 911 964 993 924 944 968 Side Indicators 2x partworks 4A0949101"
+      },
+      {
+        "sku": "8876",
+        "title": "Porsche 911 924 928 944 Heated Exterior Mirror Glass 2x partworks 91173103508"
+      },
+      {
+        "sku": "16560",
+        "title": "Porsche 924 944 968 Trunk Lock 1x Porsche 94453895600"
+      },
+      {
+        "sku": "7615",
+        "title": "Porsche 996 997 996 GT3 997 GT3 Water Pump Connection Fittings 2x partworks 99610623871"
+      },
+      {
+        "sku": "7067",
+        "title": "Porsche 996 997 GT2 GT3 Turbo Water Pump Connection Fitting 1x partworks 99610623871"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5526",
+        "title": "Porsche 924S 944S S2 Turbo From '86 968 Hydro Mounts \u00dcro 2x Engine Mounts 95137504204"
+      },
+      {
+        "sku": "1553",
+        "title": "Porsche 924S 944 Balance Shaft Sealing Rings Set partworks 00072192020"
+      },
+      {
+        "sku": "5089",
+        "title": "Porsche 924 944 Wheel Bearing 1x FAG 113501277B"
+      },
+      {
+        "sku": "5090",
+        "title": "Porsche 924 944 Wheel Bearings 2x FAG 113501277B"
+      },
+      {
+        "sku": "5093",
+        "title": "Porsche 924 944 Wheel Bearings 4x partworks 113501277B"
+      },
+      {
+        "sku": "17168",
+        "title": "Porsche 911 944 968 Air Conditioning Pressure Switch 1x Porsche 96461313700"
+      },
+      {
+        "sku": "16355",
+        "title": "Porsche 911 928 944 968 Headlight Washer Control Valve 1x partworks 28195187"
+      },
+      {
+        "sku": "1046",
+        "title": "Porsche 986 987 981 996 997 991 992 Wheel Bearings 2x SNR 9P1407621B"
+      }
+    ]
   }
 ]
