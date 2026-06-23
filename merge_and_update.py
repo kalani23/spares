@@ -156,7 +156,7 @@ def main():
             skipped += 1
             continue
 
-        available = 10 if item["in_stock"] else 0
+        available = 2 if item["in_stock"] else 0
         ok = set_inventory_level(item["inventory_item_id"], location_id, available)
 
         if ok:
