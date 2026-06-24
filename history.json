@@ -198,5 +198,117 @@
         "title": "Porsche 986 987 981 996 997 991 992 Wheel Bearings 2x SNR 9P1407621B"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-24T05:50:38.108742+00:00",
+    "total_skus": 3138,
+    "in_stock": 2410,
+    "out_of_stock": 487,
+    "not_found": 241,
+    "newly_in_stock": 16,
+    "newly_out_of_stock": 8,
+    "updated": 2897,
+    "skipped": 241,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "8424",
+        "title": "Porsche 944 944 Turbo Driveshafts 2x GKN 94433219100"
+      },
+      {
+        "sku": "9953",
+        "title": "Porsche 944 944 Turbo Drive Shaft 1x GKN 95133203822"
+      },
+      {
+        "sku": "8423",
+        "title": "Porsche 944 944 S2 944 Turbo Drive Shaft 1x GKN 94433219100"
+      },
+      {
+        "sku": "8219",
+        "title": "Porsche 911 914 924S 944 968 964 Rear Light Connectors 2x partworks 90161233000"
+      },
+      {
+        "sku": "9132",
+        "title": "Porsche 944 968 Digital Clock Bulb 1x Philips 94464190000"
+      },
+      {
+        "sku": "2178",
+        "title": "UHU Poly Max Assembly Adhesive Crystal Clear 1x UHU 00000000"
+      },
+      {
+        "sku": "17240",
+        "title": "Porsche 986 996 987 997 Timing Chain Guide Rail 1x Porsche 99610505401"
+      },
+      {
+        "sku": "14754",
+        "title": "Porsche 996 997 Boxster 986 987 Timing Chain Tensioner 1x Porsche 99610518602"
+      },
+      {
+        "sku": "3404",
+        "title": "Porsche 911 968 Boxster 911 GT2 Tapered Roller Bearing 1x Porsche 99905906602"
+      },
+      {
+        "sku": "5487",
+        "title": "Porsche 911 930 Turbo 964 968 993 986 Boxster 996 997 Gearbox Output Shaft Bearing 1x Schaeffler FAG 99905906400"
+      },
+      {
+        "sku": "5488",
+        "title": "Porsche 911 964 993 997 Four-Point Bearing 1x FAG 99905209801"
+      },
+      {
+        "sku": "6539",
+        "title": "Porsche 964 993 996 997 Boxster 986 Rear CV Joint Boot 1x GKN 92833229302"
+      },
+      {
+        "sku": "7696",
+        "title": "Porsche 964 993 996 997 Boxster 986 CV Joint Boots 2x GKN 92833229302"
+      },
+      {
+        "sku": "14721",
+        "title": "Porsche 911 996 996 Turbo Wheel Hub Caps 4x Porsche 99636130511"
+      },
+      {
+        "sku": "17899",
+        "title": "Porsche 911 993 996 986 Tire Valve 1x Porsche 99336107300"
+      },
+      {
+        "sku": "1698",
+        "title": "Porsche 996 Boxster 986 Speaker Left 1x Porsche 9966450370201C"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "11873",
+        "title": "Porsche 2x Bypass Valve Gasket for Porsche 911 930 964 924 turbo 931 Wastegate Gasket 930.123.194.07"
+      },
+      {
+        "sku": "4925",
+        "title": "Porsche 914 1.7 1.8 2.0 / 924 2.0 125PS Front Wheel Bearing FAG 31140562"
+      },
+      {
+        "sku": "17818",
+        "title": "Porsche 944 1982-1989 Front Left Bumper over rider Genuine Porsche 93150520101"
+      },
+      {
+        "sku": "8047",
+        "title": "Porsche 944 Stabilizer Links 2x partworks 95134307500"
+      },
+      {
+        "sku": "6953",
+        "title": "Porsche 944 944 Turbo Stabiliser Bushings 2x SuperPro 477411053K"
+      },
+      {
+        "sku": "8549",
+        "title": "Porsche 996 997 Air Filter 1x Mahle 99611013152"
+      },
+      {
+        "sku": "15201",
+        "title": "Porsche 911 964 993 996 997 Release Shaft Cover 1x partworks 95011672500"
+      },
+      {
+        "sku": "765",
+        "title": "Porsche 996 997 991 992 Brake Shoe Springs 2x partworks 298609717"
+      }
+    ]
   }
 ]

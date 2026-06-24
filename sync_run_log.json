@@ -189,7 +189,7 @@
     "variant_id": "gid://shopify/ProductVariant/52172752683351",
     "inventory_item_id": "gid://shopify/InventoryItem/54228349714775",
     "sku": "11873",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10403487678807",
@@ -4044,8 +4044,8 @@
     "product_title": "Porsche 944 968 Fuel Tank to Fuel Pump Hose 95135655700",
     "variant_id": "gid://shopify/ProductVariant/53483856822615",
     "inventory_item_id": "gid://shopify/InventoryItem/55553432977751",
-    "sku": "D911-95135655700",
-    "in_stock": null
+    "sku": "15219",
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10872041374039",
@@ -4061,7 +4061,7 @@
     "variant_id": "gid://shopify/ProductVariant/53584020406615",
     "inventory_item_id": "gid://shopify/InventoryItem/55655728415063",
     "sku": "4925",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10872199807319",
@@ -4133,7 +4133,7 @@
     "variant_id": "gid://shopify/ProductVariant/53600047989079",
     "inventory_item_id": "gid://shopify/InventoryItem/55672014274903",
     "sku": "17818",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10889442230615",
@@ -6493,7 +6493,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651825426775",
     "inventory_item_id": "gid://shopify/InventoryItem/55724508283223",
     "sku": "8424",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10895919645015",
@@ -6573,7 +6573,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651837682007",
     "inventory_item_id": "gid://shopify/InventoryItem/55724520538455",
     "sku": "9953",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10895922528599",
@@ -6581,7 +6581,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651838468439",
     "inventory_item_id": "gid://shopify/InventoryItem/55724521324887",
     "sku": "8423",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10895922790743",
@@ -7309,7 +7309,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651878379863",
     "inventory_item_id": "gid://shopify/InventoryItem/55724561170775",
     "sku": "8047",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895937634647",
@@ -7565,7 +7565,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651894468951",
     "inventory_item_id": "gid://shopify/InventoryItem/55724577685847",
     "sku": "6953",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895941206359",
@@ -10649,7 +10649,7 @@
   },
   {
     "product_id": "gid://shopify/Product/10896007758167",
-    "product_title": "Porsche 911 914 924 944 968 964 Rear Light Connector 1x partworks 90161233000",
+    "product_title": "Porsche 911 914 924 944 968 964 Rear Light Connector loom 1x  90161233000",
     "variant_id": "gid://shopify/ProductVariant/53652198818135",
     "inventory_item_id": "gid://shopify/InventoryItem/55724882100567",
     "sku": "8235",
@@ -10821,7 +10821,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652213465431",
     "inventory_item_id": "gid://shopify/InventoryItem/55724896747863",
     "sku": "8219",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10896010019159",
@@ -11069,7 +11069,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652223263063",
     "inventory_item_id": "gid://shopify/InventoryItem/55724907331927",
     "sku": "9132",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10896014606679",
@@ -14181,7 +14181,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652481147223",
     "inventory_item_id": "gid://shopify/InventoryItem/55725168034135",
     "sku": "2178",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10896138699095",
@@ -16285,7 +16285,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814278652247",
     "inventory_item_id": "gid://shopify/InventoryItem/55890815025495",
     "sku": "17240",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930259820887",
@@ -16349,7 +16349,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814281830743",
     "inventory_item_id": "gid://shopify/InventoryItem/55890818203991",
     "sku": "14754",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930261328215",
@@ -17741,7 +17741,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814430171479",
     "inventory_item_id": "gid://shopify/InventoryItem/55890967331159",
     "sku": "8549",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930347639127",
@@ -18541,7 +18541,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814531522903",
     "inventory_item_id": "gid://shopify/InventoryItem/55891068977495",
     "sku": "3404",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930402525527",
@@ -18549,7 +18549,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814532014423",
     "inventory_item_id": "gid://shopify/InventoryItem/55891069469015",
     "sku": "5487",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930402918743",
@@ -18677,7 +18677,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814541058391",
     "inventory_item_id": "gid://shopify/InventoryItem/55891078512983",
     "sku": "5488",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930409668951",
@@ -18789,7 +18789,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814552592727",
     "inventory_item_id": "gid://shopify/InventoryItem/55891090014551",
     "sku": "6539",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930415862103",
@@ -18853,7 +18853,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814557606231",
     "inventory_item_id": "gid://shopify/InventoryItem/55891095060823",
     "sku": "7696",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930419204439",
@@ -18965,7 +18965,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814576283991",
     "inventory_item_id": "gid://shopify/InventoryItem/55891113738583",
     "sku": "15201",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930425430359",
@@ -19869,7 +19869,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814661513559",
     "inventory_item_id": "gid://shopify/InventoryItem/55891198968151",
     "sku": "14721",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930485363031",
@@ -20181,7 +20181,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814686318935",
     "inventory_item_id": "gid://shopify/InventoryItem/55891223773527",
     "sku": "17899",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930502435159",
@@ -20693,7 +20693,7 @@
     "variant_id": "gid://shopify/ProductVariant/53815040704855",
     "inventory_item_id": "gid://shopify/InventoryItem/55891581534551",
     "sku": "765",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930691768663",
@@ -22285,7 +22285,7 @@
     "variant_id": "gid://shopify/ProductVariant/53815309467991",
     "inventory_item_id": "gid://shopify/InventoryItem/55891859472727",
     "sku": "1698",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930812387671",
