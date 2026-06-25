@@ -310,5 +310,181 @@
         "title": "Porsche 996 997 991 992 Brake Shoe Springs 2x partworks 298609717"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-25T05:42:55.837654+00:00",
+    "total_skus": 3137,
+    "in_stock": 2440,
+    "out_of_stock": 457,
+    "not_found": 240,
+    "newly_in_stock": 35,
+    "newly_out_of_stock": 5,
+    "updated": 2897,
+    "skipped": 240,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "1398",
+        "title": "Porsche Exhaust kit for Porsche 911 F 2.0 2.2 2.4 stainless steel dual tailpipe 999.230.333.02"
+      },
+      {
+        "sku": "1401",
+        "title": "Porsche Exhaust kit for Porsche 911 F/G 2.4 2.7 MFI Standard 911.628.115.04"
+      },
+      {
+        "sku": "1402",
+        "title": "Porsche Exhaust kit for Porsche 911 F/G 2.4 2.7 Standard 911.628.114.03"
+      },
+      {
+        "sku": "1416",
+        "title": "Porsche Exhaust set for Porsche 911 F/G 2.4 2.7 stainless steel 928.423.349.01"
+      },
+      {
+        "sku": "8004",
+        "title": "Porsche 924S 944 951 Turbo From '87 + Rollers Timing Belt Kit 94410202507"
+      },
+      {
+        "sku": "7659",
+        "title": "Porsche 944 S Water pump + timing belt set + rollers for Porsche 944 S 90006701103"
+      },
+      {
+        "sku": "3149",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "3161",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "3159",
+        "title": "Porsche 944 944 Turbo Water Pump Timing Belt Idler Pulleys 1x partworks 95110602101"
+      },
+      {
+        "sku": "3160",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 94410602113"
+      },
+      {
+        "sku": "5853",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8743",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Idler Pulley Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "5852",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8742",
+        "title": "Porsche 944 924S Water Pump Timing Belt Idler Pulley Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8762",
+        "title": "Porsche 924S 944 968 Guide Pulley 1x Febi 94410524104"
+      },
+      {
+        "sku": "5862",
+        "title": "Porsche 944 Inspection Kit 1x partworks 92811025307"
+      },
+      {
+        "sku": "5858",
+        "title": "Porsche 944 Inspection Kit 1x partworks 92811025307"
+      },
+      {
+        "sku": "5616",
+        "title": "Porsche 911 924 944 928 964 993 Fuel Filter 1x Mahle 92811025307"
+      },
+      {
+        "sku": "8003",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Kit 1x partworks 94410524104"
+      },
+      {
+        "sku": "8745",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "8754",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Kit 1x partworks 94410524104"
+      },
+      {
+        "sku": "8005",
+        "title": "Porsche 944 944 S2 968 Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "2745",
+        "title": "Porsche 944 Brake Pads and Wear Indicators 1x TMD Textar 94435195104"
+      },
+      {
+        "sku": "2412",
+        "title": "Porsche 924 944 928 Brake Pads 4x Textar 94435195104"
+      },
+      {
+        "sku": "8949",
+        "title": "Porsche 944 Brake Discs Pads Water Jacket Kit 1x partworks 94461221207"
+      },
+      {
+        "sku": "8946",
+        "title": "Porsche 944 Brake Discs Pads Wear Indicator Set partworks 94435204105"
+      },
+      {
+        "sku": "8943",
+        "title": "Porsche 924 928 944 Brake Discs and Pads 2x 4x partworks 94435204105"
+      },
+      {
+        "sku": "17119",
+        "title": "Porsche 944 968 Blower Housing Linkage Clip 1x Porsche 94457231400"
+      },
+      {
+        "sku": "14795",
+        "title": "Porsche 944 964 968 993 Air Conditioning Switch 1x Porsche 94465392100"
+      },
+      {
+        "sku": "8711",
+        "title": "Porsche 944 968 Door Handle Stabilizer Links 2x partworks 94453751100"
+      },
+      {
+        "sku": "3317",
+        "title": "Porsche 944 968 Accelerator Pedal 1x Porsche 94442311101"
+      },
+      {
+        "sku": "17371",
+        "title": "Porsche 911 924 928 944 968 964 993 Interior Mirror Mounting Plate 1x Porsche 477845043"
+      },
+      {
+        "sku": "1078",
+        "title": "Porsche 944 968 Door Handle Tie Rod 1x partworks"
+      },
+      {
+        "sku": "7622",
+        "title": "Porsche 996 997 Gearbox Mount 1x Porsche 99737503303"
+      },
+      {
+        "sku": "14718",
+        "title": "Porsche 911 996 Carrera 4S Wheel Hub Caps 4x Porsche 99636130600"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "1703",
+        "title": "Porsche 944 944 Turbo Coolant Expansion Tank 1x Porsche 95110602502"
+      },
+      {
+        "sku": "1150",
+        "title": "Porsche 924 944 924S Master Brake Cylinder 1x partworks 94435501102"
+      },
+      {
+        "sku": "16334",
+        "title": "Porsche 911 924 944 928 968 Brake Booster Check Valve 1x Porsche 191611933F"
+      },
+      {
+        "sku": "4929",
+        "title": "Porsche 996 997 Idler Pulley 1x Febi 99611501576"
+      },
+      {
+        "sku": "17374",
+        "title": "Porsche 996 Boxster 986 Velcro Floor Mat 1x Porsche 98655198500"
+      }
+    ]
   }
 ]
