@@ -486,5 +486,65 @@
         "title": "Porsche 996 Boxster 986 Velcro Floor Mat 1x Porsche 98655198500"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-26T06:07:10.975437+00:00",
+    "total_skus": 3137,
+    "in_stock": 2439,
+    "out_of_stock": 458,
+    "not_found": 240,
+    "newly_in_stock": 5,
+    "newly_out_of_stock": 6,
+    "updated": 2897,
+    "skipped": 240,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "6267",
+        "title": "Porsche 996 997 Boxster 986 Oil Cooler 1x NRF 99610702559"
+      },
+      {
+        "sku": "8571",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Oil Filter 1x Mahle 99610722553"
+      },
+      {
+        "sku": "6275",
+        "title": "Porsche 911 996 997 Boxster Cayman Oil Filter 1x Mann-Filter 99610722553"
+      },
+      {
+        "sku": "6471",
+        "title": "Porsche 911 964 968 993 997 Release Bearing 1x ZF Sachs 94411608002"
+      },
+      {
+        "sku": "5128",
+        "title": "Porsche 996 997 Boxster 986 987 Air Conditioning Expansion Valve 1x NRF 99657392901"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5525",
+        "title": "Porsche 924S 944 S S2 Turbo From '86 968 Hydro Mount \u00dcro 1x Engine Mount 95137504204"
+      },
+      {
+        "sku": "9132",
+        "title": "Porsche 944 968 Digital Clock Bulb 1x Philips 94464190000"
+      },
+      {
+        "sku": "16432",
+        "title": "Porsche 996 Transmission Oil Filter 1x partworks 99630740300"
+      },
+      {
+        "sku": "13368",
+        "title": "Porsche 996 Transmission Oil Filter 1x partworks 99630740300"
+      },
+      {
+        "sku": "17608",
+        "title": "Porsche 996 Turbocharger Check Valve 1x Porsche 99610703079"
+      },
+      {
+        "sku": "14781",
+        "title": "Porsche Boxster 986 Convertible Top Relay 1x Porsche 98661811103"
+      }
+    ]
   }
 ]
