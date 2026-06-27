@@ -546,5 +546,45 @@
         "title": "Porsche Boxster 986 Convertible Top Relay 1x Porsche 98661811103"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-27T05:16:23.238441+00:00",
+    "total_skus": 3137,
+    "in_stock": 2439,
+    "out_of_stock": 458,
+    "not_found": 240,
+    "newly_in_stock": 3,
+    "newly_out_of_stock": 3,
+    "updated": 2897,
+    "skipped": 240,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "8763",
+        "title": "Porsche 944 968 Guide Pulley 1x Markenhersteller 94410524102"
+      },
+      {
+        "sku": "15218",
+        "title": "Porsche 924 944 968 928 Door Contact Switch 1x partworks 96861360100"
+      },
+      {
+        "sku": "1097",
+        "title": "Porsche 944 968CS Digital Clock Display 1x partworks 94464191300"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "10104",
+        "title": "Porsche 996 996 Turbo GT2 GT3 Oil Cooler Heat Exchanger 1x Porsche 99610702573"
+      },
+      {
+        "sku": "1346",
+        "title": "Porsche 996 Boxster 986 Headlight Cover Right 1x Porsche 99663104602"
+      },
+      {
+        "sku": "17515",
+        "title": "Porsche 986 Boxster Convertible Top Microswitch 1x Porsche 98661379502"
+      }
+    ]
   }
 ]
