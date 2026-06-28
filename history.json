@@ -586,5 +586,44 @@
         "title": "Porsche 986 Boxster Convertible Top Microswitch 1x Porsche 98661379502"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-28T06:09:16.913467+00:00",
+    "total_skus": 3137,
+    "in_stock": 2433,
+    "out_of_stock": 464,
+    "not_found": 240,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 6,
+    "updated": 2897,
+    "skipped": 240,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "10020",
+        "title": "Porsche 924S 944 Vacuum Hose 1x partworks 94411021900"
+      },
+      {
+        "sku": "18034",
+        "title": "Porsche 924 944 Front Window Seal 1x Porsche 94455902701"
+      },
+      {
+        "sku": "18035",
+        "title": "Porsche 924 944 Front Window Seal 1x Porsche 94455902800"
+      },
+      {
+        "sku": "2437",
+        "title": "Porsche 996 997 Boxster 986 987 Strut Mounts 2x ZF - Lemf\u00f6rder 99634351505"
+      },
+      {
+        "sku": "7682",
+        "title": "Porsche 996 997 Boxster 986 987 Strut Mounts 2x ZF - Lemf\u00f6rder 99734301801"
+      },
+      {
+        "sku": "6101",
+        "title": "Porsche 996 997 Boxster 986 987 Strut Mounts 2x ZF - Lemf\u00f6rder 99734301801"
+      }
+    ]
   }
 ]
