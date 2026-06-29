@@ -625,5 +625,32 @@
         "title": "Porsche 996 997 Boxster 986 987 Strut Mounts 2x ZF - Lemf\u00f6rder 99734301801"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-29T06:21:31.850141+00:00",
+    "total_skus": 3137,
+    "in_stock": 2430,
+    "out_of_stock": 467,
+    "not_found": 240,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 3,
+    "updated": 2897,
+    "skipped": 240,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "4009",
+        "title": "Porsche 944 Paint Protection Film 1x partworks 94455932100"
+      },
+      {
+        "sku": "1956",
+        "title": "Porsche 996 Shock Absorbers 2x Bilstein 99634304140"
+      },
+      {
+        "sku": "14740",
+        "title": "Porsche 996 Boxster 986 Radio Storage Compartment 1x Porsche 99655225301"
+      }
+    ]
   }
 ]
