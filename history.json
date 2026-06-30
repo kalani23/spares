@@ -652,5 +652,109 @@
         "title": "Porsche 996 Boxster 986 Radio Storage Compartment 1x Porsche 99655225301"
       }
     ]
+  },
+  {
+    "timestamp": "2026-06-30T05:53:53.179635+00:00",
+    "total_skus": 3137,
+    "in_stock": 2424,
+    "out_of_stock": 473,
+    "not_found": 240,
+    "newly_in_stock": 8,
+    "newly_out_of_stock": 14,
+    "updated": 2897,
+    "skipped": 240,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "11873",
+        "title": "Porsche 2x Bypass Valve Gasket for Porsche 911 930 964 924 turbo 931 Wastegate Gasket 930.123.194.07"
+      },
+      {
+        "sku": "16499",
+        "title": "Porsche 944 944 Turbo Flywheel 1x partworks 95110205101"
+      },
+      {
+        "sku": "9132",
+        "title": "Porsche 944 968 Digital Clock Bulb 1x Philips 94464190000"
+      },
+      {
+        "sku": "15140",
+        "title": "Porsche 924 944 968 924S 944 Turbo Electric Sunroof Microswitch 1x partworks 94461312802"
+      },
+      {
+        "sku": "6513",
+        "title": "Porsche 996 Turbo GT2 Clutch Disc 1x ZF Sachs 99611601354"
+      },
+      {
+        "sku": "3948",
+        "title": "Porsche 996 Boxster 986 Speedometer Display Set 1x partworks 99664110501"
+      },
+      {
+        "sku": "6078",
+        "title": "Porsche 911 996 Boxster 986 Speedometer Display 1x partworks 99664110501"
+      },
+      {
+        "sku": "17515",
+        "title": "Porsche 986 Boxster Convertible Top Microswitch 1x Porsche 98661379502"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "14685",
+        "title": "Porsche 944 S Timing Belt Original 94410532303"
+      },
+      {
+        "sku": "17542",
+        "title": "Porsche 924S 944 2.5 2.7 Camshaft Sprocket 94410554513"
+      },
+      {
+        "sku": "10024",
+        "title": "Porsche 944 944S Idle Control Valve Hose 1x partworks 94411021402"
+      },
+      {
+        "sku": "7544",
+        "title": "Porsche 924 928 944 Vacuum Hoses 3x partworks 92857471702"
+      },
+      {
+        "sku": "4946",
+        "title": "Porsche 944 968 Air Conditioning Condenser 1x Mahle 94457301105"
+      },
+      {
+        "sku": "17935",
+        "title": "Porsche 911 924 944 928 968 Heated Windshield Washer Nozzle 1x Porsche 9446280770001C"
+      },
+      {
+        "sku": "2547",
+        "title": "Porsche 996 997 986 987 Tensioner Pulley 1x partworks 99710211700"
+      },
+      {
+        "sku": "14510",
+        "title": "Porsche 987 996 997 Secondary Air Pump 1x partworks 99760510402"
+      },
+      {
+        "sku": "6288",
+        "title": "Porsche 996 997 Carrera 4 4S Turbo CV Joint Boot 1x Meyle 99634925700"
+      },
+      {
+        "sku": "7686",
+        "title": "Porsche 996 997 CV Joint Boots 2x Meyle 99634925700"
+      },
+      {
+        "sku": "7685",
+        "title": "Porsche 996 997 Carrera 4 CV Joint Boots 2x Meyle 99734995700"
+      },
+      {
+        "sku": "7687",
+        "title": "Porsche 996 997 Carrera 4 4S CV Joint Boots 4x Meyle 99734995700"
+      },
+      {
+        "sku": "5683",
+        "title": "Porsche 996 997 987 Air Conditioning Condenser 1x NRF 99757391105"
+      },
+      {
+        "sku": "7445",
+        "title": "Porsche Boxster 986 987 Cylinder Head Gaskets 2x Elring 99610417010"
+      }
+    ]
   }
 ]
