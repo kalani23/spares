@@ -756,5 +756,97 @@
         "title": "Porsche Boxster 986 987 Cylinder Head Gaskets 2x Elring 99610417010"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-01T06:18:19.815806+00:00",
+    "total_skus": 3137,
+    "in_stock": 2425,
+    "out_of_stock": 472,
+    "not_found": 240,
+    "newly_in_stock": 10,
+    "newly_out_of_stock": 9,
+    "updated": 2897,
+    "skipped": 240,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "5473",
+        "title": "Porsche 944 2.5 951 Turbo 944S 924S STANDARD Cylinder Head Gasket 95110437402"
+      },
+      {
+        "sku": "5525",
+        "title": "Porsche 924S 944 S S2 Turbo From '86 968 Hydro Mount \u00dcro 1x Engine Mount 95137504204"
+      },
+      {
+        "sku": "5526",
+        "title": "Porsche 924S 944S S2 Turbo From '86 968 Hydro Mounts \u00dcro 2x Engine Mounts 95137504204"
+      },
+      {
+        "sku": "8670",
+        "title": "Porsche 924S 944 2.5 CUP MOTORSPORT Cylinder Head Gasket Set 94410090100"
+      },
+      {
+        "sku": "7741",
+        "title": "Porsche 924S 944 2.5 STANDARD Cylinder Head Gasket Set 94410090100"
+      },
+      {
+        "sku": "8978",
+        "title": "Porsche 944 S STANDARD Cylinder Head Gasket Set 94410090104"
+      },
+      {
+        "sku": "7742",
+        "title": "Porsche 944 Turbo 951 STANDARD Cylinder Head Gasket Set 95110437402"
+      },
+      {
+        "sku": "8405",
+        "title": "Porsche 924S 944 951 Exhaust Manifold Gasket 94411119704 Victor Reinz (Pack of 4)"
+      },
+      {
+        "sku": "7544",
+        "title": "Porsche 924 928 944 Vacuum Hoses 3x partworks 92857471702"
+      },
+      {
+        "sku": "14509",
+        "title": "Porsche Boxster 996 Fuel Tank Sender Unit 1x \u00dcRO 99662080800"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "16475",
+        "title": "Porsche 944 S2 Intake Camshaft 94410527707"
+      },
+      {
+        "sku": "5636",
+        "title": "Porsche 928 / 944 Distributor Cap + Rotor 94460290101"
+      },
+      {
+        "sku": "5634",
+        "title": "Porsche 944 Turbo / 928 Distributor Rotor 94460290101"
+      },
+      {
+        "sku": "7120",
+        "title": "Porsche 924 944 928 Distributor Cap and Rotor 1x partworks 94460290101"
+      },
+      {
+        "sku": "18287",
+        "title": "Porsche 944 944 Turbo Coilover Suspension 1x KW-Suspension"
+      },
+      {
+        "sku": "1099",
+        "title": "Porsche 944 Digital Clock 1x Porsche 94464121300"
+      },
+      {
+        "sku": "1654",
+        "title": "Porsche 924 944 924S Linkage Rod Intermediate Shift Lever 1x Porsche 94442414100"
+      },
+      {
+        "sku": "1569",
+        "title": "Porsche 993 996 986 Airbag Support Frame Bushings 1x Prekom 99334708801"
+      },
+      {
+        "sku": "16510",
+        "title": "Porsche 968 986 Boxster Synchroniser Ring 1x partworks 012311295F"
+      }
+    ]
   }
 ]
