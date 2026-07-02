@@ -848,5 +848,101 @@
         "title": "Porsche 968 986 Boxster Synchroniser Ring 1x partworks 012311295F"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-02T05:39:07.043910+00:00",
+    "total_skus": 3137,
+    "in_stock": 2429,
+    "out_of_stock": 466,
+    "not_found": 242,
+    "newly_in_stock": 12,
+    "newly_out_of_stock": 8,
+    "updated": 2895,
+    "skipped": 242,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "1138",
+        "title": "Porsche 924S 944 928 '88 964 968 993 Oil Pressure Sensor Oil Pressure Switch 92860620304"
+      },
+      {
+        "sku": "17287",
+        "title": "Porsche  911 930 944 928 Battery Clamp Retaining Bracket Genuine 91161120900"
+      },
+      {
+        "sku": "1138",
+        "title": "Porsche 968 / 993 / 964 / 928 Oil Pressure Switch 92860620304"
+      },
+      {
+        "sku": "4015",
+        "title": "Porsche 944 968 944 Turbo Control Arm 1x Porsche 94434192731"
+      },
+      {
+        "sku": "4016",
+        "title": "Porsche 944 944 Turbo 968 Control Arm 1x Porsche 94434192831"
+      },
+      {
+        "sku": "18287",
+        "title": "Porsche 944 944 Turbo Coilover Suspension 1x KW-Suspension"
+      },
+      {
+        "sku": "8787",
+        "title": "Porsche 944 944 S2 944 Turbo Indicator Lenses 2x partworks 95163116100"
+      },
+      {
+        "sku": "18098",
+        "title": "Porsche 924 944 928 Rear Windscreen Wiper Blade 1x Porsche 92862821802"
+      },
+      {
+        "sku": "3555",
+        "title": "Porsche 996 Carrera 2 Carrera 2S Sport Suspension 1x Bilstein GM5D534"
+      },
+      {
+        "sku": "17474",
+        "title": "Porsche 996 Boxster 986 Steering Column Switch 1x Porsche 99661321711EWC"
+      },
+      {
+        "sku": "14763",
+        "title": "Porsche 996 Boxster 986 Steering Column Switch 1x Porsche 99661321510"
+      },
+      {
+        "sku": "7445",
+        "title": "Porsche Boxster 986 987 Cylinder Head Gaskets 2x Elring 99610417010"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "16393",
+        "title": "Porsche 4x wishbone sealing ring for Porsche 356 front axle lever FRONT 90142470107"
+      },
+      {
+        "sku": "3160",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 94410602113"
+      },
+      {
+        "sku": "8742",
+        "title": "Porsche 944 924S Water Pump Timing Belt Idler Pulley Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8764",
+        "title": "Porsche 944 924S Tensioner Pulley 1x Magneti Marelli 94410502704"
+      },
+      {
+        "sku": "8754",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Kit 1x partworks 94410524104"
+      },
+      {
+        "sku": "1573",
+        "title": "Porsche 944 968 964 Turbo Wheel Speed Sensor 1x partworks 94460640102"
+      },
+      {
+        "sku": "17030",
+        "title": "Porsche 996 997 Convertible Top Drive Motor 1x Porsche 99656193301"
+      },
+      {
+        "sku": "8541",
+        "title": "Porsche 986 Boxster Air Filter 1x Mahle 99611013104"
+      }
+    ]
   }
 ]
