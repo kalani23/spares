@@ -1116,5 +1116,28 @@
         "title": "Porsche 996 Boxster 986 High-Tone Horn 1x partworks 99663520608"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-05T05:31:35.093789+00:00",
+    "total_skus": 3137,
+    "in_stock": 2402,
+    "out_of_stock": 490,
+    "not_found": 245,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 2,
+    "updated": 2892,
+    "skipped": 245,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "17297",
+        "title": "Porsche 944 924S 968 Handbrake Cable 1x Porsche 95142407102"
+      },
+      {
+        "sku": "12017",
+        "title": "Porsche 911 Compensating Pulley 1x partworks 96410651701"
+      }
+    ]
   }
 ]
