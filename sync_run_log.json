@@ -7429,7 +7429,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651887849815",
     "inventory_item_id": "gid://shopify/InventoryItem/55724570968407",
     "sku": "1024",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895939371351",
@@ -12413,7 +12413,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652319142231",
     "inventory_item_id": "gid://shopify/InventoryItem/55725003735383",
     "sku": "14738",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10896041509207",
