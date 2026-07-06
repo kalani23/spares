@@ -1139,5 +1139,28 @@
         "title": "Porsche 911 Compensating Pulley 1x partworks 96410651701"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-06T06:02:41.517646+00:00",
+    "total_skus": 3137,
+    "in_stock": 2400,
+    "out_of_stock": 492,
+    "not_found": 245,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 2,
+    "updated": 2892,
+    "skipped": 245,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "1024",
+        "title": "Porsche 928 944 968 Wheel Bearings 2x Schaeffler 477405641"
+      },
+      {
+        "sku": "14738",
+        "title": "Porsche 911 944 968 928 Seat Backrest Cover 1x Porsche 92852114802"
+      }
+    ]
   }
 ]
