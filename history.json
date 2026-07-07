@@ -1162,5 +1162,97 @@
         "title": "Porsche 911 944 968 928 Seat Backrest Cover 1x Porsche 92852114802"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-07T05:43:09.861037+00:00",
+    "total_skus": 3137,
+    "in_stock": 2359,
+    "out_of_stock": 466,
+    "not_found": 312,
+    "newly_in_stock": 17,
+    "newly_out_of_stock": 2,
+    "updated": 2825,
+    "skipped": 312,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "2519",
+        "title": "Porsche Blower motor for Porsche 911 3.2 Carrera 930 turbo fan heater blower NRF 911.624.043.02"
+      },
+      {
+        "sku": "14682",
+        "title": "Porsche Camshaft Timing Belt Original 94410515704"
+      },
+      {
+        "sku": "14661",
+        "title": "Porsche 944 Turbo / 968 Alternator Belt Original Porsche 924S 944 From '86- 968 951 944S S2 99919229051"
+      },
+      {
+        "sku": "7608",
+        "title": "Porsche 944 968 Radiator Mounts 2x partworks 95110615300"
+      },
+      {
+        "sku": "7026",
+        "title": "Porsche 944 968 Radiator Mount Rubber 1x partworks 95110605300"
+      },
+      {
+        "sku": "3331",
+        "title": "Porsche 924 944 968 928 964 993 Handbrake Spring 1x partworks 92835295701"
+      },
+      {
+        "sku": "8714",
+        "title": "Porsche 924 944 968 928 964 993 Handbrake Springs 4x partworks 92835295702"
+      },
+      {
+        "sku": "1573",
+        "title": "Porsche 944 968 964 Turbo Wheel Speed Sensor 1x partworks 94460640102"
+      },
+      {
+        "sku": "14835",
+        "title": "Porsche 911 914 924 944 968 964 924S Connector Housing 1x Porsche 91161212204"
+      },
+      {
+        "sku": "3316",
+        "title": "Porsche 924 944 968 Door Check Straps 2x Porsche 94453760900"
+      },
+      {
+        "sku": "17261",
+        "title": "Porsche 924 944 968 924S Rubber Bearing Rear Lock 1x Porsche 477827035"
+      },
+      {
+        "sku": "7056",
+        "title": "Porsche 993 996 997 Boxster 986 987 Temperature Sensor Rubber Grommet 1x Porsche 95860653000"
+      },
+      {
+        "sku": "2975",
+        "title": "Porsche 996 Intake Manifold Gaskets 8x Elring 99711024700"
+      },
+      {
+        "sku": "5683",
+        "title": "Porsche 996 997 987 Air Conditioning Condenser 1x NRF 99757391105"
+      },
+      {
+        "sku": "17382",
+        "title": "Porsche 996 Boxster 986 Instrument Cluster Rotary Knob 1x Porsche 99664191100"
+      },
+      {
+        "sku": "17374",
+        "title": "Porsche 996 Boxster 986 Velcro Floor Mat 1x Porsche 98655198500"
+      },
+      {
+        "sku": "14805",
+        "title": "Porsche 986 Boxster S Titanium Metallic Badge 1x Porsche 986559243009A4"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5358",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Alternator 1x Bosch 99760301212"
+      },
+      {
+        "sku": "6378",
+        "title": "Porsche 996 Boxster 986 Fuel Tank Vent Valve 1x Pierburg 99660520101"
+      }
+    ]
   }
 ]
