@@ -1254,5 +1254,109 @@
         "title": "Porsche 996 Boxster 986 Fuel Tank Vent Valve 1x Pierburg 99660520101"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-08T04:52:10.579544+00:00",
+    "total_skus": 3137,
+    "in_stock": 2365,
+    "out_of_stock": 460,
+    "not_found": 312,
+    "newly_in_stock": 14,
+    "newly_out_of_stock": 8,
+    "updated": 2825,
+    "skipped": 312,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "7797",
+        "title": "Porsche 924S 944 928S Bushing Camshaft Spacer Ring 92810513905"
+      },
+      {
+        "sku": "1553",
+        "title": "Porsche 924S 944 Balance Shaft Sealing Rings Set partworks 00072192020"
+      },
+      {
+        "sku": "16453",
+        "title": "Porsche 924 924S 944 Tapered Roller Bearing Differential 1x partworks 016409123"
+      },
+      {
+        "sku": "5089",
+        "title": "Porsche 924 944 Wheel Bearing 1x FAG 113501277B"
+      },
+      {
+        "sku": "5090",
+        "title": "Porsche 924 944 Wheel Bearings 2x FAG 113501277B"
+      },
+      {
+        "sku": "5093",
+        "title": "Porsche 924 944 Wheel Bearings 4x partworks 113501277B"
+      },
+      {
+        "sku": "3241",
+        "title": "Porsche 911 924 944 968 Handbrake Bushing Adjusting Screws 2x partworks 91135294401"
+      },
+      {
+        "sku": "7976",
+        "title": "Porsche 911 924 944 928 968 Handbrake Adjuster Bushing 1x partworks 91135294401"
+      },
+      {
+        "sku": "1097",
+        "title": "Porsche 944 968CS Digital Clock Display 1x partworks 94464191300"
+      },
+      {
+        "sku": "2547",
+        "title": "Porsche 996 997 986 987 Tensioner Pulley 1x partworks 99710211700"
+      },
+      {
+        "sku": "15163",
+        "title": "Porsche 996 986 Carrera 2/4 Boxster S Cylindrical Roller Bearings 2x partworks 99630180601"
+      },
+      {
+        "sku": "1046",
+        "title": "Porsche 986 987 981 996 997 991 992 Wheel Bearings 2x SNR 9P1407621B"
+      },
+      {
+        "sku": "8885",
+        "title": "Porsche 996 Boxster 986 Horn Tweeters 2x partworks 99663520608"
+      },
+      {
+        "sku": "4540",
+        "title": "Porsche 996 Boxster 986 High-Tone Horn 1x partworks 99663520608"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5086",
+        "title": "Porsche 996, Boxster 986 up to -'03 Ignition switch MEYLE 99634701707"
+      },
+      {
+        "sku": "4567",
+        "title": "Porsche 911 914-6 924 928 944 964 968 993 Wheel Bolt 1x partworks 99333167104"
+      },
+      {
+        "sku": "9132",
+        "title": "Porsche 944 968 Digital Clock Bulb 1x Philips 94464190000"
+      },
+      {
+        "sku": "14907",
+        "title": "Porsche 911 914 924 944 928 968 993 964 Radio Navigation DIN-1 1x Porsche 91164559000"
+      },
+      {
+        "sku": "4791",
+        "title": "Porsche 996 997 Carrera 987 Boxster Cayman Ignition Coil 1x Beru 99660210501"
+      },
+      {
+        "sku": "3849",
+        "title": "Porsche 911 964 993 996 997 Oil Pressure Piston Spring Set 1x partworks 90110753101"
+      },
+      {
+        "sku": "12759",
+        "title": "Porsche 911 914 924 928 964 993 996 Boxster 986 Hose Clamp 1x partworks 99951234802"
+      },
+      {
+        "sku": "8975",
+        "title": "Porsche Boxster 986 Hardtop Mounting Kit 1x partworks 99921904100"
+      }
+    ]
   }
 ]
