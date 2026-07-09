@@ -1358,5 +1358,305 @@
         "title": "Porsche Boxster 986 Hardtop Mounting Kit 1x partworks 99921904100"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-09T05:36:56.678628+00:00",
+    "total_skus": 3137,
+    "in_stock": 2411,
+    "out_of_stock": 480,
+    "not_found": 246,
+    "newly_in_stock": 56,
+    "newly_out_of_stock": 21,
+    "updated": 2891,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "9238",
+        "title": "Porsche 911 914 924 944 Brake Disc 1x Sebro 477405083D"
+      },
+      {
+        "sku": "9268",
+        "title": "Porsche 924 928 944 Brake Disc 1x Sebro 94435204105"
+      },
+      {
+        "sku": "9273",
+        "title": "Porsche 944 944S Brake Disc 1x Sebro 94435204103"
+      },
+      {
+        "sku": "9277",
+        "title": "Porsche 944 968 Brake Disc 1x Sebro 95135104103"
+      },
+      {
+        "sku": "9281",
+        "title": "Porsche 944 928 Brake Disc 1x Sebro 95135204103"
+      },
+      {
+        "sku": "9275",
+        "title": "Porsche 944 944 Turbo Brake Disc 1x Sebro 95135104100"
+      },
+      {
+        "sku": "9251",
+        "title": "Porsche 928 944 Turbo 944 S2 Brake Disc 1x Sebro 92835104361"
+      },
+      {
+        "sku": "9257",
+        "title": "Porsche 928 944 944 S2 944 Turbo Brake Disc 1x Sebro 92835104460"
+      },
+      {
+        "sku": "9250",
+        "title": "Porsche 944 928 944 Turbo Brake Disc 1x Sebro 92835104361"
+      },
+      {
+        "sku": "9256",
+        "title": "Porsche 944 928 944 Turbo Brake Disc 1x Sebro 92835104460"
+      },
+      {
+        "sku": "9283",
+        "title": "Porsche 944 964 968 Brake Disc 1x Sebro 95135204106"
+      },
+      {
+        "sku": "7106",
+        "title": "Porsche 911 914 924 944 Brake Discs 2x Sebro 477405083D"
+      },
+      {
+        "sku": "7107",
+        "title": "Porsche 911 914 924 944 Brake Discs 2x Sebro 91135104120"
+      },
+      {
+        "sku": "7108",
+        "title": "Porsche 911 914 924 944 Brake Discs 2x Sebro 91135104120"
+      },
+      {
+        "sku": "7133",
+        "title": "Porsche 924 928 944 Brake Discs 2x Sebro 94435204105"
+      },
+      {
+        "sku": "7132",
+        "title": "Porsche 924 928 944 Brake Discs 2x Sebro 94435204105"
+      },
+      {
+        "sku": "7130",
+        "title": "Porsche 944 944S Brake Discs 2x Sebro 94435104106"
+      },
+      {
+        "sku": "7131",
+        "title": "Porsche 944 Brake Discs 2x Sebro 94435104106"
+      },
+      {
+        "sku": "7134",
+        "title": "Porsche 944 Brake Discs 2x Sebro 94435204103"
+      },
+      {
+        "sku": "7138",
+        "title": "Porsche 944 968 944 Turbo Brake Discs 2x Sebro 95135104103"
+      },
+      {
+        "sku": "7139",
+        "title": "Porsche 944 944 Turbo 968 Brake Discs 2x Sebro 95135104103"
+      },
+      {
+        "sku": "7140",
+        "title": "Porsche 944 928 Brake Discs 2x Sebro 95135204103"
+      },
+      {
+        "sku": "7141",
+        "title": "Porsche 944 928 Brake Discs 2x Sebro 95135204103"
+      },
+      {
+        "sku": "7136",
+        "title": "Porsche 944 944 Turbo Brake Discs 2x Sebro 95135104100"
+      },
+      {
+        "sku": "7137",
+        "title": "Porsche 944 944 Turbo Brake Discs 2x Sebro 95135104100"
+      },
+      {
+        "sku": "7118",
+        "title": "Porsche 928 944 944 S2 944 Turbo Brake Discs 2x Sebro 92835104460"
+      },
+      {
+        "sku": "7117",
+        "title": "Porsche 944 928 944 Turbo Brake Discs 2x Sebro 92835104460"
+      },
+      {
+        "sku": "7142",
+        "title": "Porsche 944 964 968 Brake Discs 2x Sebro 95135204106"
+      },
+      {
+        "sku": "8946",
+        "title": "Porsche 944 Brake Discs Pads Wear Indicator Set partworks 94435204105"
+      },
+      {
+        "sku": "8943",
+        "title": "Porsche 924 928 944 Brake Discs and Pads 2x 4x partworks 94435204105"
+      },
+      {
+        "sku": "839",
+        "title": "Porsche 996 997 Brake Disc 1x Sebro 98135203101"
+      },
+      {
+        "sku": "837",
+        "title": "Porsche 996 997 986 987 Brake Disc 1x Sebro 99635140501"
+      },
+      {
+        "sku": "838",
+        "title": "Porsche 986 987 996 997 Brake Disc 1x Sebro 99635140601"
+      },
+      {
+        "sku": "835",
+        "title": "Porsche 996 997 Brake Disc 1x Sebro 99635141004"
+      },
+      {
+        "sku": "836",
+        "title": "Porsche 996 997 Brake Disc 1x Sebro 99635140904"
+      },
+      {
+        "sku": "833",
+        "title": "Porsche 996 997 Brake Disc 1x Sebro 99635240502"
+      },
+      {
+        "sku": "834",
+        "title": "Porsche 996 997 Brake Disc 1x Sebro 99635240602"
+      },
+      {
+        "sku": "859",
+        "title": "Porsche 996 997 GT3 GT2 Brake Disc 1x Sebro 9963514099H"
+      },
+      {
+        "sku": "860",
+        "title": "Porsche 996 997 GT3 GT2 Brake Disc 1x Sebro 9963514109H"
+      },
+      {
+        "sku": "3505",
+        "title": "Porsche 996 997 Brake Discs 2x Sebro 99635141004"
+      },
+      {
+        "sku": "3498",
+        "title": "Porsche 996 997 Brake Discs 2x Sebro 99635240104"
+      },
+      {
+        "sku": "3502",
+        "title": "Porsche 996 997 Boxster Cayman Brake Discs 2x Sebro 99635140501"
+      },
+      {
+        "sku": "3509",
+        "title": "Porsche 996 997 991 Rear Brake Discs 2x Sebro 99635240502"
+      },
+      {
+        "sku": "3465",
+        "title": "Porsche 996 997 GT2 GT3 Brake Discs 2x Sebro 9963514099H"
+      },
+      {
+        "sku": "3497",
+        "title": "Porsche 996 997 Brake Discs, Pads and Wear Indicator 1x partworks 99635240104"
+      },
+      {
+        "sku": "3504",
+        "title": "Porsche 996 Brake Discs, Pads and Wear Indicator Set 1x partworks 99635141004"
+      },
+      {
+        "sku": "3464",
+        "title": "Porsche 996 GT2 GT3 Brake Discs Pads Wear Indicator Kit 1x partworks 99735194702"
+      },
+      {
+        "sku": "3463",
+        "title": "Porsche 996 GT2 GT3 Brake Disc & Pad Kit 1x partworks 99735194903"
+      },
+      {
+        "sku": "846",
+        "title": "Porsche Boxster 986 Rear Brake Disc 1x Sebro 98635240104"
+      },
+      {
+        "sku": "845",
+        "title": "Porsche Boxster 986 Brake Disc 1x Sebro 98635140105"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "2654",
+        "title": "Porsche 1x Spark plug for Porsche 964 993 turbo 3.6 996 GT3 BERU 999.170.195.90"
+      },
+      {
+        "sku": "8767",
+        "title": "Porsche 924S 944 2.5 2.7 951 Turbo Camshaft Timing Belt 94410515704"
+      },
+      {
+        "sku": "3161",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8743",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Idler Pulley Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8745",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "4017",
+        "title": "Porsche 944 968 944 Turbo Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4015",
+        "title": "Porsche 944 968 944 Turbo Control Arm 1x Porsche 94434192731"
+      },
+      {
+        "sku": "7135",
+        "title": "Porsche 944 Brake Discs 2x Sebro 94435204103"
+      },
+      {
+        "sku": "7143",
+        "title": "Porsche 944 964 968 Brake Discs 2x Sebro 95135204106"
+      },
+      {
+        "sku": "8950",
+        "title": "Porsche 944 Brake Discs and Pads 1x partworks 94461221206"
+      },
+      {
+        "sku": "8958",
+        "title": "Porsche 944 944 Turbo Brake Discs, Pads & Sensors Rear 1x partworks 96435193905"
+      },
+      {
+        "sku": "8956",
+        "title": "Porsche 944 944 Turbo Brake Discs Pads Wear Indicator Kit 1x partworks 96435193905"
+      },
+      {
+        "sku": "8954",
+        "title": "Porsche 944 944 Turbo Brake Discs, Pads & Wear Indicators 1x partworks 95135204103"
+      },
+      {
+        "sku": "8955",
+        "title": "Porsche 944 944 Turbo Brake Discs Pads Wear Sensors 1x partworks 92835193006"
+      },
+      {
+        "sku": "8928",
+        "title": "Porsche 924 944 Brake Discs Pads 2x 4x partworks 94435195104"
+      },
+      {
+        "sku": "8952",
+        "title": "Porsche 944 928 944 S2 944 Turbo Brake Discs and Pads 1x partworks 92835193901"
+      },
+      {
+        "sku": "9760",
+        "title": "Porsche 911 914 924 928 944 968 Headlight Bulb 1x Osram 99963120290"
+      },
+      {
+        "sku": "5117",
+        "title": "Porsche 911 914 924 928 944 968 Headlight Bulbs 2x Osram 99963120290"
+      },
+      {
+        "sku": "2670",
+        "title": "Porsche 964 993 996 Spark Plugs 6x Beru 99917019590"
+      },
+      {
+        "sku": "3507",
+        "title": "Porsche 996 996 4S 996 Turbo 996 GT2 996 GT3 Brake Discs Pads Wear Indicator 1x partworks 99135203201"
+      },
+      {
+        "sku": "3500",
+        "title": "Porsche 996 Boxster S Brake Discs Pads Wear Indicator 1x partworks 99635140501"
+      }
+    ]
   }
 ]
