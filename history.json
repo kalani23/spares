@@ -1658,5 +1658,85 @@
         "title": "Porsche 996 Boxster S Brake Discs Pads Wear Indicator 1x partworks 99635140501"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-10T05:19:23.334542+00:00",
+    "total_skus": 3137,
+    "in_stock": 2410,
+    "out_of_stock": 482,
+    "not_found": 245,
+    "newly_in_stock": 7,
+    "newly_out_of_stock": 9,
+    "updated": 2892,
+    "skipped": 245,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "3982",
+        "title": "Porsche 944 944 Turbo Water Pipe 1x partworks 95110609100"
+      },
+      {
+        "sku": "3032",
+        "title": "Porsche 924 944 968 924S Clutch Master Cylinder Seal Kit 1x FTE 477721171"
+      },
+      {
+        "sku": "9178",
+        "title": "Porsche 924 944 968 Brake Hose 1x FTE 94435508101"
+      },
+      {
+        "sku": "3064",
+        "title": "Porsche 924 944 968 Brake Hoses 2x FTE 94435508101"
+      },
+      {
+        "sku": "10104",
+        "title": "Porsche 996 996 Turbo GT2 GT3 Oil Cooler Heat Exchanger 1x Porsche 99610702573"
+      },
+      {
+        "sku": "4675",
+        "title": "Porsche 996 997 Boxster 986 987 Cayman Stabiliser Bushings 2x partworks 99634379217"
+      },
+      {
+        "sku": "5694",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Cabin Air Filter 1x Mann-Filter 99757121902"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5595",
+        "title": "Porsche 911 3.2, 924S, 944 '86- 951, 968,  Fuel pump BOSCH 94460810204"
+      },
+      {
+        "sku": "5786",
+        "title": "Porsche 944 944S Radiator Hose 1x partworks 94410624502"
+      },
+      {
+        "sku": "5848",
+        "title": "Porsche 944 944S Radiator Hose Set 1x partworks 94410623501"
+      },
+      {
+        "sku": "2491",
+        "title": "Porsche 944 Tie Rods 2x Porsche 94434703308"
+      },
+      {
+        "sku": "3767",
+        "title": "Porsche 944 Tie Rods 2x Porsche 94434703308"
+      },
+      {
+        "sku": "5851",
+        "title": "Porsche 944 Radiator Hoses Set partworks 94410623501"
+      },
+      {
+        "sku": "6817",
+        "title": "Porsche 924S 944 968 Belt Tension Gauge 1x Gates 92810515700"
+      },
+      {
+        "sku": "12803",
+        "title": "Porsche 996 Boxster 986 Timing Chain Tensioner Gasket 1x Elring 99610522352"
+      },
+      {
+        "sku": "12911",
+        "title": "Porsche 996 997 Boxster 986 987 981 Brake Pads 1x TMD - PAGID Racing 98635293911"
+      }
+    ]
   }
 ]
