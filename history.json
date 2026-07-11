@@ -1738,5 +1738,125 @@
         "title": "Porsche 996 997 Boxster 986 987 981 Brake Pads 1x TMD - PAGID Racing 98635293911"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-11T04:58:27.603029+00:00",
+    "total_skus": 3137,
+    "in_stock": 2432,
+    "out_of_stock": 460,
+    "not_found": 245,
+    "newly_in_stock": 24,
+    "newly_out_of_stock": 2,
+    "updated": 2892,
+    "skipped": 245,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "1489",
+        "title": "Porsche 986 Boxster 996, 997, 987 Manual with A/c Air conditioning  97-04 Pulley, belt, tensioners, idlers & auxiliary drive belt Kit 99710211900"
+      },
+      {
+        "sku": "2820",
+        "title": "Hazet Porsche Motorsport - Racing Tool Line SmartCase socket wrench set"
+      },
+      {
+        "sku": "18207",
+        "title": "Porsche 924S 944 968 Toothed Sleeve Oil Pump 1x partworks 94410716104"
+      },
+      {
+        "sku": "6662",
+        "title": "Porsche 911 944 928 Wheel Bolts 10x partworks 90133167101"
+      },
+      {
+        "sku": "3249",
+        "title": "Porsche 356C 911 924 928 944 Handbrake Springs 2x partworks 90135295410"
+      },
+      {
+        "sku": "3240",
+        "title": "Porsche 911 912 924 928 944 Brake Shoe Springs 4x partworks 90135293210"
+      },
+      {
+        "sku": "2463",
+        "title": "Porsche 928 944 Brake Shoe Set 1x partworks 99735299304"
+      },
+      {
+        "sku": "16490",
+        "title": "Porsche 911 924S 944 968 986 Handbrake Return Spring 2x partworks 99635272300"
+      },
+      {
+        "sku": "6817",
+        "title": "Porsche 924S 944 968 Belt Tension Gauge 1x Gates 92810515700"
+      },
+      {
+        "sku": "12017",
+        "title": "Porsche 911 Compensating Pulley 1x partworks 96410651701"
+      },
+      {
+        "sku": "8549",
+        "title": "Porsche 996 997 Air Filter 1x Mahle 99611013152"
+      },
+      {
+        "sku": "1431",
+        "title": "Porsche 996 997 987 Boxster Cayman Tensioner Pulley Set 3x partworks 99610212754"
+      },
+      {
+        "sku": "1488",
+        "title": "Porsche 996 997 987 Tension Rollers and Wedges Set partworks 99710211900"
+      },
+      {
+        "sku": "2553",
+        "title": "Porsche 996 997 987 Carrera Boxster Idler Pulley 1x Sebro 99710211800"
+      },
+      {
+        "sku": "16432",
+        "title": "Porsche 996 Transmission Oil Filter 1x partworks 99630740300"
+      },
+      {
+        "sku": "13368",
+        "title": "Porsche 996 Transmission Oil Filter 1x partworks 99630740300"
+      },
+      {
+        "sku": "3420",
+        "title": "Porsche 911 964 993 997 Four-Point Bearing Gearbox 1x partworks 99905222701"
+      },
+      {
+        "sku": "6288",
+        "title": "Porsche 996 997 Carrera 4 4S Turbo CV Joint Boot 1x Meyle 99634925700"
+      },
+      {
+        "sku": "949",
+        "title": "Porsche 996 997 Boxster 987 Flywheel Bolt 1x partworks 99907309202"
+      },
+      {
+        "sku": "7686",
+        "title": "Porsche 996 997 CV Joint Boots 2x Meyle 99634925700"
+      },
+      {
+        "sku": "7685",
+        "title": "Porsche 996 997 Carrera 4 CV Joint Boots 2x Meyle 99734995700"
+      },
+      {
+        "sku": "7687",
+        "title": "Porsche 996 997 Carrera 4 4S CV Joint Boots 4x Meyle 99734995700"
+      },
+      {
+        "sku": "3620",
+        "title": "Porsche 996 997 Boxster 987 Flywheel Bolts 8x partworks 99907309202"
+      },
+      {
+        "sku": "15201",
+        "title": "Porsche 911 964 993 996 997 Release Shaft Cover 1x partworks 95011672500"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "3922",
+        "title": "Porsche 996 Carrera 2 Carrera S Front Shock Absorbers 2x Bilstein 99634304140"
+      },
+      {
+        "sku": "17765",
+        "title": "Porsche 996 997 Seat Belt 1x Porsche 99780303307A23"
+      }
+    ]
   }
 ]
