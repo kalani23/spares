@@ -1858,5 +1858,73 @@
         "title": "Porsche 996 997 Seat Belt 1x Porsche 99780303307A23"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-13T04:53:45.202277+00:00",
+    "total_skus": 3137,
+    "in_stock": 2421,
+    "out_of_stock": 471,
+    "not_found": 245,
+    "newly_in_stock": 1,
+    "newly_out_of_stock": 12,
+    "updated": 2892,
+    "skipped": 245,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "16512",
+        "title": "Porsche 996 997 Coolant Pump Thermostat 1x partworks 99610612573"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "1626",
+        "title": "Porsche 924 944 924S Battery Cover 1x Porsche 477915411A"
+      },
+      {
+        "sku": "1553",
+        "title": "Porsche 924S 944 Balance Shaft Sealing Rings Set partworks 00072192020"
+      },
+      {
+        "sku": "6577",
+        "title": "Porsche 911 Turbo 924 944 Wheel Bolts 10x partworks 91134167100"
+      },
+      {
+        "sku": "3302",
+        "title": "Porsche 944 968 Interior Sensor Rosette 1x Porsche 94455245100"
+      },
+      {
+        "sku": "17333",
+        "title": "Porsche 924 928 944 968 993 996 997 Cable Ties Porsche 99951304940"
+      },
+      {
+        "sku": "2682",
+        "title": "Porsche 914 924 968 Drive Shaft bolts 12x partworks 91108201"
+      },
+      {
+        "sku": "3601",
+        "title": "Porsche 911 914 964 993 996 997 Piston Oil Pressure Spring 1x partworks 90110753101"
+      },
+      {
+        "sku": "15165",
+        "title": "Porsche 986 996 Fuel Pump Relay 1x partworks 99661510100"
+      },
+      {
+        "sku": "4844",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Wishbones 2x Meyle 99634105319"
+      },
+      {
+        "sku": "17010",
+        "title": "Porsche 996 986 Boxster 996 GT3 996 Turbo Centre Cowl Cover 1x Porsche 9965725630601C"
+      },
+      {
+        "sku": "17251",
+        "title": "Porsche 996 997 Rear Spoiler Panel 1x Porsche 99651225000"
+      },
+      {
+        "sku": "17515",
+        "title": "Porsche 986 Boxster Convertible Top Microswitch 1x Porsche 98661379502"
+      }
+    ]
   }
 ]
