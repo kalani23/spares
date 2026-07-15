@@ -2010,5 +2010,109 @@
         "title": "Porsche 986 996 Door Lock Tray Left 1x Porsche 99653796302"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-15T04:44:40.747097+00:00",
+    "total_skus": 3137,
+    "in_stock": 2408,
+    "out_of_stock": 484,
+    "not_found": 245,
+    "newly_in_stock": 9,
+    "newly_out_of_stock": 13,
+    "updated": 2892,
+    "skipped": 245,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "16393",
+        "title": "Porsche 4x wishbone sealing ring for Porsche 356 front axle lever FRONT 90142470107"
+      },
+      {
+        "sku": "7314",
+        "title": "Porsche 924S 944 From '86 Onwards Tensioning Wrench Belt Tensioner 94410506717"
+      },
+      {
+        "sku": "8768",
+        "title": "Porsche 944 944S 944S2 968 Timing Belt 1x Dayco 94410532303"
+      },
+      {
+        "sku": "7717",
+        "title": "Porsche 924 944 Wishbone Bushings 4x SuperPro 171407182D"
+      },
+      {
+        "sku": "7135",
+        "title": "Porsche 944 Brake Discs 2x Sebro 94435204103"
+      },
+      {
+        "sku": "3015",
+        "title": "Porsche 996 Radiator Hose 1x partworks 99610674076"
+      },
+      {
+        "sku": "14510",
+        "title": "Porsche 987 996 997 Secondary Air Pump 1x partworks 99760510402"
+      },
+      {
+        "sku": "3358",
+        "title": "Porsche 911 964 993 996 997 Clutch Release Shaft Bearing Set 1x partworks 95011671004"
+      },
+      {
+        "sku": "7489",
+        "title": "Porsche Boxster Exhaust Valves 6x SM 99610511308"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "4890",
+        "title": "Porsche 924S 944 928 968 Balance Shaft Camshaft Oil Seal 99911328240"
+      },
+      {
+        "sku": "4023",
+        "title": "Porsche 944 Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4022",
+        "title": "Porsche 944 Control Arm 1x Porsche 94434192831"
+      },
+      {
+        "sku": "1099",
+        "title": "Porsche 944 Digital Clock 1x Porsche 94464121300"
+      },
+      {
+        "sku": "17353",
+        "title": "Porsche 911 964 928 944 968 Bevel Gear Seat Adjustment 1x Porsche 92852181804"
+      },
+      {
+        "sku": "12026",
+        "title": "Porsche 911 930 964 Leaf Spring Engine Guide Plate 1x partworks 93010622800"
+      },
+      {
+        "sku": "16504",
+        "title": "Porsche 986 987 996 997 Tensioning Element Belt Tensioner 1x partworks 99710226000"
+      },
+      {
+        "sku": "1540",
+        "title": "Porsche 996 997 GT3 Clutch Kit 1x ZF Sachs 95011608009"
+      },
+      {
+        "sku": "3647",
+        "title": "Porsche 964 993 996 997 Carrera RS GT3 Clutch Disc 1x ZF Sachs 99611601535"
+      },
+      {
+        "sku": "6284",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Wishbone 1x Meyle 99634105319"
+      },
+      {
+        "sku": "9423",
+        "title": "Porsche 996 997 Boxster 986 987 Stabilizer Bushing 1x partworks 99634379212"
+      },
+      {
+        "sku": "7076",
+        "title": "Porsche 996 997 986 987 Stabiliser Bushings 2x partworks 99634379212"
+      },
+      {
+        "sku": "14818",
+        "title": "Porsche 996 Turbo Chrome Lettering 1x Porsche 99655923703"
+      }
+    ]
   }
 ]
