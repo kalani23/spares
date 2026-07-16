@@ -2114,5 +2114,85 @@
         "title": "Porsche 996 Turbo Chrome Lettering 1x Porsche 99655923703"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-16T04:57:08.423194+00:00",
+    "total_skus": 3137,
+    "in_stock": 2409,
+    "out_of_stock": 482,
+    "not_found": 246,
+    "newly_in_stock": 9,
+    "newly_out_of_stock": 7,
+    "updated": 2891,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "2557",
+        "title": "Porsche 944 S 944 S2 968 Spark Plug Connectors Plug Caps BERU 92860231100 x 4"
+      },
+      {
+        "sku": "8640",
+        "title": "Porsche 944 S & S2 Ignition leads Cable Set 94460206005 Beru"
+      },
+      {
+        "sku": "8639",
+        "title": "Porsche 924 944 944 Turbo Ignition Cables 5x Beru 94460901515"
+      },
+      {
+        "sku": "5862",
+        "title": "Porsche 944 Inspection Kit 1x partworks 92811025307"
+      },
+      {
+        "sku": "5858",
+        "title": "Porsche 944 Inspection Kit 1x partworks 92811025307"
+      },
+      {
+        "sku": "5629",
+        "title": "Porsche 924S 944 Air Filter 1x Mahle 94411018602"
+      },
+      {
+        "sku": "8746",
+        "title": "Porsche 944 944S 944S2 968 Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "5066",
+        "title": "Porsche 924 944 924S 944 Turbo Release Bearing 1x Sachs 93111608204"
+      },
+      {
+        "sku": "15206",
+        "title": "Porsche 986 987 996 997 Brake Light Switch 1x FAE 99661311303"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "8405",
+        "title": "Porsche 924S 944 951 Exhaust Manifold Gasket 94411119704 Victor Reinz (Pack of 4)"
+      },
+      {
+        "sku": "17412",
+        "title": "Porsche 944 924S Fuel Line Elbow Fitting 1x Porsche 94411041303"
+      },
+      {
+        "sku": "10013",
+        "title": "Porsche 924 944 924S Vacuum Hose 1x partworks 94411036102"
+      },
+      {
+        "sku": "4926",
+        "title": "Porsche 928 944 968 Front Wheel Bearing 1x Schaeffler FAG 477405641"
+      },
+      {
+        "sku": "15300",
+        "title": "Porsche 996 Boxster 986 Blower Resistor 1x partworks 99661610100"
+      },
+      {
+        "sku": "8571",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Oil Filter 1x Mahle 99610722553"
+      },
+      {
+        "sku": "2352",
+        "title": "Porsche Boxster 986 987 Coolant Expansion Tank 1x Mahle-Behr 99610614708"
+      }
+    ]
   }
 ]
