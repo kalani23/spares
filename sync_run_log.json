@@ -389,7 +389,7 @@
     "variant_id": "gid://shopify/ProductVariant/52211367379287",
     "inventory_item_id": "gid://shopify/InventoryItem/54266908213591",
     "sku": "17482",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10415537258839",
@@ -3477,7 +3477,7 @@
     "variant_id": "gid://shopify/ProductVariant/53091380068695",
     "inventory_item_id": "gid://shopify/InventoryItem/55157720056151",
     "sku": "4337",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10640220258647",
@@ -5517,7 +5517,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651749208407",
     "inventory_item_id": "gid://shopify/InventoryItem/55724431606103",
     "sku": "9931",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895901229399",
@@ -7341,7 +7341,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651881689431",
     "inventory_item_id": "gid://shopify/InventoryItem/55724564808023",
     "sku": "5198",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895938060631",
@@ -7349,7 +7349,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651882148183",
     "inventory_item_id": "gid://shopify/InventoryItem/55724565266775",
     "sku": "5200",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895938158935",
@@ -7405,7 +7405,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651886997847",
     "inventory_item_id": "gid://shopify/InventoryItem/55724570116439",
     "sku": "4017",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10895939010903",
@@ -8093,7 +8093,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651939721559",
     "inventory_item_id": "gid://shopify/InventoryItem/55724623003991",
     "sku": "1581",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895952380247",
@@ -8101,7 +8101,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651940147543",
     "inventory_item_id": "gid://shopify/InventoryItem/55724623429975",
     "sku": "1577",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895952544087",
@@ -8109,7 +8109,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651941130583",
     "inventory_item_id": "gid://shopify/InventoryItem/55724624413015",
     "sku": "1582",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895952806231",
@@ -8117,7 +8117,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651941687639",
     "inventory_item_id": "gid://shopify/InventoryItem/55724624970071",
     "sku": "1578",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895952904535",
@@ -8189,7 +8189,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651950240087",
     "inventory_item_id": "gid://shopify/InventoryItem/55724633522519",
     "sku": "4015",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10895954116951",
@@ -8277,7 +8277,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651955384663",
     "inventory_item_id": "gid://shopify/InventoryItem/55724638667095",
     "sku": "2583",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895955820887",
@@ -8397,7 +8397,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651964625239",
     "inventory_item_id": "gid://shopify/InventoryItem/55724647907671",
     "sku": "5163",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895957852503",
@@ -8501,7 +8501,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651973538135",
     "inventory_item_id": "gid://shopify/InventoryItem/55724656820567",
     "sku": "2582",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895960047959",
@@ -9325,7 +9325,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652058440023",
     "inventory_item_id": "gid://shopify/InventoryItem/55724741853527",
     "sku": "2463",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895981707607",
@@ -9493,7 +9493,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652079837527",
     "inventory_item_id": "gid://shopify/InventoryItem/55724763119959",
     "sku": "5609",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895986131287",
@@ -11669,7 +11669,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652277920087",
     "inventory_item_id": "gid://shopify/InventoryItem/55724962513239",
     "sku": "17482",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10896027189591",
@@ -12597,7 +12597,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652329955671",
     "inventory_item_id": "gid://shopify/InventoryItem/55725014548823",
     "sku": "3356",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10896047898967",
@@ -16949,7 +16949,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814341763415",
     "inventory_item_id": "gid://shopify/InventoryItem/55890878923095",
     "sku": "4504",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930282365271",
@@ -20213,7 +20213,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814688514391",
     "inventory_item_id": "gid://shopify/InventoryItem/55891225968983",
     "sku": "1569",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930504106327",
@@ -20933,7 +20933,7 @@
     "variant_id": "gid://shopify/ProductVariant/53815054106967",
     "inventory_item_id": "gid://shopify/InventoryItem/55891594936663",
     "sku": "5610",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930704908631",
@@ -22685,7 +22685,7 @@
     "variant_id": "gid://shopify/ProductVariant/53815552115031",
     "inventory_item_id": "gid://shopify/InventoryItem/55892121256279",
     "sku": "14748",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930835358039",
@@ -22693,7 +22693,7 @@
     "variant_id": "gid://shopify/ProductVariant/53815554736471",
     "inventory_item_id": "gid://shopify/InventoryItem/55892124074327",
     "sku": "14747",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930835751255",
@@ -23653,7 +23653,7 @@
     "variant_id": "gid://shopify/ProductVariant/53828777967959",
     "inventory_item_id": "gid://shopify/InventoryItem/55905673707863",
     "sku": "3580",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10933217886551",
@@ -24645,7 +24645,7 @@
     "variant_id": "gid://shopify/ProductVariant/53828871291223",
     "inventory_item_id": "gid://shopify/InventoryItem/55905767391575",
     "sku": "16487",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10933309669719",

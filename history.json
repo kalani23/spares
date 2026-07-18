@@ -2266,5 +2266,121 @@
         "title": "Porsche 996 986 Seat Adjustment Motor 1x Porsche 99662433200"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-18T04:38:07.226535+00:00",
+    "total_skus": 3137,
+    "in_stock": 2392,
+    "out_of_stock": 499,
+    "not_found": 246,
+    "newly_in_stock": 4,
+    "newly_out_of_stock": 21,
+    "updated": 2891,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "4017",
+        "title": "Porsche 944 968 944 Turbo Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4015",
+        "title": "Porsche 944 968 944 Turbo Control Arm 1x Porsche 94434192731"
+      },
+      {
+        "sku": "3356",
+        "title": "Porsche 911 924 928 944 968 Interior Rearview Mirror 1x partworks 4778575110001C"
+      },
+      {
+        "sku": "1569",
+        "title": "Porsche 993 996 986 Airbag Support Frame Bushings 1x Prekom 99334708801"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "17482",
+        "title": "Porsche Headlight light switch for Porsche 944 -'85 924 477941531H"
+      },
+      {
+        "sku": "4337",
+        "title": "Porsche 944 Turbo / 911 3.2 Carrera / Carrera Temperature Sensor sender  93060611800"
+      },
+      {
+        "sku": "9931",
+        "title": "Porsche 924 944 924S Exhaust Manifold Gasket 1x Reinz 94411119704"
+      },
+      {
+        "sku": "5198",
+        "title": "Porsche 924 944 Steering Boots 2x ZF-Lemf\u00f6rder 171419831"
+      },
+      {
+        "sku": "5200",
+        "title": "Porsche 924 944 968 993 Steering Boots 2x ZF Lemf\u00f6rder 171419831"
+      },
+      {
+        "sku": "1581",
+        "title": "Porsche 924S 944 Steering Gear and Tie Rod Set 1x partworks 94434701124"
+      },
+      {
+        "sku": "1577",
+        "title": "Porsche 924S 944 Steering Gear and Tie Rods 1x partworks 94434701124"
+      },
+      {
+        "sku": "1582",
+        "title": "Porsche 944 968 944 S2 Steering Gear And Tie Rods 1x partworks 94534701122"
+      },
+      {
+        "sku": "1578",
+        "title": "Porsche 944 968 Steering Gear Tie Rods Set 1x partworks 94434701124"
+      },
+      {
+        "sku": "2583",
+        "title": "Porsche 944 968 Tie Rod Steering Boot 2x Prekom 94434703328"
+      },
+      {
+        "sku": "5163",
+        "title": "Porsche 924 944 968 993 Steering Rack Boot 1x ZF-Lemf\u00f6rder 171419831C"
+      },
+      {
+        "sku": "2582",
+        "title": "Porsche 944 951 968 Tie Rod Steering Boot 2x Prekom 94434703328"
+      },
+      {
+        "sku": "2463",
+        "title": "Porsche 928 944 Brake Shoe Set 1x partworks 99735299304"
+      },
+      {
+        "sku": "5609",
+        "title": "Porsche 924 944 928 968 924S Handbrake Pads 1x Textar 99735299304"
+      },
+      {
+        "sku": "17482",
+        "title": "Porsche 924 944 924S Headlight Switch 1x Porsche 477941531H"
+      },
+      {
+        "sku": "4504",
+        "title": "Porsche 996 Coolant Expansion Tank 1x Mahle-Behr 99610614756"
+      },
+      {
+        "sku": "5610",
+        "title": "Porsche 964 993 996 986 987 Handbrake Brake Pads 1x Textar 99735299304"
+      },
+      {
+        "sku": "14748",
+        "title": "Porsche 996 Boxster 986 Front Bumper Trim 2x Porsche 99650552600"
+      },
+      {
+        "sku": "14747",
+        "title": "Porsche 996 Boxster 986 Bumper Trim Panel 1x Porsche 99650552500"
+      },
+      {
+        "sku": "3580",
+        "title": "Porsche Boxster Engine Gasket Set 1x partworks 98610090500"
+      },
+      {
+        "sku": "16487",
+        "title": "Porsche Boxster 986 Handbrake Brake Pads 1x partworks 98635299501"
+      }
+    ]
   }
 ]
