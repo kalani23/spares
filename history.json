@@ -2429,5 +2429,40 @@
         "title": "Porsche 996 997 Boxster 986 987 Brake Pads PAGID Racing Yellow"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-20T04:59:14.125260+00:00",
+    "total_skus": 3137,
+    "in_stock": 2379,
+    "out_of_stock": 512,
+    "not_found": 246,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 5,
+    "updated": 2891,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "3764",
+        "title": "Porsche 986 996 Radiator Hose 1x partworks 99610666656"
+      },
+      {
+        "sku": "1142",
+        "title": "Porsche 996 Stabilizer Link 1x Corteco 99633306904"
+      },
+      {
+        "sku": "1143",
+        "title": "Porsche 996 Stabilizer Links 2x Corteco 99633306904"
+      },
+      {
+        "sku": "14831",
+        "title": "Porsche 996 Carrera Lettering 1x Porsche 99655923707"
+      },
+      {
+        "sku": "7036",
+        "title": "Porsche Boxster 986 987 Engine Mounts 2x partworks 99637505503"
+      }
+    ]
   }
 ]
