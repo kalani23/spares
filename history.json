@@ -2464,5 +2464,81 @@
         "title": "Porsche Boxster 986 987 Engine Mounts 2x partworks 99637505503"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-21T04:49:10.538164+00:00",
+    "total_skus": 3137,
+    "in_stock": 2380,
+    "out_of_stock": 511,
+    "not_found": 246,
+    "newly_in_stock": 8,
+    "newly_out_of_stock": 7,
+    "updated": 2891,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "8004",
+        "title": "Porsche 924S 944 951 Turbo From '87 + Rollers Timing Belt Kit 94410202507"
+      },
+      {
+        "sku": "5151",
+        "title": "Porsche 924S 944 Timing Belt 1x Continental 94410515704"
+      },
+      {
+        "sku": "3149",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "3159",
+        "title": "Porsche 944 944 Turbo Water Pump Timing Belt Idler Pulleys 1x partworks 95110602101"
+      },
+      {
+        "sku": "5853",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "5852",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8003",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Kit 1x partworks 94410524104"
+      },
+      {
+        "sku": "16504",
+        "title": "Porsche 986 987 996 997 Tensioning Element Belt Tensioner 1x partworks 99710226000"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "9716",
+        "title": "Porsche 944 968 Stabiliser Bushing 1x partworks 95134379330"
+      },
+      {
+        "sku": "5715",
+        "title": "Porsche 944 968 Stabiliser Bushings 2x partworks 95134379330"
+      },
+      {
+        "sku": "17256",
+        "title": "Porsche 924 944 968 Roof Trim Seal 1x Porsche 94455970700"
+      },
+      {
+        "sku": "3356",
+        "title": "Porsche 911 924 928 944 968 Interior Rearview Mirror 1x partworks 4778575110001C"
+      },
+      {
+        "sku": "17420",
+        "title": "Porsche 911 912 924 944 924S 968 Door Lock Ball Socket 1x Porsche 99916800440"
+      },
+      {
+        "sku": "12011",
+        "title": "Porsche 911 914 964 993 Ignition Lock Shear Bolt 1x partworks 9992190170Y"
+      },
+      {
+        "sku": "17930",
+        "title": "Porsche 986 Boxster Wind Deflector 1x Porsche 9865615840001C"
+      }
+    ]
   }
 ]
