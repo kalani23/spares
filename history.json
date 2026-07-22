@@ -2540,5 +2540,129 @@
         "title": "Porsche 986 Boxster Wind Deflector 1x Porsche 9865615840001C"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-22T04:48:29.095262+00:00",
+    "total_skus": 3140,
+    "in_stock": 2367,
+    "out_of_stock": 527,
+    "not_found": 246,
+    "newly_in_stock": 7,
+    "newly_out_of_stock": 20,
+    "updated": 2894,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "3302",
+        "title": "Porsche 944 968 Interior Sensor Rosette 1x Porsche 94455245100"
+      },
+      {
+        "sku": "14907",
+        "title": "Porsche 911 914 924 944 928 968 993 964 Radio Navigation DIN-1 1x Porsche 91164559000"
+      },
+      {
+        "sku": "17644",
+        "title": "Porsche 924 944 Gearshift Lever Boot 1x Porsche 9444240230105T"
+      },
+      {
+        "sku": "833",
+        "title": "Porsche 996 997 Brake Disc 1x Sebro 99635240502"
+      },
+      {
+        "sku": "8074",
+        "title": "Porsche 911 SC Black Stone Chip Protection Film Kit 91155932200"
+      },
+      {
+        "sku": "8175",
+        "title": "Porsche 911 F G SC 964 993 Sunroof Velvet Trim Seal Set 90156490305600"
+      },
+      {
+        "sku": "15190",
+        "title": "Porsche 911 G (1984\u20131989) 964 Carrera Front Fender Welt Rubber Seal 911.799.503.07"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "2519",
+        "title": "Porsche Blower motor for Porsche 911 3.2 Carrera 930 turbo fan heater blower NRF 911.624.043.02"
+      },
+      {
+        "sku": "12740",
+        "title": "Porsche 944 944S2 944 Turbo 968 Water Cooler 1x partworks 95110603107"
+      },
+      {
+        "sku": "17016",
+        "title": "Porsche 924 928 944 968 Fuel Shut-Off Valve 1x Porsche 92820108302"
+      },
+      {
+        "sku": "6988",
+        "title": "Porsche 911 912 924 924S 944 928 968 Wheel Hub Clamp Nut 1x partworks 91134167300"
+      },
+      {
+        "sku": "7721",
+        "title": "Porsche 911 924 928 944 968 Wheel Hub Clamp Nuts 2x partworks 91134167300"
+      },
+      {
+        "sku": "1097",
+        "title": "Porsche 944 968CS Digital Clock Display 1x partworks 94464191300"
+      },
+      {
+        "sku": "17483",
+        "title": "Porsche 944 964 968 993 Headlight Switch 1x Porsche 99361353100"
+      },
+      {
+        "sku": "5864",
+        "title": "Porsche 911 914 924 944 928 986 Safety Vests 2x Porsche 00004400115"
+      },
+      {
+        "sku": "17614",
+        "title": "Porsche 944 968 Floor Mat Holders 4x Porsche 00004320278"
+      },
+      {
+        "sku": "4812",
+        "title": "Porsche 993 996 Lambda Sensor 1x Bosch 99360612801"
+      },
+      {
+        "sku": "16465",
+        "title": "Porsche 911 964 993 996 Crankshaft Bearing Bushing 1x partworks 96410113870"
+      },
+      {
+        "sku": "2065",
+        "title": "Porsche 996 Boxster 986 Radiator Hoses 2x partworks 99610662356"
+      },
+      {
+        "sku": "17845",
+        "title": "Porsche 996 Exhaust Flap Switch 1x Porsche 99661398710"
+      },
+      {
+        "sku": "16300",
+        "title": "Porsche 928 964 968 993 996 Boxster 986 Air Conditioning Pressure Switch 1x Denso 96461313701"
+      },
+      {
+        "sku": "5340",
+        "title": "Porsche Boxster 986 Lambda Sensor 1x Bosch 98660622601"
+      },
+      {
+        "sku": "8836",
+        "title": "Porsche Boxster 986 Lambda Sensors 4x Bosch 98660622601"
+      },
+      {
+        "sku": "7443",
+        "title": "Porsche Boxster S 986 Cylinder Head Gasket 1x Elring 99610417059"
+      },
+      {
+        "sku": "5475",
+        "title": "Porsche 986 Boxster S Cylinder Head Gasket 1x Elring 99610416952"
+      },
+      {
+        "sku": "2090",
+        "title": "Porsche Boxster Radiator Hoses 2x partworks 99610662756"
+      },
+      {
+        "sku": "14805",
+        "title": "Porsche 986 Boxster S Titanium Metallic Badge 1x Porsche 986559243009A4"
+      }
+    ]
   }
 ]
