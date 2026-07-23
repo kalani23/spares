@@ -2973,7 +2973,7 @@
     "variant_id": "gid://shopify/ProductVariant/53040731849047",
     "inventory_item_id": "gid://shopify/InventoryItem/55106794815831",
     "sku": "7659",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10638293598551",
@@ -4405,7 +4405,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651453772119",
     "inventory_item_id": "gid://shopify/InventoryItem/55724135252311",
     "sku": "5153",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895755903319",
@@ -6541,7 +6541,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651832799575",
     "inventory_item_id": "gid://shopify/InventoryItem/55724515656023",
     "sku": "5620",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895921480023",
@@ -6709,7 +6709,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651846398295",
     "inventory_item_id": "gid://shopify/InventoryItem/55724529320279",
     "sku": "3100",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895926755671",
@@ -8357,7 +8357,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651963511127",
     "inventory_item_id": "gid://shopify/InventoryItem/55724646793559",
     "sku": "3312",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10895957229911",
@@ -11677,7 +11677,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652278313303",
     "inventory_item_id": "gid://shopify/InventoryItem/55724962906455",
     "sku": "17483",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10896027287895",
@@ -12413,7 +12413,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652319142231",
     "inventory_item_id": "gid://shopify/InventoryItem/55725003735383",
     "sku": "14738",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10896041509207",
@@ -12597,7 +12597,7 @@
     "variant_id": "gid://shopify/ProductVariant/53652329955671",
     "inventory_item_id": "gid://shopify/InventoryItem/55725014548823",
     "sku": "3356",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10896047898967",
@@ -15045,7 +15045,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814166126935",
     "inventory_item_id": "gid://shopify/InventoryItem/55890702238039",
     "sku": "4791",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930215551319",
@@ -15165,7 +15165,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814180643159",
     "inventory_item_id": "gid://shopify/InventoryItem/55890716852567",
     "sku": "4092",
-    "in_stock": false
+    "in_stock": true
   },
   {
     "product_id": "gid://shopify/Product/10930221646167",
@@ -16429,7 +16429,7 @@
     "variant_id": "gid://shopify/ProductVariant/53814285533527",
     "inventory_item_id": "gid://shopify/InventoryItem/55890821906775",
     "sku": "15195",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10930263556439",
@@ -22689,7 +22689,7 @@
   },
   {
     "product_id": "gid://shopify/Product/10930835358039",
-    "product_title": "Porsche 996 Boxster 986 Bumper Trim Panel 1x Porsche 99650552500",
+    "product_title": "Porsche 996 Boxster 986 Bumper Trim Panel 1x Porsche 99650552500 front left",
     "variant_id": "gid://shopify/ProductVariant/53815554736471",
     "inventory_item_id": "gid://shopify/InventoryItem/55892124074327",
     "sku": "14747",
