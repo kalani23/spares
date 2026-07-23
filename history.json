@@ -2664,5 +2664,65 @@
         "title": "Porsche 986 Boxster S Titanium Metallic Badge 1x Porsche 986559243009A4"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-23T04:45:13.105717+00:00",
+    "total_skus": 3140,
+    "in_stock": 2368,
+    "out_of_stock": 526,
+    "not_found": 246,
+    "newly_in_stock": 6,
+    "newly_out_of_stock": 5,
+    "updated": 2894,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "3312",
+        "title": "Porsche 924 944 968 Steering Gear Bushings 2x Porsche 94434713706"
+      },
+      {
+        "sku": "17483",
+        "title": "Porsche 944 964 968 993 Headlight Switch 1x Porsche 99361353100"
+      },
+      {
+        "sku": "14738",
+        "title": "Porsche 911 944 968 928 Seat Backrest Cover 1x Porsche 92852114802"
+      },
+      {
+        "sku": "3356",
+        "title": "Porsche 911 924 928 944 968 Interior Rearview Mirror 1x partworks 4778575110001C"
+      },
+      {
+        "sku": "4791",
+        "title": "Porsche 996 997 Carrera 987 Boxster Cayman Ignition Coil 1x Beru 99660210501"
+      },
+      {
+        "sku": "4092",
+        "title": "Porsche 996 997 Carrera Boxster Cayman Ignition Coils 6x Beru 99660210501"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "7659",
+        "title": "Porsche 944 S Water pump + timing belt set + rollers for Porsche 944 S 90006701103"
+      },
+      {
+        "sku": "5153",
+        "title": "Porsche 924S 944 968 Timing Belt 1x Continental 94410221904"
+      },
+      {
+        "sku": "5620",
+        "title": "Porsche 911 930 964 924S 944 968 Flywheel Bolts 9x partworks 93010220601"
+      },
+      {
+        "sku": "3100",
+        "title": "Porsche 924 924S 944 Clutch Master Cylinder 1x FTE 477721171"
+      },
+      {
+        "sku": "15195",
+        "title": "Porsche 911 964 993 Crankshaft Bearing Set 1x partworks 96410190161"
+      }
+    ]
   }
 ]
