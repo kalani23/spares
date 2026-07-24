@@ -2724,5 +2724,113 @@
         "title": "Porsche 911 964 993 Crankshaft Bearing Set 1x partworks 96410190161"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-24T04:52:14.595024+00:00",
+    "total_skus": 3140,
+    "in_stock": 2347,
+    "out_of_stock": 547,
+    "not_found": 246,
+    "newly_in_stock": 1,
+    "newly_out_of_stock": 22,
+    "updated": 2894,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "16455",
+        "title": "Porsche 996 Cayenne Panamera Throttle Body 1x partworks 94860511504"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "8004",
+        "title": "Porsche 924S 944 951 Turbo From '87 + Rollers Timing Belt Kit 94410202507"
+      },
+      {
+        "sku": "2828",
+        "title": "Porsche 924S 944 968 Timing Belt Balance Shaft 1x Gates 94410221904"
+      },
+      {
+        "sku": "3149",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "3159",
+        "title": "Porsche 944 944 Turbo Water Pump Timing Belt Idler Pulleys 1x partworks 95110602101"
+      },
+      {
+        "sku": "5853",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "5852",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8003",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Kit 1x partworks 94410524104"
+      },
+      {
+        "sku": "8005",
+        "title": "Porsche 944 944 S2 968 Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "8746",
+        "title": "Porsche 944 944S 944S2 968 Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "8911",
+        "title": "Porsche 944 944 S2 Indicator Lens 1x partworks 95163116100"
+      },
+      {
+        "sku": "8912",
+        "title": "Porsche 944 944 S2 944 Turbo Indicator Lenses 2x partworks 95163116100"
+      },
+      {
+        "sku": "17483",
+        "title": "Porsche 944 964 968 993 Headlight Switch 1x Porsche 99361353100"
+      },
+      {
+        "sku": "14761",
+        "title": "Porsche Charge-o-mat Pro Battery Charger 1x Porsche 95804490170"
+      },
+      {
+        "sku": "4791",
+        "title": "Porsche 996 997 Carrera 987 Boxster Cayman Ignition Coil 1x Beru 99660210501"
+      },
+      {
+        "sku": "4092",
+        "title": "Porsche 996 997 Carrera Boxster Cayman Ignition Coils 6x Beru 99660210501"
+      },
+      {
+        "sku": "3657",
+        "title": "Porsche 996 986 Alternator 1x Bosch 99660301206"
+      },
+      {
+        "sku": "17976",
+        "title": "Porsche 996 Boxster Cylindrical Roller Bearing 1x Porsche 99630180800"
+      },
+      {
+        "sku": "15163",
+        "title": "Porsche 996 986 Carrera 2/4 Boxster S Cylindrical Roller Bearings 2x partworks 99630180601"
+      },
+      {
+        "sku": "3732",
+        "title": "Porsche 996 Clutch Pressure Plate 1x ZF Sachs 99611602702"
+      },
+      {
+        "sku": "14597",
+        "title": "Porsche 996 Cabriolet Window Regulators 2x partworks 99754301507"
+      },
+      {
+        "sku": "14500",
+        "title": "Porsche 996 Cabriolet Window Regulator 1x partworks 99754301507"
+      },
+      {
+        "sku": "14810",
+        "title": "Porsche 986 Boxster Rally Black Lettering 1x Porsche 9865592370070C"
+      }
+    ]
   }
 ]
