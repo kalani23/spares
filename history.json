@@ -2832,5 +2832,77 @@
         "title": "Porsche 986 Boxster Rally Black Lettering 1x Porsche 9865592370070C"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-25T04:49:30.395431+00:00",
+    "total_skus": 3140,
+    "in_stock": 2351,
+    "out_of_stock": 543,
+    "not_found": 246,
+    "newly_in_stock": 9,
+    "newly_out_of_stock": 5,
+    "updated": 2894,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "3601",
+        "title": "Porsche 911 914 964 993 996 997 Piston Oil Pressure Spring 1x partworks 90110753101"
+      },
+      {
+        "sku": "3849",
+        "title": "Porsche 911 964 993 996 997 Oil Pressure Piston Spring Set 1x partworks 90110753101"
+      },
+      {
+        "sku": "2065",
+        "title": "Porsche 996 Boxster 986 Radiator Hoses 2x partworks 99610662356"
+      },
+      {
+        "sku": "8571",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Oil Filter 1x Mahle 99610722553"
+      },
+      {
+        "sku": "1590",
+        "title": "Porsche 996 986 Axial Joint Tie Rod 1x ZF - Lemf\u00f6rder 99634713105"
+      },
+      {
+        "sku": "1591",
+        "title": "Porsche 996 986 Axial Joints Tie Rods 2x ZF - Lemf\u00f6rder 99634713105"
+      },
+      {
+        "sku": "3845",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Tie Rod Ends 2x ZF 99634713105"
+      },
+      {
+        "sku": "2090",
+        "title": "Porsche Boxster Radiator Hoses 2x partworks 99610662756"
+      },
+      {
+        "sku": "3711",
+        "title": "Porsche 996 997 986 987 Tie Rod End 1x ZF 99634713105"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "8769",
+        "title": "Porsche 924S 944 968 Balance Shaft Timing Belt 94410221904"
+      },
+      {
+        "sku": "17896",
+        "title": "Porsche 911 928 944 964 Air Conditioning Valve 1x Porsche 92857396502"
+      },
+      {
+        "sku": "17895",
+        "title": "Porsche 911 928 944 964 Air Conditioning Valve 1x Porsche 92857396503"
+      },
+      {
+        "sku": "18120",
+        "title": "Porsche 996 Cylinder Head Heat Shield 1x Porsche 99610442502"
+      },
+      {
+        "sku": "1040",
+        "title": "Porsche 986 987 981 991 992 996 997 Wheel Bearings 2x FAG 9P1407621B"
+      }
+    ]
   }
 ]
