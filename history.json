@@ -2904,5 +2904,24 @@
         "title": "Porsche 986 987 981 991 992 996 997 Wheel Bearings 2x FAG 9P1407621B"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-26T05:02:13.085126+00:00",
+    "total_skus": 3140,
+    "in_stock": 2350,
+    "out_of_stock": 544,
+    "not_found": 246,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 1,
+    "updated": 2894,
+    "skipped": 246,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "15137",
+        "title": "Porsche 944 Fuel Hose 1x partworks 95135604706"
+      }
+    ]
   }
 ]

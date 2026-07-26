@@ -5853,7 +5853,7 @@
     "variant_id": "gid://shopify/ProductVariant/53651776700759",
     "inventory_item_id": "gid://shopify/InventoryItem/55724459098455",
     "sku": "15137",
-    "in_stock": true
+    "in_stock": false
   },
   {
     "product_id": "gid://shopify/Product/10895907225943",
