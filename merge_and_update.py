@@ -30,29 +30,60 @@ RESULTS_DIR = "results"
 LOG_FILE    = "sync_run_log.json"
 
 SHOPIFY_BASE = f"https://{SHOP}/admin/api/{API_VERSION}"
+GRAPHQL_URL  = f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json"
 SHOPIFY_HEADERS = {
     "X-Shopify-Access-Token": SHOPIFY_TOKEN,
     "Content-Type": "application/json",
 }
 
+# Shopify location IDs
+CORNWALL_LOCATION_ID = 113368236375   # Cornwall warehouse — UK Stock (24hr dispatch)
+EURO_LOCATION_ID     = 121881526615   # Test location — Euro Stock (5 day dispatch)
 
-def get_primary_location_id(products):
-    if not products:
-        raise RuntimeError("No products to detect location from")
-    for product in products[:20]:
-        iid = str(product.get("inventory_item_id", "")).split("/")[-1]
-        if not iid:
+
+def set_euro_stock_metafield(product_id, in_stock, retries=4):
+    """Write custom.euro_stock metafield so Liquid theme can read it."""
+    mutation = """
+    mutation setMeta($metafields: [MetafieldsSetInput!]!) {
+      metafieldsSet(metafields: $metafields) {
+        metafields { id }
+        userErrors { field message }
+      }
+    }
+    """
+    variables = {
+        "metafields": [{
+            "ownerId": product_id,
+            "namespace": "custom",
+            "key": "euro_stock",
+            "type": "boolean",
+            "value": "true" if in_stock else "false",
+        }]
+    }
+    for attempt in range(retries):
+        try:
+            r = requests.post(
+                GRAPHQL_URL,
+                headers=SHOPIFY_HEADERS,
+                json={"query": mutation, "variables": variables},
+                timeout=(10, 15),
+            )
+            if r.status_code == 429:
+                wait = float(r.headers.get("Retry-After", 2.0))
+                time.sleep(wait)
+                continue
+            result = r.json()
+            errors = result.get("data", {}).get("metafieldsSet", {}).get("userErrors", [])
+            if errors:
+                print(f"    [META ERROR] {errors}")
+                return False
+            return True
+        except Exception as e:
+            print(f"    [META EXCEPTION] {e}")
+            if attempt < retries - 1:
+                time.sleep(2)
             continue
-        r = requests.get(
-            f"{SHOPIFY_BASE}/inventory_levels.json?inventory_item_ids={iid}",
-            headers=SHOPIFY_HEADERS,
-            timeout=(10, 15),
-        )
-        data = r.json()
-        levels = data.get("inventory_levels", [])
-        if levels:
-            return levels[0]["location_id"]
-    raise RuntimeError("Could not auto-detect Shopify location ID")
+    return False
 
 
 def set_inventory_level(inventory_item_id, location_id, available, retries=4):
@@ -143,11 +174,9 @@ def main():
         json.dump(all_results, f, indent=2, default=str)
     print(f"\n  Merged log written -> {LOG_FILE}")
 
-    print("\n-> Fetching primary location...")
-    location_id = get_primary_location_id(all_results)
-    print(f"  Location ID: {location_id}")
-
-    print(f"\n-> Updating Shopify inventory levels for {len(all_results)} SKUs...\n")
+    print(f"\n-> Updating Shopify inventory levels for {len(all_results)} SKUs...")
+    print(f"   Writing Euro stock to 'Test location' ({EURO_LOCATION_ID})")
+    print(f"   Cornwall warehouse ({CORNWALL_LOCATION_ID}) is managed manually by Paul\n")
 
     updated, skipped, failed = 0, 0, 0
 
@@ -156,16 +185,23 @@ def main():
             skipped += 1
             continue
 
-        available = 2 if item["in_stock"] else 0
-        ok = set_inventory_level(item["inventory_item_id"], location_id, available)
+        # Write partworks.de stock status to Euro Stock (Test location)
+        # Cornwall warehouse is intentionally NOT touched by the sync —
+        # Paul manages his own physical UK stock manually via Shopify admin
+        euro_qty = 10 if item["in_stock"] else 0
+        ok = set_inventory_level(item["inventory_item_id"], EURO_LOCATION_ID, euro_qty)
+
+        # Also write euro_stock as a metafield so Liquid theme can read it
+        if item.get("product_id"):
+            set_euro_stock_metafield(item["product_id"], item["in_stock"])
 
         if ok:
             updated += 1
         else:
             failed += 1
-            print(f"  [FAILED] {item['sku']} - could not update inventory")
+            print(f"  [FAILED] {item['sku']} - could not update Euro stock")
 
-        time.sleep(0.75)  # stay safely under Shopify's 2 calls/sec limit, with headroom
+        time.sleep(0.75)
 
         if i % 25 == 0:
             print(f"  {i}/{len(all_results)} processed...")
