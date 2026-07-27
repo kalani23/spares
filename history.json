@@ -3339,5 +3339,105 @@
         "title": "Porsche 911 Oil Pressure Switch 1x Porsche 90174155102"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-27T20:16:27.359270+00:00",
+    "total_skus": 5621,
+    "in_stock": 4449,
+    "out_of_stock": 925,
+    "not_found": 247,
+    "newly_in_stock": 14,
+    "newly_out_of_stock": 7,
+    "updated": 5374,
+    "skipped": 247,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "9828",
+        "title": "Porsche 944 S S2 968 928 Large Valve Cover Sealing Ring 92810444308"
+      },
+      {
+        "sku": "8405",
+        "title": "Porsche 924S 944 951 Exhaust Manifold Gasket 94411119704 Victor Reinz (Pack of 4)"
+      },
+      {
+        "sku": "1703",
+        "title": "Porsche 944 944 Turbo Coolant Expansion Tank 1x Porsche 95110602502"
+      },
+      {
+        "sku": "3740",
+        "title": "Porsche 996 997 Clutch Disc 1x Sachs 99711601316"
+      },
+      {
+        "sku": "3093",
+        "title": "Porsche 911 Driveshaft Seals 2x Elring 90133229700"
+      },
+      {
+        "sku": "3092",
+        "title": "Porsche 911 Driveshaft Seals 4x Elring 90133229700"
+      },
+      {
+        "sku": "6695",
+        "title": "Porsche 911 Driveshaft Seal 1x Elring 90133229700"
+      },
+      {
+        "sku": "5443",
+        "title": "Porsche 911 Heat Exchanger Gasket 1x Elring 93011119106"
+      },
+      {
+        "sku": "7353",
+        "title": "Porsche 911 Heat Exchanger Gaskets 3x Elring 93011119112"
+      },
+      {
+        "sku": "7354",
+        "title": "Porsche 911 Heat Exchanger Gaskets 6x Elring 93011119112"
+      },
+      {
+        "sku": "7364",
+        "title": "Porsche 911 911 Turbo Heat Exchangers 2x JP - Dansk 93011119206"
+      },
+      {
+        "sku": "7363",
+        "title": "Porsche 911 911 Turbo Heat Exchangers 2x JP Dansk 93011119112"
+      },
+      {
+        "sku": "1532",
+        "title": "Porsche 911 Exhaust Heat Exchanger Set 1x SSI 93011104300"
+      },
+      {
+        "sku": "2264",
+        "title": "Porsche 911 Brake Wear Indicators 2x Textar 99361296502"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "1232",
+        "title": "Porsche 944 S S2 928 S4 + Timing Chain + Guide Shoe Valve Cover Gasket 94410550111"
+      },
+      {
+        "sku": "3005",
+        "title": "Porsche 944 S S2 968 Gasket Set Valve Cover Gasket 90012311530"
+      },
+      {
+        "sku": "8639",
+        "title": "Porsche 924 944 944 Turbo Ignition Cables 5x Beru 94460901515"
+      },
+      {
+        "sku": "5152",
+        "title": "Porsche 944 944S 944S2 968 Timing Belt 1x Continental 94410532303"
+      },
+      {
+        "sku": "1601",
+        "title": "Porsche 944 944 Turbo Fog Light Cover 1x Porsche 95163193100"
+      },
+      {
+        "sku": "14510",
+        "title": "Porsche 987 996 997 Secondary Air Pump 1x partworks 99760510402"
+      },
+      {
+        "sku": "16590",
+        "title": "Porsche 911 911S 911 Turbo Oil Line 1x partworks 91110773011"
+      }
+    ]
   }
 ]
