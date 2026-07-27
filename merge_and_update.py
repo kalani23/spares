@@ -56,8 +56,8 @@ def set_euro_stock_metafield(product_id, in_stock, retries=4):
             "ownerId": product_id,
             "namespace": "custom",
             "key": "euro_stock",
-            "type": "boolean",
-            "value": "true" if in_stock else "false",
+            "type": "number_integer",
+            "value": "2" if in_stock else "0",
         }]
     }
     for attempt in range(retries):
@@ -188,7 +188,7 @@ def main():
         # Write partworks.de stock status to Euro Stock (Test location)
         # Cornwall warehouse is intentionally NOT touched by the sync —
         # Paul manages his own physical UK stock manually via Shopify admin
-        euro_qty = 10 if item["in_stock"] else 0
+        euro_qty = 2 if item["in_stock"] else 0
         ok = set_inventory_level(item["inventory_item_id"], EURO_LOCATION_ID, euro_qty)
 
         # Also write euro_stock as a metafield so Liquid theme can read it
