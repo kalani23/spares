@@ -3595,5 +3595,129 @@
         "title": "Porsche 911 Bumper Protection Strip 1x partworks 91150510001"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-30T05:33:04.258576+00:00",
+    "total_skus": 5621,
+    "in_stock": 4445,
+    "out_of_stock": 929,
+    "not_found": 247,
+    "newly_in_stock": 14,
+    "newly_out_of_stock": 13,
+    "updated": 5374,
+    "skipped": 247,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "5330",
+        "title": "Porsche 1x Lambda sensor before/after catalytic converter for Porsche Boxster 986 up to -'02 BOSCH 986.606.126.01"
+      },
+      {
+        "sku": "5638",
+        "title": "Porsche 928 Distributor Cap + Distributor Rotor 92860221101"
+      },
+      {
+        "sku": "5637",
+        "title": "Porsche 928 Distributor Rotor 92860221300"
+      },
+      {
+        "sku": "5595",
+        "title": "Porsche 911 3.2, 924S, 944 '86- 951, 968,  Fuel pump BOSCH 94460810204"
+      },
+      {
+        "sku": "1099",
+        "title": "Porsche 944 Digital Clock 1x Porsche 94464121300"
+      },
+      {
+        "sku": "1336",
+        "title": "Porsche 911 964 993 996 997 Starter Motor 1x Bosch 99660410700"
+      },
+      {
+        "sku": "5340",
+        "title": "Porsche Boxster 986 Lambda Sensor 1x Bosch 98660622601"
+      },
+      {
+        "sku": "8836",
+        "title": "Porsche Boxster 986 Lambda Sensors 4x Bosch 98660622601"
+      },
+      {
+        "sku": "8463",
+        "title": "Porsche 911 Fuel Injectors 6x Bosch 99970142340"
+      },
+      {
+        "sku": "9946",
+        "title": "Porsche 911 Fuel Injector 1x Bosch 91111022501"
+      },
+      {
+        "sku": "8462",
+        "title": "Porsche 911 Fuel Injector 1x Bosch 91111022501"
+      },
+      {
+        "sku": "16590",
+        "title": "Porsche 911 911S 911 Turbo Oil Line 1x partworks 91110773011"
+      },
+      {
+        "sku": "11740",
+        "title": "Porsche 911 912 Turn Signal Housing 1x partworks 90163140103"
+      },
+      {
+        "sku": "7395",
+        "title": "Porsche 911 Turbo Fuel Injectors 6x Bosch 93011022502"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "11495",
+        "title": "Porsche Boxster 986 2.5 Catalytic converter mounting kit for exhaust with clamps 99611111001"
+      },
+      {
+        "sku": "17941",
+        "title": "Porsche 924 944 Camshaft Gear 94410512502"
+      },
+      {
+        "sku": "17177",
+        "title": "Porsche 911 924 928 944 Exterior Mirror Control Unit 1x Porsche 91173102706"
+      },
+      {
+        "sku": "1466",
+        "title": "Porsche 996 986 Oil Separator Hose Opener Tool 1x partworks 98710714602"
+      },
+      {
+        "sku": "6965",
+        "title": "Porsche 928 964 993 996 997 Wheel Bearings 2x NTN/SNR 99905305502"
+      },
+      {
+        "sku": "8663",
+        "title": "Porsche 911 914-6 Distributor Finger 1x Beru 91160292801"
+      },
+      {
+        "sku": "7390",
+        "title": "Porsche 911 911S Injection Line Fittings 6x partworks 90111091800"
+      },
+      {
+        "sku": "7476",
+        "title": "Porsche 911 914 Brake Hoses 2x FTE-Valeo 90135563103"
+      },
+      {
+        "sku": "5619",
+        "title": "Porsche 911 914 Brake Hose 1x FTE 90135563103"
+      },
+      {
+        "sku": "14753",
+        "title": "Porsche 911 Auxiliary Blower Bracket 1x Porsche 91121113902"
+      },
+      {
+        "sku": "4515",
+        "title": "Porsche 911 914 Windshield Washer Nozzle 1x partworks 90162874120"
+      },
+      {
+        "sku": "8882",
+        "title": "Porsche 911 912 Windshield Washer Nozzles 2x partworks 64462874102"
+      },
+      {
+        "sku": "1460",
+        "title": "Porsche 911 911S SC Brake Kit Front 1x partworks 91135142502"
+      }
+    ]
   }
 ]
