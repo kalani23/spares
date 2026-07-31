@@ -3719,5 +3719,117 @@
         "title": "Porsche 911 911S SC Brake Kit Front 1x partworks 91135142502"
       }
     ]
+  },
+  {
+    "timestamp": "2026-07-31T06:23:52.529728+00:00",
+    "total_skus": 5621,
+    "in_stock": 4446,
+    "out_of_stock": 926,
+    "not_found": 249,
+    "newly_in_stock": 13,
+    "newly_out_of_stock": 11,
+    "updated": 5372,
+    "skipped": 249,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "4337",
+        "title": "Porsche 944 Turbo / 911 3.2 Carrera / Carrera Temperature Sensor sender  93060611800"
+      },
+      {
+        "sku": "5152",
+        "title": "Porsche 944 944S 944S2 968 Timing Belt 1x Continental 94410532303"
+      },
+      {
+        "sku": "4671",
+        "title": "Porsche 944 964 968 Air Conditioning Switch 1x partworks 94465392200"
+      },
+      {
+        "sku": "2065",
+        "title": "Porsche 996 Boxster 986 Radiator Hoses 2x partworks 99610662356"
+      },
+      {
+        "sku": "4373",
+        "title": "Porsche 996 Boxster 986 Radiator Hose 1x partworks 99610662756"
+      },
+      {
+        "sku": "14597",
+        "title": "Porsche 996 Cabriolet Window Regulators 2x partworks 99754301507"
+      },
+      {
+        "sku": "14500",
+        "title": "Porsche 996 Cabriolet Window Regulator 1x partworks 99754301507"
+      },
+      {
+        "sku": "2090",
+        "title": "Porsche Boxster Radiator Hoses 2x partworks 99610662756"
+      },
+      {
+        "sku": "14599",
+        "title": "Porsche Boxster 986 987 Convertible Top Gears 2x partworks 98756117901"
+      },
+      {
+        "sku": "14520",
+        "title": "Porsche Boxster Convertible Top Gear 1x partworks 98756118001"
+      },
+      {
+        "sku": "8680",
+        "title": "Porsche 911 914-6 Oil Filter 1x Mahle 90110720301"
+      },
+      {
+        "sku": "12783",
+        "title": "Porsche 911 964 993 Roof Frame Seal 1x partworks 99356132100"
+      },
+      {
+        "sku": "12784",
+        "title": "Porsche 911 911G 964 993 Roof Frame Seal 1x partworks 99356132200"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "9027",
+        "title": "Porsche 944 S2 928 S4 GTS Timing Chain 94410550111"
+      },
+      {
+        "sku": "3348",
+        "title": "Porsche 944 968 Rear Axle Control Arms 2x Porsche 95133102232"
+      },
+      {
+        "sku": "10190",
+        "title": "Porsche 944 & 944 S Power Steering Pump 115 Bar Exchange Unit 94434743204"
+      },
+      {
+        "sku": "6825",
+        "title": "Porsche 911 Spark Plug Connector Holder 1x partworks 90160958100"
+      },
+      {
+        "sku": "7714",
+        "title": "Porsche 911 Spark Plug Connector Holders 6x partworks 90160958100"
+      },
+      {
+        "sku": "8569",
+        "title": "Porsche 911 914-6 Oil Pressure Switch 1x Hella 91160623001"
+      },
+      {
+        "sku": "7680",
+        "title": "Porsche 911 912 Drive Shafts 2x GKN 90133202611"
+      },
+      {
+        "sku": "2333",
+        "title": "Porsche 911 912 Drive Shaft 1x GKN 90133202611"
+      },
+      {
+        "sku": "5252",
+        "title": "Porsche 911 912 Drive Shaft 1x GKN 90133202611"
+      },
+      {
+        "sku": "5823",
+        "title": "Porsche 911 914 Flasher Relay 1x partworks 91461830312"
+      },
+      {
+        "sku": "9515",
+        "title": "Porsche 911 914 964 993 Throttle Linkage Bearing Bushing 1x partworks 90142325300"
+      }
+    ]
   }
 ]
