@@ -4007,5 +4007,53 @@
         "title": "Porsche 911 964 993 Camshaft Counterhold Tool 1x partworks 00072191910"
       }
     ]
+  },
+  {
+    "timestamp": "2026-08-02T06:34:06.306135+00:00",
+    "total_skus": 5621,
+    "in_stock": 4435,
+    "out_of_stock": 937,
+    "not_found": 249,
+    "newly_in_stock": 2,
+    "newly_out_of_stock": 6,
+    "updated": 5370,
+    "skipped": 249,
+    "failed": 2,
+    "newly_in_stock_skus": [
+      {
+        "sku": "1601",
+        "title": "Porsche 944 944 Turbo Fog Light Cover 1x Porsche 95163193100"
+      },
+      {
+        "sku": "17636",
+        "title": "Porsche 993 (1994-1998) Genuine Porsche Mirror Adjustment Switch 9936132410001C"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "14682",
+        "title": "Porsche Camshaft Timing Belt Original 94410515704"
+      },
+      {
+        "sku": "5152",
+        "title": "Porsche 944 944S 944S2 968 Timing Belt 1x Continental 94410532303"
+      },
+      {
+        "sku": "1661",
+        "title": "Porsche 996 Glove Box Handle 1x Porsche 99655234900"
+      },
+      {
+        "sku": "8847",
+        "title": "Porsche 911 Door Window Frames 2x partworks 90154200643"
+      },
+      {
+        "sku": "15432",
+        "title": "Porsche 911 912 914 Gearshift Lever Stop Plate 1x partworks 90142401700"
+      },
+      {
+        "sku": "16517",
+        "title": "Porsche 911 930 914 Throttle Linkage Lever 1x partworks 90142325002"
+      }
+    ]
   }
 ]
