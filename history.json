@@ -4639,5 +4639,101 @@
         "title": "Porsche 964 Carrera Turbo Upper and Lower Valve Cover Set with Gaskets partworks 96410511503"
       }
     ]
+  },
+  {
+    "timestamp": "2026-08-18T04:19:52.444223+00:00",
+    "total_skus": 5638,
+    "in_stock": 4455,
+    "out_of_stock": 931,
+    "not_found": 252,
+    "newly_in_stock": 8,
+    "newly_out_of_stock": 12,
+    "updated": 5386,
+    "skipped": 252,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "14682",
+        "title": "Porsche Camshaft Timing Belt Original 94410515704"
+      },
+      {
+        "sku": "8513",
+        "title": "Porsche 944 Turbo 951 Set 1x Piston Rings 95110390102"
+      },
+      {
+        "sku": "8514",
+        "title": "Porsche 944 Turbo 951 Piston Ring Set 4x Piston Rings 95110390102"
+      },
+      {
+        "sku": "6965",
+        "title": "Porsche 928 964 993 996 997 Wheel Bearings 2x NTN/SNR 99905305502"
+      },
+      {
+        "sku": "14831",
+        "title": "Porsche 996 Carrera Lettering 1x Porsche 99655923707"
+      },
+      {
+        "sku": "14805",
+        "title": "Porsche 986 Boxster S Titanium Metallic Badge 1x Porsche 986559243009A4"
+      },
+      {
+        "sku": "7185",
+        "title": "Porsche 911 924 Transmission Bearing 1x Schaeffler - FAG 99905203000"
+      },
+      {
+        "sku": "14753",
+        "title": "Porsche 911 Auxiliary Blower Bracket 1x Porsche 91121113902"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "3020",
+        "title": "Porsche 924 944 968 power steering PAS pump Seal set kit + mounting bolt. 94434792101"
+      },
+      {
+        "sku": "5473",
+        "title": "Porsche 944 2.5 951 Turbo 944S 924S STANDARD Cylinder Head Gasket 95110437402"
+      },
+      {
+        "sku": "7741",
+        "title": "Porsche 924S 944 2.5 STANDARD Cylinder Head Gasket Set 94410090100"
+      },
+      {
+        "sku": "8978",
+        "title": "Porsche 944 S STANDARD Cylinder Head Gasket Set 94410090104"
+      },
+      {
+        "sku": "7742",
+        "title": "Porsche 944 Turbo 951 STANDARD Cylinder Head Gasket Set 95110437402"
+      },
+      {
+        "sku": "5635",
+        "title": "Porsche 944 Turbo / 928 Distributor Cap 94460225100"
+      },
+      {
+        "sku": "9716",
+        "title": "Porsche 944 968 Stabiliser Bushing 1x partworks 95134379330"
+      },
+      {
+        "sku": "5715",
+        "title": "Porsche 944 968 Stabiliser Bushings 2x partworks 95134379330"
+      },
+      {
+        "sku": "14779",
+        "title": "Porsche 911 924 944 928 968 ABS Relay 1x Porsche 92861512403"
+      },
+      {
+        "sku": "17847",
+        "title": "Porsche 996 Turbo Rear Spoiler Push Button Switch 1x Porsche 99661315510A05"
+      },
+      {
+        "sku": "14859",
+        "title": "Porsche 911 Alternator V-Belt 1x Porsche 9991923135A"
+      },
+      {
+        "sku": "15278",
+        "title": "Porsche 911 G 911 Turbo Front Lip Brackets 7x partworks 91150302300"
+      }
+    ]
   }
 ]
