@@ -4991,5 +4991,229 @@
         "title": "Porsche 911 930 Fuse Box Cover Mounting Plate 1x partworks 93061010503"
       }
     ]
+  },
+  {
+    "timestamp": "2026-08-22T04:10:32.051925+00:00",
+    "total_skus": 5639,
+    "in_stock": 4461,
+    "out_of_stock": 927,
+    "not_found": 251,
+    "newly_in_stock": 27,
+    "newly_out_of_stock": 25,
+    "updated": 5388,
+    "skipped": 251,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "17912",
+        "title": "Porsche 928 944 Cooling Fan Resistor 94461652101"
+      },
+      {
+        "sku": "7765",
+        "title": "Porsche 944 2.5 up to '85 Engine Gasket Set Crankcase Gasket Set 94410090101"
+      },
+      {
+        "sku": "4023",
+        "title": "Porsche 944 Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4026",
+        "title": "Porsche 944 Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4017",
+        "title": "Porsche 944 968 944 Turbo Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4022",
+        "title": "Porsche 944 Control Arm 1x Porsche 94434192831"
+      },
+      {
+        "sku": "4025",
+        "title": "Porsche 944 Control Arm 1x Porsche 94434192831"
+      },
+      {
+        "sku": "4015",
+        "title": "Porsche 944 968 944 Turbo Control Arm 1x Porsche 94434192731"
+      },
+      {
+        "sku": "17177",
+        "title": "Porsche 911 924 928 944 Exterior Mirror Control Unit 1x 91173102706"
+      },
+      {
+        "sku": "1276",
+        "title": "Porsche 944 968 Centre Console Storage Compartment 1x Porsche 94455215500"
+      },
+      {
+        "sku": "1206",
+        "title": "Porsche 944 968 Storage Compartment Rubber Insert 1x Porsche 94455216100"
+      },
+      {
+        "sku": "18084",
+        "title": "Porsche 356 912 914 924 928 944 964 968 993 996 Engine Oil Bag 1x Porsche PCG04320900"
+      },
+      {
+        "sku": "18205",
+        "title": "Porsche 924 944 968 Tool Bag 1x Porsche PCG94472110"
+      },
+      {
+        "sku": "17976",
+        "title": "Porsche 996 Boxster Cylindrical Roller Bearing 1x Porsche 99630180800"
+      },
+      {
+        "sku": "2243",
+        "title": "Porsche 996 997 Brake Pad Wear Indicators 2x Textar 99761267602"
+      },
+      {
+        "sku": "17030",
+        "title": "Porsche 996 997 Convertible Top Drive Motor 1x Porsche 99656193301"
+      },
+      {
+        "sku": "17586",
+        "title": "Porsche Boxster Convertible Top Lock Relay 1x Porsche 98661819901"
+      },
+      {
+        "sku": "8638",
+        "title": "Porsche 911 914-6 Ignition Cables 1x Beru 91160906100"
+      },
+      {
+        "sku": "17546",
+        "title": "Porsche 911 Oil Pressure Switch 1x Porsche 90174155102"
+      },
+      {
+        "sku": "16556",
+        "title": "Porsche 911 914 911S 914-6 Heater Air Duct 1x partworks 91110632700"
+      },
+      {
+        "sku": "17170",
+        "title": "Porsche 911 Gearbox Release Lever 1x Porsche 91511671301"
+      },
+      {
+        "sku": "6759",
+        "title": "Porsche 911 Floor Panels 1x JP - Dansk 91150193500"
+      },
+      {
+        "sku": "15432",
+        "title": "Porsche 911 912 914 Gearshift Lever Stop Plate 1x partworks 90142401700"
+      },
+      {
+        "sku": "6938",
+        "title": "Porsche 911 912 930 Engine and Transmission Mounts 4x SuperPro 91137503110"
+      },
+      {
+        "sku": "1679",
+        "title": "Porsche 911 Bulb and Fuse Box 1x Porsche PCG91130000"
+      },
+      {
+        "sku": "17824",
+        "title": "Porsche 911 Bumper Support Tube 1x Porsche 93050162802"
+      },
+      {
+        "sku": "17220",
+        "title": "Porsche 911 Throttle Linkage 1x Porsche 91142304302"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "3161",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "3160",
+        "title": "Porsche 944 944 Turbo Timing Belt Service Kit 1x partworks 94410602113"
+      },
+      {
+        "sku": "8743",
+        "title": "Porsche 924S 944 Water Pump Timing Belt Idler Pulley Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8742",
+        "title": "Porsche 944 924S Water Pump Timing Belt Idler Pulley Kit 1x partworks 90006701103"
+      },
+      {
+        "sku": "8765",
+        "title": "Porsche 924S 944 968 Tensioner Pulley 1x Febi 94410202506"
+      },
+      {
+        "sku": "8745",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "8754",
+        "title": "Porsche 924S 944 944 Turbo Timing Belt Kit 1x partworks 94410524104"
+      },
+      {
+        "sku": "8746",
+        "title": "Porsche 944 944S 944S2 968 Timing Belt Set 1x partworks 94410202507"
+      },
+      {
+        "sku": "3034",
+        "title": "Porsche 924S 924 944 928 Clutch Slave Cylinder Seal Kit 1x Valeo 92811690100"
+      },
+      {
+        "sku": "14777",
+        "title": "Porsche 911 924 944 928 Pop-Up Headlight Relay 1x Porsche 92861511601"
+      },
+      {
+        "sku": "18110",
+        "title": "Porsche 944 944 Turbo Headlight Insert 1x Porsche 95163122100"
+      },
+      {
+        "sku": "3359",
+        "title": "Porsche 996 997 Boxster 986 987 Crankshaft Sensor 1x Bosch 99660611203"
+      },
+      {
+        "sku": "15319",
+        "title": "Porsche 996 Boxster 986 Ignition Lock Housing 1x Porsche 99634701707"
+      },
+      {
+        "sku": "1241",
+        "title": "Porsche 986 996 Storage Compartment 1x Porsche 99655209601"
+      },
+      {
+        "sku": "1327",
+        "title": "Porsche 986 996 Centre Console Storage Compartment 1x Porsche 99655209601"
+      },
+      {
+        "sku": "1699",
+        "title": "Porsche 996 Boxster 986 Speaker Right 1x Porsche 9966450380201C"
+      },
+      {
+        "sku": "7971",
+        "title": "Porsche 911 Release Fork 1x partworks 91511671203"
+      },
+      {
+        "sku": "18135",
+        "title": "Porsche 356 911 912 914 Horn Tweeters 2x Bosch"
+      },
+      {
+        "sku": "1208",
+        "title": "Porsche 911 Exterior Mirrors 2x partworks 90173111101"
+      },
+      {
+        "sku": "7410",
+        "title": "Porsche 911 912 Indicator Housing Fender 2x JP \u2013 Dansk 90150303822"
+      },
+      {
+        "sku": "8536",
+        "title": "Porsche 911 Alternator 1x Valeo 91160312002"
+      },
+      {
+        "sku": "1422",
+        "title": "Porsche 911 911 3.3 Turbo Oil Cooler Mounting Bracket 1x Porsche 91150149001"
+      },
+      {
+        "sku": "1516",
+        "title": "Porsche 911 911 SC Clutch Set and Flywheel 1x partworks 91511600127"
+      },
+      {
+        "sku": "1512",
+        "title": "Porsche 911 Clutch Set and Flywheel 1x partworks 91511600127"
+      },
+      {
+        "sku": "18747",
+        "title": "Porsche \u2013 911 F / 912 / 914 \u2013 1965\u20131976 \u2013 Hella 118 Front Fog Light \u2013 90163120210"
+      }
+    ]
   }
 ]
