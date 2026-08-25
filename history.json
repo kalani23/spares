@@ -5215,5 +5215,129 @@
         "title": "Porsche \u2013 911 F / 912 / 914 \u2013 1965\u20131976 \u2013 Hella 118 Front Fog Light \u2013 90163120210"
       }
     ]
+  },
+  {
+    "timestamp": "2026-08-25T04:25:02.073534+00:00",
+    "total_skus": 5639,
+    "in_stock": 4440,
+    "out_of_stock": 948,
+    "not_found": 251,
+    "newly_in_stock": 3,
+    "newly_out_of_stock": 24,
+    "updated": 5388,
+    "skipped": 251,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "3729",
+        "title": "Porsche 911 924 944 968 964 993 Side Indicators 2x Unbranded 161949111"
+      },
+      {
+        "sku": "3051",
+        "title": "Porsche 911 924 944 968 Side Indicators 2x Aftermarket 161949111"
+      },
+      {
+        "sku": "3786",
+        "title": "Porsche 911 Piston and Cylinder 1x Mahle 93010398305"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "1345",
+        "title": "Porsche 924 944 924S Coolant Expansion Tank 1x Porsche 94410612506"
+      },
+      {
+        "sku": "10032",
+        "title": "Porsche 944 944 Turbo Vacuum Hose 1x partworks 95111022100"
+      },
+      {
+        "sku": "9249",
+        "title": "Porsche 911 914 924 928 944 964 993 996 Boxster 986 Wheel Nut 1x JP Dansk 99918200336"
+      },
+      {
+        "sku": "4049",
+        "title": "Porsche 911 914 924S 928 944 968 Wheel Nuts 20x JP-Dansk 99918200336"
+      },
+      {
+        "sku": "17642",
+        "title": "Porsche 944 968 Switch Panel Light 1x Porsche 94455242900"
+      },
+      {
+        "sku": "5519",
+        "title": "Porsche 924 944 Door Seal 1x partworks 94453709200"
+      },
+      {
+        "sku": "5520",
+        "title": "Porsche 924 944 Door Seals 2x partworks 94453709200"
+      },
+      {
+        "sku": "12835",
+        "title": "Porsche 996 Boxster 986 Cayenne Knock Sensor 1x Bosch 99660612501"
+      },
+      {
+        "sku": "17240",
+        "title": "Porsche 986 996 987 997 Timing Chain Guide Rail 1x Porsche 99610505401"
+      },
+      {
+        "sku": "15311",
+        "title": "Porsche 928 964 993 996 997 Wheel Bearing 1x FAG 99905305502"
+      },
+      {
+        "sku": "17572",
+        "title": "Porsche 911 964 968 993 996 Boxster Air Conditioning Relay 1x Porsche 99965701890"
+      },
+      {
+        "sku": "17382",
+        "title": "Porsche 996 Boxster 986 Instrument Cluster Rotary Knob 1x Porsche 99664191100"
+      },
+      {
+        "sku": "17010",
+        "title": "Porsche 996 986 Boxster 996 GT3 996 Turbo Centre Cowl Cover 1x Porsche 9965725630601C"
+      },
+      {
+        "sku": "7370",
+        "title": "Porsche 911 912 914-6 Connecting Rod Bolts and Nuts 12x partworks 90110317302"
+      },
+      {
+        "sku": "10116",
+        "title": "Porsche 911 Intake Valve 1x partworks 90110540104"
+      },
+      {
+        "sku": "7366",
+        "title": "Porsche 911 Exhaust Pipe Clamps 2x partworks 91111118700"
+      },
+      {
+        "sku": "904",
+        "title": "Porsche 356 911 914 928 Brake Pad Cotter Pin 1x partworks 90135195510"
+      },
+      {
+        "sku": "9957",
+        "title": "Porsche 356 911 914 928 Speedometer Lighting Bulb 1x Hella 90063110290"
+      },
+      {
+        "sku": "2179",
+        "title": "Porsche 356 911 914 928 Speedometer Bulbs 5x Hella 90063110290"
+      },
+      {
+        "sku": "2907",
+        "title": "Porsche 911 912 914 930 Turbo Shift Rod Bushing 1x JP - Dansk 91442422400"
+      },
+      {
+        "sku": "16547",
+        "title": "Porsche 911 914-6 Throttle Linkage 1x partworks 90142302603"
+      },
+      {
+        "sku": "7368",
+        "title": "Porsche 911 Compensating Pipe 1x partworks 93011119206"
+      },
+      {
+        "sku": "7367",
+        "title": "Porsche 911 Compensating Pipe + Seals 1x partworks 93011119206"
+      },
+      {
+        "sku": "4437",
+        "title": "Porsche 911 964 Targa Bar Seal 1x partworks 91156509147"
+      }
+    ]
   }
 ]
