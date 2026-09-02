@@ -5755,5 +5755,205 @@
         "title": "Porsche - 356 B/C & 912 - Valve Spring - 61610543203"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-02T06:50:43.867670+00:00",
+    "total_skus": 5661,
+    "in_stock": 4440,
+    "out_of_stock": 968,
+    "not_found": 253,
+    "newly_in_stock": 19,
+    "newly_out_of_stock": 27,
+    "updated": 5408,
+    "skipped": 253,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "2554",
+        "title": "Porsche 968 / 964 / 928 / 944 Ignition Coil 94460211501"
+      },
+      {
+        "sku": "6988",
+        "title": "Porsche 911 912 924 924S 944 928 968 Wheel Hub Clamp Nut 1x partworks 91134167300"
+      },
+      {
+        "sku": "7721",
+        "title": "Porsche 911 924 928 944 968 Wheel Hub Clamp Nuts 2x partworks 91134167300"
+      },
+      {
+        "sku": "17669",
+        "title": "Porsche 924 944 924S Headlights 1x Porsche 94463191000"
+      },
+      {
+        "sku": "4640",
+        "title": "Porsche 996 997 Boxster 986 987 Fuel Filler Flap Hinge 1x partworks 99720106300"
+      },
+      {
+        "sku": "9525",
+        "title": "Porsche 986 987 Stabilizer Bushing 1x partworks 99633379228"
+      },
+      {
+        "sku": "7048",
+        "title": "Porsche 986 987 Boxster Cayman Stabiliser Bushings 2x partworks 99633379228"
+      },
+      {
+        "sku": "4657",
+        "title": "Porsche Boxster 986 Convertible Top Tension Cable 1x partworks 98656119103"
+      },
+      {
+        "sku": "8889",
+        "title": "Porsche 986 Boxster Convertible Top Tension Cables 2x partworks 98656119102"
+      },
+      {
+        "sku": "8512",
+        "title": "Porsche 911 914 964 993 Timing Chains 2x IWIS 91110552951"
+      },
+      {
+        "sku": "8546",
+        "title": "Porsche 911 914-6 Air Filter 1x Hengst 90110895511"
+      },
+      {
+        "sku": "3742",
+        "title": "Porsche 911 912 914 914-6 Clutch Pressure Plate 1x ZF Sachs Performance 90111601702"
+      },
+      {
+        "sku": "5101",
+        "title": "Porsche 911 911S Clutch Kit 1x ZF Sachs 91511600127"
+      },
+      {
+        "sku": "5823",
+        "title": "Porsche 911 914 Flasher Relay 1x partworks 91461830312"
+      },
+      {
+        "sku": "9515",
+        "title": "Porsche 911 914 964 993 Throttle Linkage Bearing Bushing 1x partworks 90142325300"
+      },
+      {
+        "sku": "4720",
+        "title": "Porsche 911 914 964 993 Throttle Linkage Bearing Bushings 2x partworks 90142325300"
+      },
+      {
+        "sku": "969",
+        "title": "Porsche 911 914 Windscreen Wiper Arm 1x partworks 90162801320"
+      },
+      {
+        "sku": "7158",
+        "title": "Porsche 911 914 Wiper Arms 2x partworks 91462831310"
+      },
+      {
+        "sku": "909",
+        "title": "Porsche - 356 B/C & 912 - Valve Spring - 61610543203"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "8670",
+        "title": "Porsche 924S 944 2.5 CUP MOTORSPORT Cylinder Head Gasket Set 94410090100"
+      },
+      {
+        "sku": "5414",
+        "title": "Porsche 944 Turbo / 968 V-belt Alternator 99919229051"
+      },
+      {
+        "sku": "5634",
+        "title": "Porsche 944 Turbo / 928 Distributor Rotor 94460290101"
+      },
+      {
+        "sku": "7120",
+        "title": "Porsche 924 944 928 Distributor Cap and Rotor 1x partworks 94460290101"
+      },
+      {
+        "sku": "5151",
+        "title": "Porsche 924S 944 Timing Belt 1x Continental 94410515704"
+      },
+      {
+        "sku": "17488",
+        "title": "Porsche 944 968 Air Filter Grille Cover 1x Porsche 94457210400"
+      },
+      {
+        "sku": "2680",
+        "title": "Porsche 924 944 968 924S 944 Turbo 968 Rear Axle Thrust Bearing 1x partworks 95133308832"
+      },
+      {
+        "sku": "16125",
+        "title": "Porsche 924 944 Brake Caliper 1x Porsche 94435242900"
+      },
+      {
+        "sku": "3322",
+        "title": "Porsche 944 Glove Box Light 1x Porsche 94463211300"
+      },
+      {
+        "sku": "8717",
+        "title": "Porsche 924 944 964 968 Cable Ties 10x partworks 443971850A"
+      },
+      {
+        "sku": "9020",
+        "title": "Porsche 924 944 968 964 Cable Tie 1x partworks 443971850A"
+      },
+      {
+        "sku": "8041",
+        "title": "Porsche 924 944 964 968 Cable Ties 3x partworks 443971850A"
+      },
+      {
+        "sku": "17029",
+        "title": "Porsche 911 928 944 968 964 993 Antenna Amplifier 1x Porsche 96464517302"
+      },
+      {
+        "sku": "1099",
+        "title": "Porsche 944 Digital Clock 1x Porsche 94464121300"
+      },
+      {
+        "sku": "17136",
+        "title": "Porsche 911 964 993 996 997 Oil Level Sensor Gasket 1x Porsche 99320722600"
+      },
+      {
+        "sku": "17361",
+        "title": "Porsche Timing Chain Tensioner 996 Carrera & 986 Boxster \u2013 99610518059"
+      },
+      {
+        "sku": "8690",
+        "title": "Porsche 964 993 Distributor Cap and Rotor 2x partworks 93060290201"
+      },
+      {
+        "sku": "15577",
+        "title": "Porsche 911 Alternator Voltage Regulator 1x Beru 91160390100"
+      },
+      {
+        "sku": "9440",
+        "title": "Porsche 911 912 914 Stabilizer Lever 1x partworks 90134371301"
+      },
+      {
+        "sku": "17444",
+        "title": "Porsche 911 912 914 Steering Rod Bearing Bracket 1x Porsche 90134722101"
+      },
+      {
+        "sku": "5611",
+        "title": "Porsche 356 911 912 Brake Hose 1x FTE 69535263102"
+      },
+      {
+        "sku": "14900",
+        "title": "Porsche 911 912 914 Air Hose Blower 1x Porsche 91457212310"
+      },
+      {
+        "sku": "3867",
+        "title": "Porsche 356 911 912 914-6 Throttle Linkage Bushings 2x partworks 91442321100"
+      },
+      {
+        "sku": "1207",
+        "title": "Porsche 356 911 Wing Mirror 1x partworks 64473111111"
+      },
+      {
+        "sku": "15148",
+        "title": "Porsche 911 930 Gearshift Rod Repair Kit 1x partworks 42402000"
+      },
+      {
+        "sku": "1548",
+        "title": "Porsche 911 Shift Spring 1x partworks 91142412402"
+      },
+      {
+        "sku": "4090",
+        "title": "Porsche 356 911 912 914 Gear Shift Boot 1x partworks 91442490100"
+      }
+    ]
   }
 ]
