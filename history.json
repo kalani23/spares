@@ -6199,5 +6199,137 @@
         "title": "Porsche 911 Ignition Timing Sticker 1x Porsche 91100650800"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-05T06:51:48.943443+00:00",
+    "total_skus": 5661,
+    "in_stock": 4462,
+    "out_of_stock": 945,
+    "not_found": 254,
+    "newly_in_stock": 17,
+    "newly_out_of_stock": 12,
+    "updated": 5407,
+    "skipped": 254,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "8476",
+        "title": "Porsche 924S 944 2.5 2.7 Air Intake Boot Hose Throttle Body Intake 94411035804"
+      },
+      {
+        "sku": "6577",
+        "title": "Porsche 911 Turbo 924 944 Wheel Bolts 10x partworks 91134167100"
+      },
+      {
+        "sku": "4566",
+        "title": "Porsche 911 Turbo 924 944 Wheel Bolt 1x partworks 91133167104"
+      },
+      {
+        "sku": "17360",
+        "title": "Porsche 996 997 Boxster 986 987 Cayman 987C Chain Tensioner 1x Porsche 99610518058"
+      },
+      {
+        "sku": "15313",
+        "title": "Porsche 996 997 Boxster 986 987 981 Rear CV Joint Boot 1x GKN 99633229300"
+      },
+      {
+        "sku": "2594",
+        "title": "Porsche 996 997 Boxster 986 987 981 CV Joint Boots 2x GKN 99633229300"
+      },
+      {
+        "sku": "2595",
+        "title": "Porsche 996 997 Boxster 986 987 981 CV Joint Boots 4x GKN 99633229300"
+      },
+      {
+        "sku": "3580",
+        "title": "Porsche Boxster Engine Gasket Set 1x partworks 98610090500"
+      },
+      {
+        "sku": "8218",
+        "title": "Porsche 911 911 Turbo Oil Line 1x partworks 91110773011"
+      },
+      {
+        "sku": "9231",
+        "title": "Porsche 911 Brake Disc 1x Sebro 90135204114"
+      },
+      {
+        "sku": "7099",
+        "title": "Porsche 911 Brake Discs 2x Sebro 90135204114"
+      },
+      {
+        "sku": "8884",
+        "title": "Porsche 911 928 964 993 Horns High-Tone Low-Tone 2x partworks 91163510121"
+      },
+      {
+        "sku": "4520",
+        "title": "Porsche 911 928 964 993 Low-Tone Horn 1x partworks 91163510221"
+      },
+      {
+        "sku": "4474",
+        "title": "Porsche 911 911 Turbo Bumper Protection Strip 1x partworks 91150544701"
+      },
+      {
+        "sku": "2499",
+        "title": "Porsche 911 930 911 Turbo Front Bumper Protection Strips 1x partworks 91150544701"
+      },
+      {
+        "sku": "8929",
+        "title": "Porsche 911 911 Turbo Brake Discs and Pads Set 1x partworks 91135295005"
+      },
+      {
+        "sku": "7984",
+        "title": "Porsche 911 914 964 993 Soundproofing Mat 1x partworks 91455613510"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "14682",
+        "title": "Porsche Camshaft Timing Belt Original 94410515704"
+      },
+      {
+        "sku": "17157",
+        "title": "Porsche 911 924 928 944 Throttle Position Switch 1x Porsche 94460611301"
+      },
+      {
+        "sku": "14782",
+        "title": "Porsche 911 944 968 Brake Caliper Repair Kit 1x Porsche 95135191911"
+      },
+      {
+        "sku": "6697",
+        "title": "Porsche 996 Boxster 986 Spark Plug Sleeve 1x Febi 99970721540"
+      },
+      {
+        "sku": "17556",
+        "title": "Porsche 911 996 997 Oil Level Sensor 1x Porsche 99660614002"
+      },
+      {
+        "sku": "16477",
+        "title": "Porsche 986 987 996 997 Crankcase Oil Separator 1x partworks 99610708054"
+      },
+      {
+        "sku": "4070",
+        "title": "Porsche 911 911S Bumper Horns 2x partworks 90150503326"
+      },
+      {
+        "sku": "8409",
+        "title": "Porsche 911 Rear CV Joint Boot 1x GKN 92333203700"
+      },
+      {
+        "sku": "8410",
+        "title": "Porsche 911 SC Carrera Rear Axle Boots 2x GKN 92333203700"
+      },
+      {
+        "sku": "7466",
+        "title": "Porsche 911 930 911 G Turbo Brake Caliper Seals 4x partworks 93035255400"
+      },
+      {
+        "sku": "17390",
+        "title": "Porsche 911 Ventilation Slider Knob 1x Porsche 9116131390101C"
+      },
+      {
+        "sku": "4402",
+        "title": "Porsche - 356 & 912 - Stainless Steel Pushrod Tube - PCG10523101"
+      }
+    ]
   }
 ]
