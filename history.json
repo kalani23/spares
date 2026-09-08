@@ -6331,5 +6331,153 @@
         "title": "Porsche - 356 & 912 - Stainless Steel Pushrod Tube - PCG10523101"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-08T07:38:40.292120+00:00",
+    "total_skus": 5661,
+    "in_stock": 4439,
+    "out_of_stock": 968,
+    "not_found": 254,
+    "newly_in_stock": 5,
+    "newly_out_of_stock": 28,
+    "updated": 5407,
+    "skipped": 254,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "8601",
+        "title": "Porsche 924 924S 944 Shock Absorbers 2x ZF Sachs 94434303112"
+      },
+      {
+        "sku": "8358",
+        "title": "Porsche 911 Exhaust Pre-Silencer Pipe 1x JP - Dansk 93011118301"
+      },
+      {
+        "sku": "18135",
+        "title": "Porsche 356 911 912 914 Horn Tweeters 2x Bosch"
+      },
+      {
+        "sku": "4070",
+        "title": "Porsche 911 911S Bumper Horns 2x partworks 90150503326"
+      },
+      {
+        "sku": "1715",
+        "title": "Porsche 911 914 924 Shift Rod Coupling Bushings 2x Powerflex 96442422301"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "14208",
+        "title": "Porsche 911 924 944 928 968 Wheel Spacers 2x SCC 5x130"
+      },
+      {
+        "sku": "15232",
+        "title": "Porsche 928 944 968 993 964 Brake Pad Guide Plate 1x partworks 99335295900"
+      },
+      {
+        "sku": "15224",
+        "title": "Porsche 911 928 944 968 993 Repair Kit Spring Plate 1x partworks 99335295901"
+      },
+      {
+        "sku": "17392",
+        "title": "Porsche 944 968 Door Lock Knob 1x Porsche 9445553590101C"
+      },
+      {
+        "sku": "7180",
+        "title": "Porsche 996 997 Lambda Sensors 2x Bosch 99660617802"
+      },
+      {
+        "sku": "5326",
+        "title": "Porsche 996 997 Carrera Lambda Sensor 1x Bosch 99660616802"
+      },
+      {
+        "sku": "5494",
+        "title": "Porsche 996 997 986 987 Idler Pulley 1x Febi 99610211958"
+      },
+      {
+        "sku": "7622",
+        "title": "Porsche 996 997 Gearbox Mount 1x Porsche 99737503303"
+      },
+      {
+        "sku": "14870",
+        "title": "Porsche 996 986 Synchronizer Body 1x Porsche 99630406103"
+      },
+      {
+        "sku": "17829",
+        "title": "Porsche 996 Boxster Synchroniser Ring 1x Porsche 99630461100"
+      },
+      {
+        "sku": "5696",
+        "title": "Porsche 996 997 Boxster 986 987 Cayman Cabin Air Filter 1x Mann-Filter 99757121902"
+      },
+      {
+        "sku": "3716",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Air Conditioning Compressor 1x Mahle-Behr 99612601152"
+      },
+      {
+        "sku": "8975",
+        "title": "Porsche Boxster 986 Hardtop Mounting Kit 1x partworks 99921904100"
+      },
+      {
+        "sku": "5084",
+        "title": "Porsche 911 911S 911SC Engine Mount 1x partworks 91137504300"
+      },
+      {
+        "sku": "8533",
+        "title": "Porsche 911 Fuel Injection Line 1x partworks 91111009314"
+      },
+      {
+        "sku": "7532",
+        "title": "Porsche 911 911S 911SC Engine & Transmission Mounts 2x partworks 91137504306"
+      },
+      {
+        "sku": "8471",
+        "title": "Porsche 911 Transmission Gasket Set 1x Elring 91530091101"
+      },
+      {
+        "sku": "16461",
+        "title": "Porsche 911 Gearbox Planetary Gear Set 1x partworks 91530291116"
+      },
+      {
+        "sku": "5101",
+        "title": "Porsche 911 911S Clutch Kit 1x ZF Sachs 91511600127"
+      },
+      {
+        "sku": "4467",
+        "title": "Porsche 911 Starter Ring Gear 1x partworks 91111623904"
+      },
+      {
+        "sku": "8739",
+        "title": "Porsche 911 Rear Brake Caliper Seal Kit 1x ATE 91135295100"
+      },
+      {
+        "sku": "7841",
+        "title": "Porsche 911 964 993 Interior Light 1x Hella 90163210129"
+      },
+      {
+        "sku": "3201",
+        "title": "Porsche 356 911 964 993 Interior Lights 2x Hella 90163210129"
+      },
+      {
+        "sku": "5131",
+        "title": "Porsche 911 Window Regulator Motor 1x partworks 91162401502"
+      },
+      {
+        "sku": "5132",
+        "title": "Porsche 911 Window Regulator Motors 2x partworks 91162401502"
+      },
+      {
+        "sku": "1671",
+        "title": "Porsche 911 Heater Air Intake 1x Porsche 93010632601"
+      },
+      {
+        "sku": "18141",
+        "title": "Porsche 911 Drive Shaft Joint Set 1x GKN 92333203200"
+      },
+      {
+        "sku": "16389",
+        "title": "Porsche 911 Brake Line 1x partworks 91135560500"
+      }
+    ]
   }
 ]
