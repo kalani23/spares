@@ -6479,5 +6479,113 @@
         "title": "Porsche 911 Brake Line 1x partworks 91135560500"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-09T07:13:21.840015+00:00",
+    "total_skus": 5661,
+    "in_stock": 4454,
+    "out_of_stock": 953,
+    "not_found": 254,
+    "newly_in_stock": 19,
+    "newly_out_of_stock": 4,
+    "updated": 5407,
+    "skipped": 254,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "16475",
+        "title": "Porsche 944 S2 Intake Camshaft 94410527707"
+      },
+      {
+        "sku": "16477",
+        "title": "Porsche 986 987 996 997 Crankcase Oil Separator 1x partworks 99610708054"
+      },
+      {
+        "sku": "3358",
+        "title": "Porsche 911 964 993 996 997 Clutch Release Shaft Bearing Set 1x partworks 95011671004"
+      },
+      {
+        "sku": "6984",
+        "title": "Porsche 911 Heater Hose 1x partworks 91110815100"
+      },
+      {
+        "sku": "8525",
+        "title": "Porsche 911 Fuel Injector Lines 6x partworks 91111009314"
+      },
+      {
+        "sku": "14759",
+        "title": "Porsche 911 Fuel Pump 1x partworks 90160810505"
+      },
+      {
+        "sku": "8533",
+        "title": "Porsche 911 Fuel Injection Line 1x partworks 91111009314"
+      },
+      {
+        "sku": "7974",
+        "title": "Porsche 911 914 924 928 964 Differential Screws 12x partworks 92833227603"
+      },
+      {
+        "sku": "3206",
+        "title": "Porsche 911 914 924 Locking Plates and Screws 6x partworks 90133228501"
+      },
+      {
+        "sku": "4467",
+        "title": "Porsche 911 Starter Ring Gear 1x partworks 91111623904"
+      },
+      {
+        "sku": "9440",
+        "title": "Porsche 911 912 914 Stabilizer Lever 1x partworks 90134371301"
+      },
+      {
+        "sku": "3867",
+        "title": "Porsche 356 911 912 914-6 Throttle Linkage Bushings 2x partworks 91442321100"
+      },
+      {
+        "sku": "7819",
+        "title": "Porsche 911 964 Door Channel Seal 1x partworks 90153193620"
+      },
+      {
+        "sku": "4418",
+        "title": "Porsche 911 912 Bumper Seals 2x partworks 90150509220"
+      },
+      {
+        "sku": "16417",
+        "title": "Porsche 911 SC Fuel Pump Pressure Line 1x partworks 91135606616"
+      },
+      {
+        "sku": "3613",
+        "title": "Porsche 911 Shift Sleeve 1x partworks 93030290106"
+      },
+      {
+        "sku": "4402",
+        "title": "Porsche - 356 & 912 - Stainless Steel Pushrod Tube - PCG10523101"
+      },
+      {
+        "sku": "6972",
+        "title": "Porsche - 356 & 912 - Flywheel Pilot Bearing Banjo Bolt - 61610202501"
+      },
+      {
+        "sku": "16385",
+        "title": "Porsche - 356 - Fuel Tank Reserve Selector Tap - 64420102107"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "6264",
+        "title": "Porsche 944 Turbo Thermostat 1x Mahle-Behr 95110631100"
+      },
+      {
+        "sku": "3155",
+        "title": "Porsche 924 944 968 Trunk Carpet Clips 12x Porsche 47786374701C"
+      },
+      {
+        "sku": "17636",
+        "title": "Porsche 993 (1994-1998) Genuine Porsche Mirror Adjustment Switch 9936132410001C"
+      },
+      {
+        "sku": "6378",
+        "title": "Porsche 996 Boxster 986 Fuel Tank Vent Valve 1x Pierburg 99660520101"
+      }
+    ]
   }
 ]
