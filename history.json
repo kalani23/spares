@@ -6587,5 +6587,213 @@
         "title": "Porsche 996 Boxster 986 Fuel Tank Vent Valve 1x Pierburg 99660520101"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-10T07:03:39.361343+00:00",
+    "total_skus": 5661,
+    "in_stock": 4476,
+    "out_of_stock": 931,
+    "not_found": 254,
+    "newly_in_stock": 35,
+    "newly_out_of_stock": 13,
+    "updated": 5407,
+    "skipped": 254,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "5634",
+        "title": "Porsche 944 Turbo / 928 Distributor Rotor 94460290101"
+      },
+      {
+        "sku": "7120",
+        "title": "Porsche 924 944 928 Distributor Cap and Rotor 1x partworks 94460290101"
+      },
+      {
+        "sku": "10032",
+        "title": "Porsche 944 944 Turbo Vacuum Hose 1x partworks 95111022100"
+      },
+      {
+        "sku": "9716",
+        "title": "Porsche 944 968 Stabiliser Bushing 1x partworks 95134379330"
+      },
+      {
+        "sku": "5715",
+        "title": "Porsche 944 968 Stabiliser Bushings 2x partworks 95134379330"
+      },
+      {
+        "sku": "7371",
+        "title": "Porsche 993 996 997 Connecting Rod Bolts and Nuts 12x partworks 99310317403"
+      },
+      {
+        "sku": "4562",
+        "title": "Porsche 993 996 997 Connecting Rod Bolt 1x partworks 99610317670"
+      },
+      {
+        "sku": "18197",
+        "title": "Porsche 996 986 Crankcase Ventilation Connector 1x partworks 99610704751"
+      },
+      {
+        "sku": "15165",
+        "title": "Porsche 986 996 Fuel Pump Relay 1x partworks 99661510100"
+      },
+      {
+        "sku": "3412",
+        "title": "Porsche 911 964 993 996 Cylindrical Roller Bearings 1x partworks 99911011701"
+      },
+      {
+        "sku": "15163",
+        "title": "Porsche 996 986 Carrera 2/4 Boxster S Cylindrical Roller Bearings 2x partworks 99630180601"
+      },
+      {
+        "sku": "1234",
+        "title": "Porsche 996 986 Axle Strut Control Arm 2x Porsche 99733104302"
+      },
+      {
+        "sku": "1231",
+        "title": "Porsche 996 986 Control Arm 1x Porsche 99733104302"
+      },
+      {
+        "sku": "3095",
+        "title": "Porsche 996 Rear Control Arms and Struts 10x Porsche Originalteil 99733104505"
+      },
+      {
+        "sku": "16510",
+        "title": "Porsche 968 986 Boxster Synchroniser Ring 1x partworks 012311295F"
+      },
+      {
+        "sku": "10116",
+        "title": "Porsche 911 Intake Valve 1x partworks 90110540104"
+      },
+      {
+        "sku": "7796",
+        "title": "Porsche 911 914-6 Camshaft Nut 1x partworks 90110517200"
+      },
+      {
+        "sku": "16436",
+        "title": "Porsche 911 Throttle Linkage 1x partworks 91142304300"
+      },
+      {
+        "sku": "16435",
+        "title": "Porsche 911 Throttle Linkage 1x partworks 91142301600"
+      },
+      {
+        "sku": "8471",
+        "title": "Porsche 911 Transmission Gasket Set 1x Elring 91530091101"
+      },
+      {
+        "sku": "3615",
+        "title": "Porsche 911 914 914-6 Shift Sleeve 1x partworks 91130241110"
+      },
+      {
+        "sku": "3612",
+        "title": "Porsche 911 Shift Sleeve 1x partworks 91530241100"
+      },
+      {
+        "sku": "7971",
+        "title": "Porsche 911 Release Fork 1x partworks 91511671203"
+      },
+      {
+        "sku": "7190",
+        "title": "Porsche 911 911 Turbo 964 Headlight Seal 1x partworks 91163111502"
+      },
+      {
+        "sku": "8814",
+        "title": "Porsche 911 911 Turbo 964 Headlight Seals 2x partworks 91163111502"
+      },
+      {
+        "sku": "4515",
+        "title": "Porsche 911 914 Windshield Washer Nozzle 1x partworks 90162874120"
+      },
+      {
+        "sku": "8882",
+        "title": "Porsche 911 912 Windshield Washer Nozzles 2x partworks 64462874102"
+      },
+      {
+        "sku": "4205",
+        "title": "Porsche 911 912 930 A-Lever Floor Panels 2x partworks 90150142720"
+      },
+      {
+        "sku": "9304",
+        "title": "Porsche 911 912 930 Turbo Upper Front Wishbone 1x partworks 90150142720"
+      },
+      {
+        "sku": "4543",
+        "title": "Porsche 911 911S 930 Turbo Workshop Manual 1x Porsche WKD422320"
+      },
+      {
+        "sku": "15196",
+        "title": "Porsche 911 911 Turbo Shift Rod Coupling 1x partworks 91142402404"
+      },
+      {
+        "sku": "16517",
+        "title": "Porsche 911 930 914 Throttle Linkage Lever 1x partworks 90142325002"
+      },
+      {
+        "sku": "4054",
+        "title": "Porsche 911 Bumper Protection Strips 2x partworks 91150509901"
+      },
+      {
+        "sku": "4055",
+        "title": "Porsche 911 Bumper Protection Strips 2x partworks 91150509904"
+      },
+      {
+        "sku": "4423",
+        "title": "Porsche 911 Bumper Protection Strip 1x partworks 91150510001"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "17898",
+        "title": "Porsche 911 924 928 944 924S 968 Headlight Range Control Valve 1x Porsche 92853736102"
+      },
+      {
+        "sku": "5331",
+        "title": "Porsche 993 996 Lambda Sensor 1x Bosch 99360611801"
+      },
+      {
+        "sku": "17360",
+        "title": "Porsche 996 997 Boxster 986 987 Cayman 987C Chain Tensioner 1x Porsche 99610518058"
+      },
+      {
+        "sku": "6948",
+        "title": "Porsche 996 986 Tie Rod End Joints 2x ZF - Lemf\u00f6rder 99634732203"
+      },
+      {
+        "sku": "1591",
+        "title": "Porsche 996 986 Axial Joints Tie Rods 2x ZF - Lemf\u00f6rder 99634713105"
+      },
+      {
+        "sku": "1588",
+        "title": "Porsche 996 Boxster 986 Steering Gear and Tie Rod Set 1x partworks 99634701111"
+      },
+      {
+        "sku": "10186",
+        "title": "Porsche 996 986 Steering Gear 1x Porsche 99634701111"
+      },
+      {
+        "sku": "14673",
+        "title": "Porsche 911 Alternator V-Belt 1x Porsche 99919209750"
+      },
+      {
+        "sku": "7951",
+        "title": "Porsche 911 914-6 Mechanical Timing Chain Tensioner 1x partworks 93010505304"
+      },
+      {
+        "sku": "8460",
+        "title": "Porsche 911 Fuel Pressure Accumulator 1x Bosch 91111019733"
+      },
+      {
+        "sku": "18135",
+        "title": "Porsche 356 911 912 914 Horn Tweeters 2x Bosch"
+      },
+      {
+        "sku": "3275",
+        "title": "Porsche 911 Rear Bumper Trim Strips 2x partworks 90150504650"
+      },
+      {
+        "sku": "5061",
+        "title": "Porsche 356 911 911F 911G Shock Absorber Bump Stops 4x partworks 91133352100"
+      }
+    ]
   }
 ]
