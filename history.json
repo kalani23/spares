@@ -7211,5 +7211,36 @@
         "title": "Porsche Alternator V-belt ORIGINAL Porsche 964 C2 Tiptronic 993 turbo fan"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-14T07:27:13.250448+00:00",
+    "total_skus": 5712,
+    "in_stock": 4507,
+    "out_of_stock": 950,
+    "not_found": 255,
+    "newly_in_stock": 0,
+    "newly_out_of_stock": 4,
+    "updated": 5457,
+    "skipped": 255,
+    "failed": 0,
+    "newly_in_stock_skus": [],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "1974",
+        "title": "Porsche 996 Carrera 4 Shock Absorbers 2x Bilstein 99634304339"
+      },
+      {
+        "sku": "15308",
+        "title": "Porsche 996 997 Targa Gas Springs Tailgate 2x Stabilus 99756242900"
+      },
+      {
+        "sku": "15327",
+        "title": "Porsche 996 997 Targa Gas Spring 1x Stabilus 99756243000"
+      },
+      {
+        "sku": "4640",
+        "title": "Porsche 996 997 Boxster 986 987 Fuel Filler Flap Hinge 1x partworks 99720106300"
+      }
+    ]
   }
 ]
