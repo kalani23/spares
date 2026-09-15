@@ -7242,5 +7242,109 @@
         "title": "Porsche 996 997 Boxster 986 987 Fuel Filler Flap Hinge 1x partworks 99720106300"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-15T07:10:39.688618+00:00",
+    "total_skus": 5712,
+    "in_stock": 4502,
+    "out_of_stock": 954,
+    "not_found": 256,
+    "newly_in_stock": 9,
+    "newly_out_of_stock": 13,
+    "updated": 5456,
+    "skipped": 256,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "1345",
+        "title": "Porsche 924 944 924S Coolant Expansion Tank 1x Porsche 94410612506"
+      },
+      {
+        "sku": "12839",
+        "title": "Porsche 996 Boxster 986 987 Crankshaft Bearings Pierburg"
+      },
+      {
+        "sku": "5229",
+        "title": "Porsche 911 914-6 Heat Exchanger Gasket 1x Reinz 91111319001"
+      },
+      {
+        "sku": "7352",
+        "title": "Porsche 911 914-6 Heat Exchanger Gaskets 6x Reinz 91111319001"
+      },
+      {
+        "sku": "5611",
+        "title": "Porsche 356 911 912 Brake Hose 1x FTE 69535263102"
+      },
+      {
+        "sku": "21033",
+        "title": "Porsche 911 914 928 Windshield Washer Pump Plugs 3x partworks 91462874100"
+      },
+      {
+        "sku": "4090",
+        "title": "Porsche 356 911 912 914 Gear Shift Boot 1x partworks 91442490100"
+      },
+      {
+        "sku": "7361",
+        "title": "Porsche 911 930 Turbo Heat Exchangers 2x JP - Dansk 91111319001"
+      },
+      {
+        "sku": "7362",
+        "title": "Porsche 911 930 Heat Exchangers 2x JP - Dansk 91111319001"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5862",
+        "title": "Porsche 944 Inspection Kit 1x partworks 92811025307"
+      },
+      {
+        "sku": "5858",
+        "title": "Porsche 944 Inspection Kit 1x partworks 92811025307"
+      },
+      {
+        "sku": "5861",
+        "title": "Porsche 944 944 Turbo Inspection Kit 1x partworks 92811025307"
+      },
+      {
+        "sku": "5621",
+        "title": "Porsche 924S 944 968 Oil Filter 1x Mann-Filter 94410720111"
+      },
+      {
+        "sku": "8691",
+        "title": "Porsche 924 Turbo 931 (1979-1982) Victor Reinz Complete Engine Gasket Set 93110090100"
+      },
+      {
+        "sku": "8559",
+        "title": "Porsche 924 2.0 / 924 Turbo 931 Victor Reinz Crankcase Gasket Set 060198011"
+      },
+      {
+        "sku": "1702",
+        "title": "Porsche 996 996 Turbo GT2 Turbocharger Intake Manifold 1x Porsche 99610733874"
+      },
+      {
+        "sku": "1234",
+        "title": "Porsche 996 986 Axle Strut Control Arm 2x Porsche 99733104302"
+      },
+      {
+        "sku": "1231",
+        "title": "Porsche 996 986 Control Arm 1x Porsche 99733104302"
+      },
+      {
+        "sku": "3095",
+        "title": "Porsche 996 Rear Control Arms and Struts 10x Porsche Originalteil 99733104505"
+      },
+      {
+        "sku": "12884",
+        "title": "Porsche 996 997 Boxster 986 987 Wiper Blades 2x Valeo 99662890111"
+      },
+      {
+        "sku": "16590",
+        "title": "Porsche 911 911S 911 Turbo Oil Line 1x partworks 91110773011"
+      },
+      {
+        "sku": "8545",
+        "title": "Porsche 911 Air Filter 1x Mahle 91111018502"
+      }
+    ]
   }
 ]
