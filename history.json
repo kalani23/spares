@@ -7346,5 +7346,277 @@
         "title": "Porsche 911 Air Filter 1x Mahle 91111018502"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-16T07:12:56.882736+00:00",
+    "total_skus": 5828,
+    "in_stock": 4616,
+    "out_of_stock": 957,
+    "not_found": 255,
+    "newly_in_stock": 118,
+    "newly_out_of_stock": 14,
+    "updated": 5573,
+    "skipped": 255,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "3346",
+        "title": "Porsche 924S 944 2.5 928 S 4.7 4x Inlet Valve 92810540902"
+      },
+      {
+        "sku": "3653",
+        "title": "Porsche 924S 944 2.5 928 S 4.7 Inlet Valve 92810540902"
+      },
+      {
+        "sku": "17157",
+        "title": "Porsche 911 924 928 944 Throttle Position Switch 1x Porsche 94460611301"
+      },
+      {
+        "sku": "3282",
+        "title": "Porsche 924 924S 944 CV Joint Kits 4x GKN 94433190100"
+      },
+      {
+        "sku": "4640",
+        "title": "Porsche 996 997 Boxster 986 987 Fuel Filler Flap Hinge 1x partworks 99720106300"
+      },
+      {
+        "sku": "4622",
+        "title": "Porsche 996 Boxster 986 Clutch Pedal Servo Spring 1x partworks 99642308119"
+      },
+      {
+        "sku": "5937",
+        "title": "Porsche 911 911S Steering Column Switch Cover 1x partworks 91161309900"
+      },
+      {
+        "sku": "5952",
+        "title": "Porsche 911 911S Steering Column Switch Cover 1x partworks 91161331200"
+      },
+      {
+        "sku": "15560",
+        "title": "Porsche 911 Ignition Timing Sticker 1x Porsche 91100650800"
+      },
+      {
+        "sku": "8409",
+        "title": "Porsche 911 Rear CV Joint Boot 1x GKN 92333203700"
+      },
+      {
+        "sku": "8410",
+        "title": "Porsche 911 SC Carrera Rear Axle Boots 2x GKN 92333203700"
+      },
+      {
+        "sku": "1405",
+        "title": "Porsche 928 Bonnet Insulation Mat Set 92855624102"
+      },
+      {
+        "sku": "15266",
+        "title": "Porsche 993 1994-97 Valve Spring Set of 12 99310590154 partworks"
+      },
+      {
+        "sku": "3850",
+        "title": "Porsche 964 993 1988-97 18x O-rings for timing chain cover 96410514001 Federal-Mogul Payen"
+      },
+      {
+        "sku": "8835",
+        "title": "Porsche 964 993 1988-97 18x Pressure Washer 96410544500 partworks"
+      },
+      {
+        "sku": "7054",
+        "title": "Porsche 993 1994-95 1x exhaust valve 99310541901 SM Motorenteile"
+      },
+      {
+        "sku": "7055",
+        "title": "Porsche 993 1995-97 1x Exhaust valve 99310541984 partworks"
+      },
+      {
+        "sku": "7034",
+        "title": "Porsche 964 993 1988-97 1x Pressure washer for timing chain case 96410544500 partworks"
+      },
+      {
+        "sku": "7053",
+        "title": "Porsche 993 1994-97 1x Intake valve 99310540902 SM Motorenteile"
+      },
+      {
+        "sku": "7052",
+        "title": "Porsche 993 1995-97 1x inlet valve 99310540502 SM Motorenteile"
+      },
+      {
+        "sku": "15035",
+        "title": "Porsche 993 1994-97 1x Vent Hose 99320714903 partworks"
+      },
+      {
+        "sku": "5095",
+        "title": "Porsche 993 1993-97 1x Hydraulic Tappet 99310514107 INA"
+      },
+      {
+        "sku": "5013",
+        "title": "Porsche 993 1995-97 1x Hydraulic Tappet ORIGINAL 99310514106 Porsche"
+      },
+      {
+        "sku": "3701",
+        "title": "Porsche 993 1994-97 1x Piston + Cylinder 99310391531 MAHLE"
+      },
+      {
+        "sku": "14637",
+        "title": "Porsche 993 1995-97 1x piston + cylinder 99310391556 MAHLE"
+      },
+      {
+        "sku": "6617",
+        "title": "Porsche 993 1994-97 1x Piston Rings 99310392507 MAHLE"
+      },
+      {
+        "sku": "12847",
+        "title": "Porsche 993 1995-97 1x piston rings 99310392540 Federal-Mogul Goetze"
+      },
+      {
+        "sku": "14562",
+        "title": "Porsche 993 1995-97 1x Alternator Pulley 99310626802 partworks"
+      },
+      {
+        "sku": "15202",
+        "title": "Porsche 993 1994-97 1x Cylinder Head Stud 99310117203 partworks"
+      },
+      {
+        "sku": "15154",
+        "title": "Porsche 993 1994-97 1x Valve Spring Set 99310590154 partworks"
+      },
+      {
+        "sku": "12867",
+        "title": "Porsche 993 1994-97 1x Valve stem seal 99310411102 Elring"
+      },
+      {
+        "sku": "7059",
+        "title": "Porsche 964 993 1988-97 4x Guide Rail + Tensioner Rail Timing Chain 96410502900 partworks"
+      },
+      {
+        "sku": "7386",
+        "title": "Porsche 993 1994-95 6x exhaust valve 99310541901 SM Motorenteile"
+      },
+      {
+        "sku": "7387",
+        "title": "Porsche 993 1995-97 6x Exhaust Valve 99310541984 partworks"
+      },
+      {
+        "sku": "7385",
+        "title": "Porsche 993 1994-97 6x Intake Valve 99310540902 SM Motorenteile"
+      },
+      {
+        "sku": "7384",
+        "title": "Porsche 993 1995-97 6x inlet valve 99310540502 SM Motorenteile"
+      },
+      {
+        "sku": "5096",
+        "title": "Porsche 993 1993-97 6x Hydraulic Tappets 99310514107 INA"
+      },
+      {
+        "sku": "3832",
+        "title": "Porsche 993 1994-97 6x Pistons + Cylinders 99310391531 MAHLE"
+      },
+      {
+        "sku": "14638",
+        "title": "Porsche 993 1995-97 6x pistons + cylinders 99310391556 MAHLE"
+      },
+      {
+        "sku": "8826",
+        "title": "Porsche 993 1994-97 6x Piston Rings 99310392507 MAHLE"
+      },
+      {
+        "sku": "16532",
+        "title": "Porsche 993 1995-97 6x Exhaust Valve Guides 99310432161 partworks"
+      },
+      {
+        "sku": "3637",
+        "title": "Porsche 964 993 1988-97 Chain Case Sealing Ring 96410514001 partworks"
+      },
+      {
+        "sku": "7922",
+        "title": "Porsche 964 993 1988-97 Camshaft Sealing Ring 99970731340 partworks"
+      },
+      {
+        "sku": "6450",
+        "title": "Porsche 993 1994-97 Cylinder head gasket set 99310090200 Reinz"
+      },
+      {
+        "sku": "14594",
+        "title": "Porsche 993 1993-95 Vent hose 99320714301 partworks"
+      },
+      {
+        "sku": "15032",
+        "title": "Porsche 993 1994-97 Vent hose 99320714601 partworks"
+      },
+      {
+        "sku": "15034",
+        "title": "Porsche 993 1995-97 Crankcase ventilation hose 99320715002 partworks"
+      },
+      {
+        "sku": "15036",
+        "title": "Porsche 993 1994-95 Crankcase ventilation hose 99320715082 partworks"
+      },
+      {
+        "sku": "15033",
+        "title": "Porsche 993 1995-97 Oil tank vent hose 99320715102 partworks"
+      },
+      {
+        "sku": "15031",
+        "title": "Porsche 993 1994-95 Oil tank vent hose 99320715104 partworks"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5634",
+        "title": "Porsche 944 Turbo / 928 Distributor Rotor 94460290101"
+      },
+      {
+        "sku": "7120",
+        "title": "Porsche 924 944 928 Distributor Cap and Rotor 1x partworks 94460290101"
+      },
+      {
+        "sku": "11820",
+        "title": "Porsche 911 912 964 Targa Roof Locking Bolts 8x partworks 96456526501"
+      },
+      {
+        "sku": "7692",
+        "title": "Porsche 911 CV Joint Kits 4x GKN 93033203400"
+      },
+      {
+        "sku": "12893",
+        "title": "Porsche 993 1995-97 6x piston rings 99310392540 Federal-Mogul Goetze"
+      },
+      {
+        "sku": "3047",
+        "title": "Porsche 993 1994-97 Inspection kit 94410719711 partworks"
+      },
+      {
+        "sku": "3055",
+        "title": "Porsche 964 968 993 1988-97 Inspection kit 99320720103 partworks"
+      },
+      {
+        "sku": "17456",
+        "title": "Porsche 911 928 959 964 993 1977-97 Door Opener Bearing Shell 9285375850270B Porsche"
+      },
+      {
+        "sku": "3053",
+        "title": "Porsche 993 1994-97 Belt Kit 99919233851 partworks"
+      },
+      {
+        "sku": "7045",
+        "title": "Porsche 964 968 993 1988-97 Oil Cooler Temperature Sensor 96462411000 partworks"
+      },
+      {
+        "sku": "3290",
+        "title": "Porsche 993 1993-97 Valve Cover 99310513502 partworks"
+      },
+      {
+        "sku": "5108",
+        "title": "Porsche 993 1993-97 Valve Cover Gasket Set 90003101140 partworks"
+      },
+      {
+        "sku": "5107",
+        "title": "Porsche 993 1993-97 Lower Valve Cover Gasket 99310513502 partworks"
+      },
+      {
+        "sku": "2130",
+        "title": "Porsche 993 1994-97 Timing belt for power steering pump 99314718701 Gates Industrial Europe S\u00e0rl"
+      }
+    ]
   }
 ]
