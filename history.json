@@ -7618,5 +7618,421 @@
         "title": "Porsche 993 1994-97 Timing belt for power steering pump 99314718701 Gates Industrial Europe S\u00e0rl"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-18T07:06:27.966072+00:00",
+    "total_skus": 6058,
+    "in_stock": 4720,
+    "out_of_stock": 1001,
+    "not_found": 337,
+    "newly_in_stock": 129,
+    "newly_out_of_stock": 68,
+    "updated": 5721,
+    "skipped": 337,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "12864",
+        "title": "Porsche 944 968 Fan Thermal Switch 1x Metzger 95160648100"
+      },
+      {
+        "sku": "2680",
+        "title": "Porsche 924 944 968 924S 944 Turbo 968 Rear Axle Thrust Bearing 1x partworks 95133308832"
+      },
+      {
+        "sku": "12930",
+        "title": "Porsche 911 944 968 928 Brake Pads TMD - PAGID Racing 96535293905"
+      },
+      {
+        "sku": "3893",
+        "title": "Porsche 911 944 964 968 Brake Pads 1x Textar 96435193905"
+      },
+      {
+        "sku": "12906",
+        "title": "Porsche 911 928 944 968 993 Brake Pads 1x TMD - PAGID Racing 99335193905"
+      },
+      {
+        "sku": "6697",
+        "title": "Porsche 996 Boxster 986 Spark Plug Sleeve 1x Febi 99970721540"
+      },
+      {
+        "sku": "6792",
+        "title": "Porsche 996 Boxster 986 Spark Plug Sleeves 6x Febi 99970721540"
+      },
+      {
+        "sku": "1748",
+        "title": "Porsche 996 986 Spark Plug Tube Sleeves 1x partworks 99970721540"
+      },
+      {
+        "sku": "12916",
+        "title": "Porsche 996 997 Brake Pads 1x TMD - PAGID Racing 99635194913"
+      },
+      {
+        "sku": "3948",
+        "title": "Porsche 996 Boxster 986 Speedometer Display Set 1x partworks 99664110501"
+      },
+      {
+        "sku": "3978",
+        "title": "Porsche 996 Boxster 986 Speedometer Display 1x partworks 99664110501"
+      },
+      {
+        "sku": "6076",
+        "title": "Porsche 911 996 Boxster 986 Speedometer Display 1x partworks 99664110501"
+      },
+      {
+        "sku": "6078",
+        "title": "Porsche 911 996 Boxster 986 Speedometer Display 1x partworks 99664110501"
+      },
+      {
+        "sku": "15308",
+        "title": "Porsche 996 997 Targa Gas Springs Tailgate 2x Stabilus 99756242900"
+      },
+      {
+        "sku": "15327",
+        "title": "Porsche 996 997 Targa Gas Spring 1x Stabilus 99756243000"
+      },
+      {
+        "sku": "16590",
+        "title": "Porsche 911 911S 911 Turbo Oil Line 1x partworks 91110773011"
+      },
+      {
+        "sku": "1397",
+        "title": "Porsche 911 911 Turbo Front Brake System 1x partworks 91135195011"
+      },
+      {
+        "sku": "6633",
+        "title": "Porsche 911 Brake Pads 1x Textar 91135195011"
+      },
+      {
+        "sku": "8926",
+        "title": "Porsche 911 Brake Discs and Pads Set 1x partworks 91135195011"
+      },
+      {
+        "sku": "2733",
+        "title": "Porsche 911 Brake Pads & Wear Indicators 1x Textar 91135195011"
+      },
+      {
+        "sku": "2734",
+        "title": "Porsche 911 911 Turbo Brake Pads With Wear Indicators 1x Textar 93035193800"
+      },
+      {
+        "sku": "8932",
+        "title": "Porsche 911 Brake Discs, Pads & Wear Indicators 1x partworks 91135195104"
+      },
+      {
+        "sku": "8904",
+        "title": "Porsche 911 911 Turbo Brake Discs Pads Wear Indicators 2x partworks 96435193905"
+      },
+      {
+        "sku": "3341",
+        "title": "Porsche 911 G 964 993 Gas Spring Bolts 2x partworks 99916604202"
+      },
+      {
+        "sku": "7350",
+        "title": "Porsche 964 993 1988-97 Heat Exchanger Sealing Rings Set of 6 99311119500 Reinz"
+      },
+      {
+        "sku": "8991",
+        "title": "Porsche 993 1995-97 Turbocharger to Heat Exchanger Sealing Ring 94411120511 partworks"
+      },
+      {
+        "sku": "14752",
+        "title": "Porsche 993 1994-97 Oil Filler Neck Bellows 99320736350 Porsche"
+      },
+      {
+        "sku": "1265",
+        "title": "Porsche 964 993 1988-97 Engine Fan Hub with Bearing and Screws 96410605131 partworks"
+      },
+      {
+        "sku": "18862",
+        "title": "Porsche 964 993 1988-97 Engine Fan Hub with Bearing 96410605131 JP Dansk"
+      },
+      {
+        "sku": "4950",
+        "title": "Porsche 964 993 1988-97 Front Engine Oil Cooler 96420722004 partworks"
+      },
+      {
+        "sku": "1815",
+        "title": "Porsche 993 1994-97 Oil Cooler Fan Shroud 99362404100 partworks"
+      },
+      {
+        "sku": "18029",
+        "title": "Porsche 964 993 1990-97 Warm Air Duct and Oil Tank Plug 99970304450 Porsche"
+      },
+      {
+        "sku": "7388",
+        "title": "Porsche 993 1994-97 Air Filter Temperature Sensor and Rubber Sleeve 95860653000 Hella"
+      },
+      {
+        "sku": "5691",
+        "title": "Porsche 993 1993-97 Air Filter Temperature Sensor 99360611300 Hella"
+      },
+      {
+        "sku": "4773",
+        "title": "Porsche 911 964 993 1980-97 Oil Hose Connector 93011026704 Porsche"
+      },
+      {
+        "sku": "8633",
+        "title": "Porsche 964 993 1988-97 Cooling Fan Blower Resistor 99361652102 partworks"
+      },
+      {
+        "sku": "5799",
+        "title": "Porsche 964 993 1988-97 RS Specification Engine Mounts Pair 96437504900 partworks"
+      },
+      {
+        "sku": "8470",
+        "title": "Porsche 993 1995-97 Large and Small Oil Filter Set 99310720306 MAHLE"
+      },
+      {
+        "sku": "15562",
+        "title": "Porsche 964 993 1988-97 Carbon Front Strut Brace partworks"
+      },
+      {
+        "sku": "18878",
+        "title": "Porsche 356 911 912 912E 964 993 996 997 986 987 1950-2013 Oil Pan Silicone Sealant 70ml Elring"
+      },
+      {
+        "sku": "8676",
+        "title": "Porsche 964 993 1988-97 Timing Chain Tensioners Left and Right Pair 96410507901 INA"
+      },
+      {
+        "sku": "8497",
+        "title": "Porsche 964 993 1988-97 Right Timing Chain Tensioner 96410508001 INA"
+      },
+      {
+        "sku": "8496",
+        "title": "Porsche 964 993 1988-97 Left Timing Chain Tensioner 96410507901 INA"
+      },
+      {
+        "sku": "13321",
+        "title": "Porsche 993 1993-97 Washable Sport Air Filter 99311032701 K&N"
+      },
+      {
+        "sku": "8575",
+        "title": "Porsche 993 1994-97 Large Engine Oil Filter 99320720103 MAHLE"
+      },
+      {
+        "sku": "8576",
+        "title": "Porsche 993 1995-97 Small Additional Engine Oil Filter 99310720306 MAHLE"
+      },
+      {
+        "sku": "9926",
+        "title": "Porsche 928 993 1985-97 Exhaust Sealing Ring 92811124607 partworks"
+      },
+      {
+        "sku": "8127",
+        "title": "Porsche 928 993 1985-97 Exhaust Sealing Rings Pair 92811124607 partworks"
+      },
+      {
+        "sku": "7170",
+        "title": "Porsche 993 1994-97 Exhaust Tailpipe Trims Pair 99311125113 JP Dansk"
+      },
+      {
+        "sku": "7343",
+        "title": "Porsche 928 993 1977-97 Centre Exhaust Gaskets Pair 92811112702 partworks"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "14685",
+        "title": "Porsche 944 S Timing Belt Original 94410532303"
+      },
+      {
+        "sku": "9027",
+        "title": "Porsche 944 S2 928 S4 GTS Timing Chain 94410550111"
+      },
+      {
+        "sku": "17887",
+        "title": "Porsche 964 993 924 944 Valve Vent Hose 94410732400"
+      },
+      {
+        "sku": "15140",
+        "title": "Porsche 924 944 968 924S 944 Turbo Electric Sunroof Microswitch 1x partworks 94461312802"
+      },
+      {
+        "sku": "17371",
+        "title": "Porsche 911 924 928 944 968 964 993 Interior Mirror Mounting Plate 1x Porsche 477845043"
+      },
+      {
+        "sku": "6994",
+        "title": "Porsche 911 928 944 964 993 996 997 Windshield Washer Pump Seal 1x partworks 431955465B"
+      },
+      {
+        "sku": "3316",
+        "title": "Porsche 924 944 968 Door Check Straps 2x Porsche 94453760900"
+      },
+      {
+        "sku": "17875",
+        "title": "Porsche 924 944 968 Door Lock Deflection Lever 1x Porsche 94453726102"
+      },
+      {
+        "sku": "5385",
+        "title": "Porsche 996 986 Spark Plug 1x Bosch 99917020791"
+      },
+      {
+        "sku": "5271",
+        "title": "Porsche 996 986 Spark Plugs 6x Bosch 99917020791"
+      },
+      {
+        "sku": "5546",
+        "title": "Porsche 996 997 Crankcase Oil Separator 1x \u00dcRO 99610702652"
+      },
+      {
+        "sku": "14903",
+        "title": "Porsche 911 996 997 Oil Filter Housing 1x Porsche 99610702055"
+      },
+      {
+        "sku": "4943",
+        "title": "Porsche 996 997 987 Boxster Idler Pulley 1x Gates 99710211900"
+      },
+      {
+        "sku": "3945",
+        "title": "Porsche 996 Carrera 4 4S Turbo TurboS Front Shock Absorbers 2x Bilstein 99634304339"
+      },
+      {
+        "sku": "3845",
+        "title": "Porsche 996 997 Boxster 986 Cayman 987 Tie Rod Ends 2x ZF 99634713105"
+      },
+      {
+        "sku": "6558",
+        "title": "Porsche 996 997 Targa Rear Window Gas Spring 1x Stabilus 99756242900"
+      },
+      {
+        "sku": "7521",
+        "title": "Porsche 996 997 Targa Rear Window Gas Struts 2x Stabilus 99756243000"
+      },
+      {
+        "sku": "1337",
+        "title": "Porsche 911 Starter Motor 1x partworks 91160410103"
+      },
+      {
+        "sku": "6468",
+        "title": "Porsche 911 Release Bearing 1x ZF Sachs 91511608280"
+      },
+      {
+        "sku": "7631",
+        "title": "Porsche 911 912 914 Shock Absorbers 2x Bilstein 91134191309"
+      },
+      {
+        "sku": "8853",
+        "title": "Porsche 911 964 993 Sun Visor Brackets 2x JP-Dansk 96473131901"
+      },
+      {
+        "sku": "5403",
+        "title": "Porsche 911 928 Air Conditioning Compressor V-Belt 1x Continental 99919214850"
+      },
+      {
+        "sku": "7499",
+        "title": "Porsche 911 911 Turbo Brake Light Switches 2x Ate 113945515H"
+      },
+      {
+        "sku": "5289",
+        "title": "Porsche 911 911 Turbo Brake Light Switch 1x ATE 113945515H"
+      },
+      {
+        "sku": "14638",
+        "title": "Porsche 993 1995-97 6x pistons + cylinders 99310391556 MAHLE"
+      },
+      {
+        "sku": "4806",
+        "title": "Porsche 964 993 1988-97 Air Conditioning Condenser Fan 96462403503 partworks"
+      },
+      {
+        "sku": "17554",
+        "title": "Porsche 993 1994-97 Oil Hose Connector 99320725301 Porsche"
+      },
+      {
+        "sku": "17555",
+        "title": "Porsche 993 1994-97 Oil Hose Connector 99320725500 Porsche"
+      },
+      {
+        "sku": "17864",
+        "title": "Porsche 924 928 993 1975-97 Oil Thermostat 92810717202 Porsche"
+      },
+      {
+        "sku": "14655",
+        "title": "Porsche 964 993 1988-97 Air Conditioning Compressor V-Belt 13x1085mm 99919236350 Porsche"
+      },
+      {
+        "sku": "8543",
+        "title": "Porsche 993 1993-97 Engine Air Filter 99311003002 MAHLE"
+      },
+      {
+        "sku": "8314",
+        "title": "Porsche 993 1993-97 Rear Silencer Securing Bands Pair 99311111907 JP Dansk"
+      },
+      {
+        "sku": "4308",
+        "title": "Porsche 928 993 1984-97 Exhaust Clamp 92811142700 partworks"
+      },
+      {
+        "sku": "8313",
+        "title": "Porsche 993 1993-97 Rear Silencer Securing Band 99311111907 JP Dansk"
+      },
+      {
+        "sku": "2966",
+        "title": "Porsche 993 1994-97 Sport Stainless Steel Tailpipes Left and Right 99311125100 JP Dansk"
+      },
+      {
+        "sku": "2965",
+        "title": "Porsche 993 1994-95 Stainless Steel Tailpipes Left and Right 99311125104 JP Dansk"
+      },
+      {
+        "sku": "1437",
+        "title": "Porsche 993 1993-97 Stainless Steel Sport Rear Silencers Motorsport 99311199300 partworks"
+      },
+      {
+        "sku": "1438",
+        "title": "Porsche 993 1994-97 Exhaust Tailpipe Tips 99311125113 partworks"
+      },
+      {
+        "sku": "8365",
+        "title": "Porsche 993 1993-97 Stainless Steel Sport Rear Silencers with Clamps 99311111907 JP Dansk"
+      },
+      {
+        "sku": "14000",
+        "title": "Porsche 993 1994-97 Stainless Steel Sport Rear Silencers Left and Right Motorsport 99311104614 JP Dansk"
+      },
+      {
+        "sku": "18700",
+        "title": "Porsche 993 1994-97 OE Version Stainless Steel Sport Rear Silencers 99311199300 JP Dansk"
+      },
+      {
+        "sku": "14099",
+        "title": "Porsche 993 1995-97 Turbo Stainless Steel Sport Rear Silencers Left and Right 99311104655 JP Dansk"
+      },
+      {
+        "sku": "14918",
+        "title": "Porsche 993 1994-97 Heater Hose 72x2mm Cut to Length 00004320504 Porsche"
+      },
+      {
+        "sku": "18836",
+        "title": "Porsche Universal 100 Cell Sport Catalytic Converter 108mm JP Dansk"
+      },
+      {
+        "sku": "18729",
+        "title": "Porsche 993 1994-97 Stainless Steel 100 Cell Sport Catalytic Converter Set 99311321316 JP Dansk"
+      },
+      {
+        "sku": "18751",
+        "title": "Porsche 993 1993-97 Gillet Stainless Steel Cat Delete Cross Pipes Motorsport 99311321344 JP Dansk"
+      },
+      {
+        "sku": "11492",
+        "title": "Porsche 993 1994-97 Bischoff Rear Silencer Mounting Kit 99311111907 JP Dansk"
+      },
+      {
+        "sku": "11493",
+        "title": "Porsche 993 1994-97 Gillet Rear Silencer Mounting Kit 99311111907 JP Dansk"
+      },
+      {
+        "sku": "2555",
+        "title": "Porsche 993 1995-97 Turbo Intercooler Air Hoses Left and Right Pair 99311063256 partworks"
+      },
+      {
+        "sku": "17017",
+        "title": "Porsche 993 Carrera 1995-06 Turbo ABS Pump 99335595351 Porsche"
+      }
+    ]
   }
 ]
