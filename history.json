@@ -8034,5 +8034,205 @@
         "title": "Porsche 993 Carrera 1995-06 Turbo ABS Pump 99335595351 Porsche"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-22T07:09:18.138746+00:00",
+    "total_skus": 6058,
+    "in_stock": 4716,
+    "out_of_stock": 1005,
+    "not_found": 337,
+    "newly_in_stock": 21,
+    "newly_out_of_stock": 25,
+    "updated": 5721,
+    "skipped": 337,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "17029",
+        "title": "Porsche 911 928 944 968 964 993 Antenna Amplifier 1x Porsche 96464517302"
+      },
+      {
+        "sku": "2847",
+        "title": "Porsche 964 Carrera 2 4 968 Exhaust Clamp & Sealing Ring Kit 96411133600"
+      },
+      {
+        "sku": "14755",
+        "title": "Porsche 996 997 Boxster 986 987 Timing Chain Tensioner 1x Porsche 99610518802  Cylinders 4-6"
+      },
+      {
+        "sku": "16465",
+        "title": "Porsche 911 964 993 996 Crankshaft Bearing Bushing 1x partworks 96410113870"
+      },
+      {
+        "sku": "3945",
+        "title": "Porsche 996 Carrera 4 4S Turbo TurboS Front Shock Absorbers 2x Bilstein 99634304339"
+      },
+      {
+        "sku": "15319",
+        "title": "Porsche 996 Boxster 986 Ignition Lock Housing 1x Porsche 99634701707"
+      },
+      {
+        "sku": "17008",
+        "title": "Porsche 996 997 Seatbelt Cover 1x Porsche 99780352100A03"
+      },
+      {
+        "sku": "17010",
+        "title": "Porsche 996 986 Boxster 996 GT3 996 Turbo Centre Cowl Cover 1x Porsche 9965725630601C"
+      },
+      {
+        "sku": "16586",
+        "title": "Porsche 911 Oil Line Hose 1x Unbranded 90110730113"
+      },
+      {
+        "sku": "10136",
+        "title": "Porsche 911 Carburetor Gasket Set 1x partworks 91110894800"
+      },
+      {
+        "sku": "7543",
+        "title": "Porsche 911 914 Synchroniser Rings 2x partworks 91130230113"
+      },
+      {
+        "sku": "1451",
+        "title": "Porsche 911 912 Gearbox Repair Kit 1x partworks 90130090100"
+      },
+      {
+        "sku": "1452",
+        "title": "Porsche 911 912 Gearbox Repair Kit 1x partworks 90130091600"
+      },
+      {
+        "sku": "4448",
+        "title": "Porsche 911 914 Synchronising Rings 6x partworks 91130230113"
+      },
+      {
+        "sku": "1447",
+        "title": "Porsche 911 Synchroniser Rings 10x partworks 91130230113"
+      },
+      {
+        "sku": "17444",
+        "title": "Porsche 911 912 914 Steering Rod Bearing Bracket 1x Porsche 90134722101"
+      },
+      {
+        "sku": "11820",
+        "title": "Porsche 911 912 964 Targa Roof Locking Bolts 8x partworks 96456526501"
+      },
+      {
+        "sku": "1445",
+        "title": "Porsche 911 Synchroniser Rings 1x partworks 91130230113"
+      },
+      {
+        "sku": "7499",
+        "title": "Porsche 911 911 Turbo Brake Light Switches 2x Ate 113945515H"
+      },
+      {
+        "sku": "5289",
+        "title": "Porsche 911 911 Turbo Brake Light Switch 1x ATE 113945515H"
+      },
+      {
+        "sku": "8534",
+        "title": "Porsche 928 964 993 1986-97 Fuel Pump with Check Valve 92860810408 Bosch"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "8490",
+        "title": "Porsche 924S 944 944 Turbo Intake Manifold Gaskets 4x Elring 94411016305"
+      },
+      {
+        "sku": "14694",
+        "title": "Porsche 911 944 968 928 Wheel Hub Cap 1x Porsche 92836103206"
+      },
+      {
+        "sku": "5722",
+        "title": "Porsche 924 944 Tie Rod Ends 2x partworks 94434733305"
+      },
+      {
+        "sku": "5812",
+        "title": "Porsche 924 924S 944 Tie Rod End 1x partworks 94434733305"
+      },
+      {
+        "sku": "996",
+        "title": "Porsche 356 911 924 944 928 Mounting Bracket 1x partworks 477885761"
+      },
+      {
+        "sku": "17437",
+        "title": "Porsche 911 914 924 944 924S Headlight Linkage Bearing Block 1x Porsche 91475027110"
+      },
+      {
+        "sku": "3315",
+        "title": "Porsche 924 944 968 Door Check Strap 1x Porsche 94453760900"
+      },
+      {
+        "sku": "6792",
+        "title": "Porsche 996 Boxster 986 Spark Plug Sleeves 6x Febi 99970721540"
+      },
+      {
+        "sku": "1748",
+        "title": "Porsche 996 986 Spark Plug Tube Sleeves 1x partworks 99970721540"
+      },
+      {
+        "sku": "14666",
+        "title": "Porsche 996 997 Boxster Cayman V-Belt 1x Porsche 99610215168"
+      },
+      {
+        "sku": "18125",
+        "title": "Porsche 996 Turbo Rear Spoiler Hydraulic Cylinder 1x Porsche 99651295201"
+      },
+      {
+        "sku": "7618",
+        "title": "Porsche 996 986 Tie Rod End Joints 2x TRW 99634732203"
+      },
+      {
+        "sku": "7517",
+        "title": "Porsche 986 996 997 987 Tie Rod Ends 2x TRW 99634713105"
+      },
+      {
+        "sku": "6589",
+        "title": "Porsche 986 996 997 987 Tie Rod End 1x TRW 99634713105"
+      },
+      {
+        "sku": "6681",
+        "title": "Porsche 996 997 Carrera Front Brake Pads 1x Brembo 99635194091"
+      },
+      {
+        "sku": "14793",
+        "title": "Porsche 996 Boxster 986 Window Regulator Switch 1x Porsche 99661315110A05"
+      },
+      {
+        "sku": "1388",
+        "title": "Porsche 996 Boxster 986 Clutch Pedal 1x partworks 99642313910"
+      },
+      {
+        "sku": "6904",
+        "title": "Porsche 911 912 Oil Cooler 1x partworks 90110704103"
+      },
+      {
+        "sku": "9108",
+        "title": "Porsche 911 912 930 Rear Axle Control Arm Rubber Bushing 1x partworks 90133319500"
+      },
+      {
+        "sku": "3146",
+        "title": "Porsche 911 Window Regulator Switch 1x partworks 91161362104"
+      },
+      {
+        "sku": "3145",
+        "title": "Porsche 911 Window Regulator Switches 3x partworks 91161362104"
+      },
+      {
+        "sku": "1962",
+        "title": "Porsche 911 Shock Absorbers 2x Bilstein 91134191310"
+      },
+      {
+        "sku": "2264",
+        "title": "Porsche 911 Brake Wear Indicators 2x Textar 99361296502"
+      },
+      {
+        "sku": "3289",
+        "title": "Porsche 964 Carrera Turbo Upper and Lower Valve Cover Set with Gaskets partworks 96410511503"
+      },
+      {
+        "sku": "18840",
+        "title": "Porsche 964 993 1988-97 Hydraulic Clutch Hose 96442347702 JP Dansk"
+      }
+    ]
   }
 ]
