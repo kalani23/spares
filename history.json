@@ -8234,5 +8234,113 @@
         "title": "Porsche 964 993 1988-97 Hydraulic Clutch Hose 96442347702 JP Dansk"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-23T07:08:43.457591+00:00",
+    "total_skus": 6058,
+    "in_stock": 4701,
+    "out_of_stock": 1020,
+    "not_found": 337,
+    "newly_in_stock": 4,
+    "newly_out_of_stock": 19,
+    "updated": 5721,
+    "skipped": 337,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "5546",
+        "title": "Porsche 996 997 Crankcase Oil Separator 1x \u00dcRO 99610702652"
+      },
+      {
+        "sku": "5220",
+        "title": "Porsche Boxster 986 987 Shock Absorber Bump Stops 1x partworks 98633330101"
+      },
+      {
+        "sku": "5320",
+        "title": "Porsche 911 924 928 Fuel Pump 1x Bosch 91160810204"
+      },
+      {
+        "sku": "6238",
+        "title": "Porsche 964 993 1988-97 Carrera Dual-Mass Flywheel 96411401104 LuK"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "4017",
+        "title": "Porsche 944 968 944 Turbo Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4015",
+        "title": "Porsche 944 968 944 Turbo Control Arm 1x Porsche 94434192731"
+      },
+      {
+        "sku": "14787",
+        "title": "Porsche 911 944 968 928 Brake Caliper Repair Kit 1x Porsche 92835191910"
+      },
+      {
+        "sku": "17134",
+        "title": "Porsche 911 914 924 944 License Plate Light Seal 1x Porsche 90163160500"
+      },
+      {
+        "sku": "17791",
+        "title": "Porsche 911 924 944 928 968 964 Connector Sleeve 1x Porsche N0175624"
+      },
+      {
+        "sku": "2649",
+        "title": "Porsche 996 986 Spark Plug 1x Beru 99917020791"
+      },
+      {
+        "sku": "7490",
+        "title": "Porsche 996 986 Carrera Boxster Slide Rails Chain Tensioner 4x partworks 99610525301"
+      },
+      {
+        "sku": "3087",
+        "title": "Porsche 996 Carrera 3.4 986 Boxster Timing Chain Kit Complete Set up to 2000 99610517054"
+      },
+      {
+        "sku": "3088",
+        "title": "Porsche 996 Boxster 986 Timing Chain Kit 1x partworks 99610517054"
+      },
+      {
+        "sku": "17415",
+        "title": "Porsche 996 Carrera 4 Fuel Pump 1x Porsche 99662013300"
+      },
+      {
+        "sku": "1952",
+        "title": "Porsche Boxster 986 Shock Absorbers 2x Bilstein 98633305120"
+      },
+      {
+        "sku": "3918",
+        "title": "Porsche Boxster Shock Absorbers 2x Bilstein 98633305120"
+      },
+      {
+        "sku": "3484",
+        "title": "Porsche Boxster Cayman Brake Discs 2x Sebro 98635240301"
+      },
+      {
+        "sku": "7962",
+        "title": "Porsche 911 914-6 Crankcase Screws 11x partworks 90110117300"
+      },
+      {
+        "sku": "3410",
+        "title": "Porsche 911 911 Turbo Cylindrical Roller Bearing 1x partworks 99911002500"
+      },
+      {
+        "sku": "6961",
+        "title": "Porsche 911 912 914 Stabiliser Bushings 2x SuperPro 90133379304"
+      },
+      {
+        "sku": "7395",
+        "title": "Porsche 911 Turbo Fuel Injectors 6x Bosch 93011022502"
+      },
+      {
+        "sku": "16396",
+        "title": "Porsche 911 928 911 Turbo CV Joint Seal 1x partworks 93033229700"
+      },
+      {
+        "sku": "2181",
+        "title": "Porsche 911 Speedometer Dial 1x Porsche 911641516AX"
+      }
+    ]
   }
 ]
