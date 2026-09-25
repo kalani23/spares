@@ -8342,5 +8342,225 @@
         "title": "Porsche 911 Speedometer Dial 1x Porsche 911641516AX"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-25T07:26:35.014009+00:00",
+    "total_skus": 6058,
+    "in_stock": 4700,
+    "out_of_stock": 1021,
+    "not_found": 337,
+    "newly_in_stock": 25,
+    "newly_out_of_stock": 26,
+    "updated": 5721,
+    "skipped": 337,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "14675",
+        "title": "Porsche 924S 944 968 Power Steering Pump V-Belt 1x Porsche 99919223650"
+      },
+      {
+        "sku": "5150",
+        "title": "Porsche 944 968 Tensioner Pulley 1x Schaeffler-Ina 94410563110"
+      },
+      {
+        "sku": "1134",
+        "title": "Porsche 911 924S 944 968 Fuel Pump 1x Magneti Marelli 94460810204"
+      },
+      {
+        "sku": "6378",
+        "title": "Porsche 996 Boxster 986 Fuel Tank Vent Valve 1x Pierburg 99660520101"
+      },
+      {
+        "sku": "2825",
+        "title": "Porsche 996 997 Boxster 986 Trailing Arm 1x Meyle 99634104306"
+      },
+      {
+        "sku": "2826",
+        "title": "Porsche 996 997 986 Axle Struts 2x Meyle 99634104306"
+      },
+      {
+        "sku": "1234",
+        "title": "Porsche 996 986 Axle Strut Control Arm 2x Porsche 99733104302"
+      },
+      {
+        "sku": "1231",
+        "title": "Porsche 996 986 Control Arm 1x Porsche 99733104302"
+      },
+      {
+        "sku": "3095",
+        "title": "Porsche 996 Rear Control Arms and Struts 10x Porsche Originalteil 99733104505"
+      },
+      {
+        "sku": "1521",
+        "title": "Porsche 911 914-6 964 Valve Cover 1x partworks 90110511511"
+      },
+      {
+        "sku": "6468",
+        "title": "Porsche 911 Release Bearing 1x ZF Sachs 91511608280"
+      },
+      {
+        "sku": "5101",
+        "title": "Porsche 911 911S Clutch Kit 1x ZF Sachs 91511600127"
+      },
+      {
+        "sku": "8853",
+        "title": "Porsche 911 964 993 Sun Visor Brackets 2x JP-Dansk 96473131901"
+      },
+      {
+        "sku": "1294",
+        "title": "Porsche 911 911S HKZ Control Unit 1x Bosch 93060270200"
+      },
+      {
+        "sku": "1006",
+        "title": "Porsche 911 911S Compensating Pipe 1x partworks 93011115702"
+      },
+      {
+        "sku": "1005",
+        "title": "Porsche 911 Exhaust Compensating Pipe Set 1x partworks 93011115702"
+      },
+      {
+        "sku": "5642",
+        "title": "Porsche 911 Clutch Master Cylinder 1x FTE 91142317103"
+      },
+      {
+        "sku": "1528",
+        "title": "Porsche 911 Clutch Kit 1x partworks 91511600127"
+      },
+      {
+        "sku": "1527",
+        "title": "Porsche 911 Clutch Kit & Flywheel 1x partworks 91511608706"
+      },
+      {
+        "sku": "1523",
+        "title": "Porsche 911 Clutch Kit & Flywheel 1x partworks 91511600127"
+      },
+      {
+        "sku": "1518",
+        "title": "Porsche 911 Clutch Kit and Flywheel 1x partworks 91511600127"
+      },
+      {
+        "sku": "1514",
+        "title": "Porsche 911 Clutch Kit and Flywheel 1x partworks 91511600127"
+      },
+      {
+        "sku": "17278",
+        "title": "Porsche 911 Impact Absorber Rubber Pad 1x Porsche 91150521901"
+      },
+      {
+        "sku": "17554",
+        "title": "Porsche 993 1994-97 Oil Hose Connector 99320725301 Porsche"
+      },
+      {
+        "sku": "14655",
+        "title": "Porsche 964 993 1988-97 Air Conditioning Compressor V-Belt 13x1085mm 99919236350 Porsche"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "5606",
+        "title": "Porsche 924 / 944 / 968 / 993 / 964 / 928 Alternator Voltage Regulator 92860314201 Hella"
+      },
+      {
+        "sku": "5603",
+        "title": "Porsche 924S 944 968 Thermostat 1x Mahle 94410601900"
+      },
+      {
+        "sku": "8764",
+        "title": "Porsche 944 924S Tensioner Pulley 1x Magneti Marelli 94410502704"
+      },
+      {
+        "sku": "1581",
+        "title": "Porsche 924S 944 Steering Gear and Tie Rod Set 1x partworks 94434701124"
+      },
+      {
+        "sku": "1582",
+        "title": "Porsche 944 968 944 S2 Steering Gear And Tie Rods 1x partworks 94534701122"
+      },
+      {
+        "sku": "10181",
+        "title": "Porsche 924 944 968 Steering Gear 1x Porsche 94534701122"
+      },
+      {
+        "sku": "17907",
+        "title": "Porsche 924 944 964 993 924S Steering Gear Seal Plug 1x Porsche 477419115"
+      },
+      {
+        "sku": "7995",
+        "title": "Porsche 911 928 944 964 968 986 987 993 996 997 Brake Caliper Bleed Valves 2x partworks 93035191900"
+      },
+      {
+        "sku": "8061",
+        "title": "Porsche 924 944 924S Sun Visor Brackets 2x partworks 90015102801"
+      },
+      {
+        "sku": "14738",
+        "title": "Porsche 911 944 968 928 Seat Backrest Cover 1x Porsche 92852114802"
+      },
+      {
+        "sku": "10139",
+        "title": "Porsche 964 993 996 997 Synchronizer Ring 1x partworks 92830421130"
+      },
+      {
+        "sku": "1590",
+        "title": "Porsche 996 986 Axial Joint Tie Rod 1x ZF - Lemf\u00f6rder 99634713105"
+      },
+      {
+        "sku": "6229",
+        "title": "Porsche 996 986 Tie Rod End Joint 1x ZF - Lemf\u00f6rder 99634732203"
+      },
+      {
+        "sku": "17396",
+        "title": "Porsche 911 964 993 996 997 Boxster 986 Trunk Light 1x Porsche 99763220100"
+      },
+      {
+        "sku": "17872",
+        "title": "Porsche 986 996 997 987 Door Security Light 1x Porsche 99663213201"
+      },
+      {
+        "sku": "14771",
+        "title": "Porsche 996 997 Boxster 986 987 Clutch Pedal Microswitch 1x Porsche 99761310950"
+      },
+      {
+        "sku": "15319",
+        "title": "Porsche 996 Boxster 986 Ignition Lock Housing 1x Porsche 99634701707"
+      },
+      {
+        "sku": "3577",
+        "title": "Porsche Boxster 986 Engine Gasket Set 1x partworks 98610090500"
+      },
+      {
+        "sku": "3711",
+        "title": "Porsche 996 997 986 987 Tie Rod End 1x ZF 99634713105"
+      },
+      {
+        "sku": "2669",
+        "title": "Porsche 911 Spark Plugs 6x NGK 99917016290"
+      },
+      {
+        "sku": "5405",
+        "title": "Porsche 911 Alternator V-Belt 1x Continental 99919209750"
+      },
+      {
+        "sku": "7807",
+        "title": "Porsche 911 Flywheel Bolts 6x partworks 99906700702"
+      },
+      {
+        "sku": "3743",
+        "title": "Porsche 911 924 Clutch Pressure Plate 1x ZF - Sachs Performance 91511600127"
+      },
+      {
+        "sku": "7098",
+        "title": "Porsche 911 Brake Discs 2x Sebro 90135140111"
+      },
+      {
+        "sku": "8924",
+        "title": "Porsche 911 912 Brake Discs and Pads 1x partworks 91135295005"
+      },
+      {
+        "sku": "15177",
+        "title": "Porsche 911 928 911 Turbo Heater Control Ball Joint 2x partworks 99916802140"
+      }
+    ]
   }
 ]
