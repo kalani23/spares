@@ -8562,5 +8562,149 @@
         "title": "Porsche 911 928 911 Turbo Heater Control Ball Joint 2x partworks 99916802140"
       }
     ]
+  },
+  {
+    "timestamp": "2026-09-27T07:41:25.186984+00:00",
+    "total_skus": 6058,
+    "in_stock": 4679,
+    "out_of_stock": 1035,
+    "not_found": 344,
+    "newly_in_stock": 9,
+    "newly_out_of_stock": 23,
+    "updated": 5714,
+    "skipped": 344,
+    "failed": 0,
+    "newly_in_stock_skus": [
+      {
+        "sku": "5056",
+        "title": "Porsche 944 Turbo Distributor Cap Gasket 94460225700"
+      },
+      {
+        "sku": "8490",
+        "title": "Porsche 924S 944 944 Turbo Intake Manifold Gaskets 4x Elring 94411016305"
+      },
+      {
+        "sku": "3310",
+        "title": "Porsche 944 968 Gearshift Lever Frame 1x Porsche 94455225700"
+      },
+      {
+        "sku": "12080",
+        "title": "Porsche Bushing Housing 1x partworks 99965015040"
+      },
+      {
+        "sku": "17068",
+        "title": "Porsche 986 996 987 997 Battery Mounting Rail 1x Porsche 99661120901"
+      },
+      {
+        "sku": "2980",
+        "title": "Porsche 996 Boxster 986 Stabilizer Link 1x TRW 99634306904"
+      },
+      {
+        "sku": "2981",
+        "title": "Porsche 996 Boxster 986 Stabiliser Links 2x TRW 99634306904"
+      },
+      {
+        "sku": "7443",
+        "title": "Porsche Boxster S 986 Cylinder Head Gasket 1x Elring 99610417059"
+      },
+      {
+        "sku": "4920",
+        "title": "Porsche 986 Boxster S Cylinder Head Gasket 1x Elring 99610417059"
+      }
+    ],
+    "newly_out_of_stock_skus": [
+      {
+        "sku": "4037",
+        "title": "Porsche 968 / 928 / 944 Crankshaft Sensor 94460611500"
+      },
+      {
+        "sku": "8580",
+        "title": "Porsche 924S 944 968 Expansion Tank Cap 1x Mahle-Behr 94410625700"
+      },
+      {
+        "sku": "4026",
+        "title": "Porsche 944 Wishbones 2x Porsche 94434192731"
+      },
+      {
+        "sku": "4025",
+        "title": "Porsche 944 Control Arm 1x Porsche 94434192831"
+      },
+      {
+        "sku": "14788",
+        "title": "Porsche 928 944 944 Turbo Brake Caliper Repair Kit 1x Porsche 95135291901"
+      },
+      {
+        "sku": "17168",
+        "title": "Porsche 911 944 968 Air Conditioning Pressure Switch 1x Porsche 96461313700"
+      },
+      {
+        "sku": "14776",
+        "title": "Porsche 944 968 Sunroof Relay 1x Porsche 94461511703"
+      },
+      {
+        "sku": "8718",
+        "title": "Porsche 924 944 924S Sun Visor Holder 1x partworks 90015102801"
+      },
+      {
+        "sku": "17007",
+        "title": "Porsche 924 928 944 968 Hood Release Cover 1x Porsche 92851114302"
+      },
+      {
+        "sku": "18058",
+        "title": "Porsche 986 996 997 Timing Chain Guide Rail 1x Porsche 99610516804"
+      },
+      {
+        "sku": "16507",
+        "title": "Porsche 993 996 997 Synchroniser Ring 1x partworks 95030461120"
+      },
+      {
+        "sku": "17473",
+        "title": "Porsche 996 Boxster 986 996 GT3 Steering Column Switch 1x Porsche 99661321310EWC"
+      },
+      {
+        "sku": "1698",
+        "title": "Porsche 996 Boxster 986 Speaker Left 1x Porsche 9966450370201C"
+      },
+      {
+        "sku": "14681",
+        "title": "Porsche 911 Timing Belt Injection Pump 1x Porsche 99919203040"
+      },
+      {
+        "sku": "7901",
+        "title": "Porsche 911 914-6 964 Rocker Arm 1x partworks 93010504306"
+      },
+      {
+        "sku": "4916",
+        "title": "Porsche 911 Cylinder Head Gasket 1x Elring 91210431400"
+      },
+      {
+        "sku": "2852",
+        "title": "Porsche 911 912 911 Turbo Windshield Seal 1x \u00dcRO 91154122505"
+      },
+      {
+        "sku": "2093",
+        "title": "Porsche 911 964 911 Turbo 964 Turbo Intake Manifold Flanges 6x partworks 93011014102"
+      },
+      {
+        "sku": "7041",
+        "title": "Porsche 911 Rubber Sleeve Intake Manifold 6x partworks 91111088503"
+      },
+      {
+        "sku": "7001",
+        "title": "Porsche 911 964 Intake Manifold Flange 1x partworks 93011014103"
+      },
+      {
+        "sku": "4409",
+        "title": "Porsche 911 Intake Manifold Rubber Boot 1x partworks 91111088503"
+      },
+      {
+        "sku": "7386",
+        "title": "Porsche 993 1994-95 6x exhaust valve 99310541901 SM Motorenteile"
+      },
+      {
+        "sku": "8534",
+        "title": "Porsche 928 964 993 1986-97 Fuel Pump with Check Valve 92860810408 Bosch"
+      }
+    ]
   }
 ]
